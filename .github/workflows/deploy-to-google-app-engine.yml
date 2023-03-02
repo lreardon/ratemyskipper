@@ -1,0 +1,37 @@
+name: Deploy to App Engine
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  publish:
+    name: Publish Rate My Skipper to GAE
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Authenticate to Google Cloud
+      id: auth
+      uses: google-github-actions/auth@v1
+      with:
+        workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
+        service_account: ${{ secrets.SERVICE_ACCOUNT }}
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v1
+
+    - name: Deploy to Google App Engine
+      id: 'deploy'
+      uses: 'google-github-actions/deploy-appengine@v1.1.0'
+      with:
+        flags: '--verbosity=info'
+      env:
+        CLOUDSDK_APP_CLOUD_BUILD_TIMEOUT: 1800
+        SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }} # Unnecessary on Github; should be on GCP
