@@ -5,8 +5,3 @@ runtime: ruby
 env_variables:
   SECRET_KEY_BASE: ${SECRET_KEY_BASE}
   RAILS_ENV: "production"
-
-automatic_scaling:
-  min_pending_latency: automatic
-  min_instances: 1
-  max_instances: 1
