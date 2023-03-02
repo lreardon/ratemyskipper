@@ -4,11 +4,12 @@ runtime: ruby
 
 env_variables:
   SECRET_KEY_BASE: ${SECRET_KEY_BASE}
-  RAILS_ENV: 'production'
+  RAILS_ENV: "production"
 
 automatic_scaling:
-  min_idle_instances: automatic
+  min_idle_instances: 1
   max_idle_instances: 1
   min_pending_latency: automatic
   max_pending_latency: 0.030s
-  max_instances: 1
+  min_num_instances: 1
+  max_num_instances: 1
