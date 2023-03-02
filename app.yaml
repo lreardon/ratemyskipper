@@ -11,5 +11,5 @@ automatic_scaling:
   max_idle_instances: 1
   min_pending_latency: automatic
   max_pending_latency: 0.030s
-  min_num_instances: 1
-  max_num_instances: 1
+  min_instances: 1
+  max_instances: 1
