@@ -56,3 +56,5 @@ If you're working in MacOS, you need to install gnu-sed, and configure it as fol
 `brew install gnu-sed`
 
 Then add to your `$PATH`, by adding `export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"` to your `.bashrc` or `.zshrc` file.
+
+To develop locally, start the rails server with `./bin/dev` so that tailwind css is updated on the fly! Otherwise, it's a pain in the butt because you have to recompile assets every time.

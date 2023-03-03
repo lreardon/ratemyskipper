@@ -3,6 +3,7 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # TODO: Experiment with taking out this line. I suspect that now that we set this somewhere else during the build phase, it's no longer necessary, and maybe unsafe.
   config.secret_key_base = ENV['SECRET_KEY_BASE']
 
   # Code is not reloaded between requests.
