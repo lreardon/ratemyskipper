@@ -24,7 +24,7 @@ jobs:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
-      # This step is not explicitly necessary, but it is useful to separate from the 'deploy' step, for debugging purposes, because its output is verbose.
+      # This step is not explicitly necessary, but it may be useful to separate from the 'deploy' step, for debugging purposes, because its output is verbose.
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
 
@@ -32,7 +32,7 @@ jobs:
         id: "deploy"
         uses: "google-github-actions/deploy-appengine@v1.1.0"
         with:
-          flags: "--verbosity=debug"
+          flags: "--verbosity=info"
         env:
           CLOUDSDK_APP_CLOUD_BUILD_TIMEOUT: 1800
           SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }} # Unnecessary on Github? Should this be on GCP?
