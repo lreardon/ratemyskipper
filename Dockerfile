@@ -8,7 +8,7 @@ WORKDIR /app/
 ENV RACK_ENV=production \
     RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
-    SECRET_KEY_BASE=<SECRET_KEY_BASE_PLACEHOLDER>
+    SECRET_KEY_BASE=<PLACEHOLDER__SECRET_KEY_BASE>
 
 RUN echo $SECRET_KEY_BASE
 RUN echo $RACK_ENV
@@ -20,4 +20,4 @@ RUN bundle exec rake assets:precompile
 
 # ENTRYPOINT []
 # # I think we can set '3000' back to $PORT in deployment, but for now it breaks when I do things locally, so I just set it explicitly.
-CMD bundle exec rackup -p 3000
+CMD bundle exec rackup -p 8080
