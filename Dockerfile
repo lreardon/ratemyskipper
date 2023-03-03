@@ -1,12 +1,14 @@
 FROM ruby:3.2.1
 
+ARG SECRET_KEY_BASE
+
 COPY . /app/
 WORKDIR /app/
 
 ENV RACK_ENV=production \
     RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
-    SECRET_KEY_BASE=$SECRET_KEY_BASE
+    SECRET_KEY_BASE=${SECRET_KEY_BASE}
 
 RUN gem install bundler
 RUN bundle install
