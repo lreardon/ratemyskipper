@@ -35,4 +35,4 @@ jobs:
           flags: "--verbosity=debug"
         env:
           CLOUDSDK_APP_CLOUD_BUILD_TIMEOUT: 1800
-          SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }} # Unnecessary on Github; should be on GCP
+          SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }} # Unnecessary on Github? Should this be on GCP?
