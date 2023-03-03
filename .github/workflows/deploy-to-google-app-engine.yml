@@ -36,3 +36,15 @@ jobs:
           flags: "--verbosity=info"
         env:
           CLOUDSDK_APP_CLOUD_BUILD_TIMEOUT: 1800
+
+      - name: Delete old versions of the app
+        run: |
+          versions=$(gcloud app versions list \
+            --service default \
+            --sort-by '~VERSION.ID' \
+            --format 'value(VERSION.ID)' | sed 1,1d)
+          for version in $versions; do
+            gcloud app versions delete "$version" \
+              --service default \
+              --quiet
+          done
