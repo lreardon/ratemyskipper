@@ -28,8 +28,8 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
 
-      - name: Inject secrets into Dockerfile
-        run: sed -i '' "s/<SECRET_KEY_BASE_PLACEHOLDER>/$SECRET_KEY_BASE/g" Dockerfile
+      - name: Inject SECRET_KEY_BASE into Dockerfile
+        run: sed -i "s/<SECRET_KEY_BASE_PLACEHOLDER>/$SECRET_KEY_BASE/g" Dockerfile
         env:
           SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
 
