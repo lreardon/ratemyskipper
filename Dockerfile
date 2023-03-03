@@ -18,6 +18,5 @@ RUN bundle install
 
 RUN bundle exec rake assets:precompile
 
-# ENTRYPOINT []
-# # I think we can set '3000' back to $PORT in deployment, but for now it breaks when I do things locally, so I just set it explicitly.
+ENTRYPOINT []
 CMD bundle exec rackup -p 8080
