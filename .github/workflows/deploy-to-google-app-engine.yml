@@ -28,6 +28,11 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
 
+      - name: Inject secrets into Dockerfile
+        run: sed -i '' "s/<SECRET_KEY_BASE_PLACEHOLDER>/$SECRET_KEY_BASE/g" Dockerfile
+        env:
+          SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
+
       - name: Deploy to Google App Engine
         id: "deploy"
         uses: "google-github-actions/deploy-appengine@v1.1.0"
@@ -35,4 +40,4 @@ jobs:
           flags: "--verbosity=info"
         env:
           CLOUDSDK_APP_CLOUD_BUILD_TIMEOUT: 1800
-          SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }} # Unnecessary on Github? Should this be on GCP?
+          # SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }} # Unnecessary on Github? Should this be on GCP?
