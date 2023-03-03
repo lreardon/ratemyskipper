@@ -24,8 +24,9 @@ jobs:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
-      # - name: Set up Cloud SDK
-      #   uses: google-github-actions/setup-gcloud@v1
+      # This step is not explicitly necessary, but it is useful to separate from the 'deploy' step, for debugging purposes, because its output is verbose.
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
 
       - name: Deploy to Google App Engine
         id: "deploy"
