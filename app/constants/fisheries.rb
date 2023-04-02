@@ -1,4 +1,4 @@
 module Fisheries
-    const KODIAK = :kodiak
-    const BRISTOL_BAY = :bristol_bay
+    KODIAK = :kodiak
+    BRISTOL_BAY = :bristol_bay
 end

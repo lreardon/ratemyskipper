@@ -1,1 +1,1 @@
-# I FORGET HOW TO EXTEND ERRORS
+class AlreadyExistsError < StandardError; end
