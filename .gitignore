@@ -34,6 +34,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# I'm not sure exactly why these were here, though if I want to include them, I will need to precompile assets during the deployment phase, after pushing to the repo.
 # /app/assets/builds/*
 # !/app/assets/builds/.keep
 
