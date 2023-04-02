@@ -6,8 +6,12 @@ ruby '3.2.1'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
 
+gem 'dotenv-rails', groups: %i[development test]
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
+
+gem 'tailwindcss-rails', '~> 2.0'
 
 # Use postgres as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
@@ -24,9 +28,6 @@ gem 'turbo-rails'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
-
-# Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
-gem 'tailwindcss-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
