@@ -21,7 +21,7 @@ production:
   timeout: 5000
   username: postgres
   password: <%= ENV['PROD_PG_PASSWORD'] %>
-  database: ratemyskipper
+  database: ratemyskipper_production
   host: "/cloudsql/ratemyskipper:us-central1:ratemyskipper"
 
 development:
