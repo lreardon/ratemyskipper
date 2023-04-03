@@ -2,7 +2,6 @@
   <% if skipper.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
       <h2><%= pluralize(skipper.errors.count, "error") %> prohibited this skipper from being saved:</h2>
-
       <ul>
         <% skipper.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,8 +9,30 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="inline">
+  <div class='flex flex-col justify-start gap-6'>
+    <div>
+      <%= form.label :firstname, 'First name' %>
+      <%= form.text_field :firstname %>
+    </div>
+    <div>
+      <%= form.label :lastname, 'Last name' %>
+      <%= form.text_field :lastname %>
+    </div>
+    <div>
+      <%= form.label :boatname, "Boat name (exclude F/V)" %>
+      <%= form.text_field :boatname %>
+    </div>
+    <div class='flex flex-row gap-6'>
+      <%= form.label :fishery, 'Fishery' %>
+      <div class='flex flex-row gap-3'>
+        <% Fisheries.constants.map { |c| Fisheries.const_get c }.each do |fishery| %>
+          <div>
+            <%= form.radio_button :fishery, fishery %>
+            <%= form.label :fishery, fishery %>
+          </div>
+        <% end %>
+      </div>
+    </div>
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
   </div>
 <% end %>

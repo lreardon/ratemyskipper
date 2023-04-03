@@ -1,4 +1,4 @@
 module Fisheries
-    KODIAK = :kodiak
-    BRISTOL_BAY = :bristol_bay
+  KODIAK = 'Kodiak'.freeze
+  BRISTOL_BAY = 'Bristol Bay'.freeze
 end

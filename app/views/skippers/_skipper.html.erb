@@ -1,7 +1,18 @@
 <div id="<%= dom_id skipper %>">
   <% if action_name != "show" %>
-    <%= link_to "Show this skipper", skipper, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit this skipper', edit_skipper_path(skipper), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <div class='flex flex-row justify-between items-center bg-blue-100 rounded-lg my-5 mx-3'>
+      <div class='flex flex-row w-3/4'>
+        <div class='flex flex-row gap-10 px-10 py-5 bg-blue-100 rounded-lg'>
+          <p><%= skipper.name %></p>
+          <p><%= skipper.boatname %></p>
+          <p><%= skipper.fishery %></p>
+        </div>
+      </div>
+      <div class='flex flex-row items-center justify-center gap-2 px-10 py-5'>
+        <%= link_to 'View', skipper, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
+        <%= link_to 'Edit', edit_skipper_path(skipper), class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
+      </div>
+    </div>
     <hr class="mt-6">
   <% end %>
 </div>
