@@ -17,11 +17,12 @@
 production:
   adapter: postgresql
   encoding: unicode
-  database: ratemyskipper_production
   pool: 5
-  username:
-  password:
   timeout: 5000
+  username: postgres
+  password: <%= ENV['PROD_PG_PASSWORD'] %>
+  database: ratemyskipper
+  host: "/cloudsql/ratemyskipper:us-central1:ratemyskipper"
 
 development:
   adapter: postgresql

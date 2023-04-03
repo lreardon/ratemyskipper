@@ -1,7 +1,14 @@
-entrypoint: bundle exec rails server -p $PORT
+entrypoint: bundle exec rails db:migrate && bundle exec rails server -p $PORT
 env: standard
 runtime: ruby32
 
 env_variables:
   SECRET_KEY_BASE: ${SECRET_KEY_BASE}
   RAILS_ENV: "production"
+  PROD_PG_USERNAME: "postgres"
+  PROD_PG_PASSWORD: ${PROD_PG_PASSWORD}
+  DEVISE_MAILER_USERNAME: "leland6925"
+  DEVISE_MAILER_APP_PASSWORD: ${DEVISE_MAILER_APP_PASSWORD}
+
+beta_settings:
+  cloud_sql_instances: 'ratemyskipper'

@@ -17,6 +17,8 @@ gem 'tailwindcss-rails', '~> 2.0'
 # gem 'sqlite3', '~> 1.4'
 gem 'pg'
 
+gem 'appengine'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
