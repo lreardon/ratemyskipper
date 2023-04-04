@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_07_080910) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_04_153811) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
+
+  create_table "reviews", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "author_id"
+    t.string "skipper_id"
+    t.boolean "would_return"
+    t.boolean "did_not_pay", default: false, null: false
+    t.boolean "aggressive", default: false, null: false
+    t.boolean "reckless", default: false, null: false
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "skippers", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -23,6 +35,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_07_080910) do
     t.string "boatname"
     t.string "fishery"
     t.boolean "active"
+    t.uuid "creator_id"
   end
 
   create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|

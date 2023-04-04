@@ -4,9 +4,20 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-  def create_skipper(firstname, lastname, boatname, fishery, active)
-    throw AlreadyExistsError if Skipper.find_by({ firstname:, lastname:, boatname:, fishery:, active: })
+  attribute :email
 
-    Skipper.create(firstname, lastname, boatname, fishery, active)
+  has_many :created_skippers, class_name: 'Skipper', foreign_key: :creator_id
+  has_many :authored_reviews, class_name: 'Review', foreign_key: :author_id
+
+  def can_delete_skipper?(skipper)
+    skipper.creator_id == id
+  end
+
+  def can_edit_skipper?(skipper)
+    skipper.creator_id == id
+  end
+
+  def reviewed_skipper?(skipper)
+    authored_reviews.map(&:skipper_id).include?(skipper.id)
   end
 end

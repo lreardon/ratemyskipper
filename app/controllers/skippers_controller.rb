@@ -7,7 +7,11 @@ class SkippersController < ApplicationController
   end
 
   # GET /skippers/1 or /skippers/1.json
-  def show; end
+  def show
+    return unless current_user.reviewed_skipper?(@skipper)
+
+    @review = Review.find_by(author_id: current_user.id, skipper_id: @skipper.id)
+  end
 
   # GET /skippers/new
   def new
@@ -20,6 +24,7 @@ class SkippersController < ApplicationController
   # POST /skippers or /skippers.json
   def create
     @skipper = Skipper.new(skipper_params)
+    @skipper.creator = current_user
 
     respond_to do |format|
       if @skipper.save
@@ -48,6 +53,8 @@ class SkippersController < ApplicationController
   # DELETE /skippers/1 or /skippers/1.json
   def destroy
     @skipper.destroy
+
+    puts 'HEY WE DESTROYED THAT SKIPPER'
 
     respond_to do |format|
       format.html { redirect_to skippers_url, notice: 'Skipper was successfully destroyed.' }

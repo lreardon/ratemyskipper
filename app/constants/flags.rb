@@ -1,7 +1,7 @@
 module Flags
-    module Bad
-    DID_NOT_PAY = :did_not_pay
-    RECKLESS = :reckless
-    AGGRESSIVE = :aggressive
-    end
+  module Bad
+    DID_NOT_PAY = 'Did Not Pay'.freeze
+    RECKLESS = 'Reckless'.freeze
+    AGGRESSIVE = 'Aggressive'.freeze
+  end
 end
