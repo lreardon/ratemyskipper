@@ -35,7 +35,7 @@ jobs:
         id: "deploy"
         uses: "google-github-actions/deploy-appengine@v1.1.0"
         env:
-          TEST_SECRET='${{ steps.secrets.outputs.test_secret}}'
+          TEST_SECRET: '${{ steps.secrets.outputs.test_secret}}'
         with:
           flags: "--promote"
 
