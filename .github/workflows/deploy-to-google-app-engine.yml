@@ -32,7 +32,6 @@ jobs:
           env_vars: |-
             DEVISE_MAILER_APP_PASSWORD={{ secrets.DEVISE_MAILER_APP_PASSWORD }}
             PG_PASSWORD_PROD={{ secrets.PROD_PG_PASSWORD }}
-            TEST_SECRET={{ secrets.TEST_SECRET }}
 
       - name: Delete Old Versions of the App
         run: |
