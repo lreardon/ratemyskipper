@@ -19,7 +19,7 @@ production:
   encoding: unicode
   pool: 5
   timeout: 5000
-  username: <%= ENV['PROD_PG_USERNAME'] %>
+  username: <%= ENV['PG_USERNAME_PROD'] %>
   password: r(H%eqp45+"n(o|J
   database: ratemyskipper_production
   host: "/cloudsql/ratemyskipper:us-central1:ratemyskipper"
@@ -29,8 +29,8 @@ development:
   encoding: unicode
   database: ratemyskipper_development
   pool: 5
-  username: <%= ENV['PG_USERNAME'] %>
-  password: <%= ENV['PG_PASSWORD'] %>
+  username: <%= ENV['PG_USERNAME_DEV'] %>
+  password: <%= ENV['PG_PASSWORD_DEV'] %>
   timeout: 5000
 
   # Connect on a TCP socket. Omitted by default since the client uses a

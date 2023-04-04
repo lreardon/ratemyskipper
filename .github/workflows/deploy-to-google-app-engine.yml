@@ -29,6 +29,9 @@ jobs:
         uses: "google-github-actions/deploy-appengine@v1.1.0"
         with:
           flags: "--promote"
+          env_vars: |-
+            DEVISE_MAILER_APP_PASSWORD={{ secrets.DEVISE_MAILER_APP_PASSWORD }}
+            PG_PASSWORD_PROD={{ secrets.PROD_PG_PASSWORD }}
 
       - name: Delete Old Versions of the App
         run: |
