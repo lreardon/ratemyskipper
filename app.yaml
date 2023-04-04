@@ -4,7 +4,6 @@ runtime: ruby32
 
 env_variables:
   RAILS_ENV: "production"
-  PORT: $PORT
 
 beta_settings:
   cloud_sql_instances: 'ratemyskipper'
