@@ -25,7 +25,7 @@ jobs:
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
       - name: Fetch secrets from Secret Manager
-        id: 'secrets'
+        id: 'sm'
         uses: 'google-github-actions/get-secretmanager-secrets@v1'
         with:
           secrets: |-
@@ -43,7 +43,9 @@ jobs:
         id: "deploy"
         uses: "google-github-actions/deploy-appengine@v1.1.0"
         env:
-          TEST_SECRET: '${{ steps.secrets.outputs.test_secret}}'
+          SM_TEST_SECRET: ${{ steps.sm.outputs.test_secret}}
+          GH_TEST_SECRET: ${{ secrets.TEST_SECRET}}
+          WF_TEST_SECRET: 'workflow secret'
         with:
           flags: "--promote"
 
