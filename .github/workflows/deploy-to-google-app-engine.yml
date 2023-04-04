@@ -37,7 +37,7 @@ jobs:
 
       - name: Print GH Secret
         id: 'print-gh-secret'
-        run: 'echo ${{ secrets. }}'
+        run: 'echo ${{ secrets.TEST_SECRET }}'
 
       - name: Deploy to Google App Engine
         id: "deploy"
