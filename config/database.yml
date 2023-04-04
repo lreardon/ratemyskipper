@@ -19,7 +19,7 @@ production:
   encoding: unicode
   pool: 5
   timeout: 5000
-  username: postgres
+  username: <%= ENV['PROD_PG_USERNAME'] %>
   password: r(H%eqp45+"n(o|J
   database: ratemyskipper_production
   host: "/cloudsql/ratemyskipper:us-central1:ratemyskipper"
