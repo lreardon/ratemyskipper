@@ -13,6 +13,8 @@
   </p>
   <h2>Secret Manager Secret?</h2>
   <h2><%= ENV['TEST_SECRET'] %></h2>
+  <h2>Secret KEY BASE?</h2>
+  <h2><%= ENV['SECRET_KEY_BASE'] %></h2>
   <div class="flex flex-row justify-around content-center py-24 px-5">
     <%= button_to 'Sign Up', new_user_registration_path, method: :get, class: 'bg-blue-500 hover:bg-blue-700 text-white text-4xl font-bold p-10 rounded' %>
     <%= button_to 'Log In', new_user_session_path, method: :get, class: 'bg-gray-500 hover:bg-gray-700 text-white text-4xl font-bold p-10 rounded' %>
