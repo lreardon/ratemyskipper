@@ -33,7 +33,7 @@ jobs:
 
       - name: Create secrets.yaml from PROD_ENV github secret.
         id: 'hisecrets'
-        run: 'echo ${{ secrets.SECRETS_YAML }} > secrets.yaml'
+        run: 'echo "${{ secrets.SECRETS_YAML }}" > secrets.yaml'
 
       - name: Deploy to Google App Engine
         id: "deploy"
