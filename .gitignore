@@ -40,3 +40,4 @@
 
 # Don't upload environment variables
 .env
+secrets.yaml

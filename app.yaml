@@ -3,10 +3,7 @@ env: standard
 runtime: ruby32
 
 env_variables:
-  SECRET_KEY_BASE: $SECRET_KEY_BASE
-  SM_TEST_SECRET: $SM_TEST_SECRET
-  GH_TEST_SECRET: $GH_TEST_SECRET
-  WF_TEST_SECRET: $WF_TEST_SECRET
+  SECRET_KEY_BASE: ${SECRET_KEY_BASE}
   EX_TEST_SECRET: 'explicit secret'
   RAILS_ENV: "production"
   PG_USERNAME_PROD: "postgres"
@@ -16,3 +13,6 @@ env_variables:
 
 beta_settings:
   cloud_sql_instances: 'ratemyskipper'
+
+includes:
+  - secrets.yaml

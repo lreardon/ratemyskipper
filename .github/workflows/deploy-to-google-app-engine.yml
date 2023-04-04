@@ -31,15 +31,19 @@ jobs:
           secrets: |-
             test_secret:ratemyskipper/TEST_SECRET
 
+      - name: Create secrets.yaml from PROD_ENV github secret.
+        id: 'hisecrets'
+        run: 'echo ${{ secrets.SECRETS_YAML }} > secrets.yaml'
+
       - name: Deploy to Google App Engine
         id: "deploy"
         uses: "google-github-actions/deploy-appengine@v1.1.0"
-        env:
-          SM_TEST_SECRET: ${{ steps.sm.outputs.test_secret}}
-          GH_TEST_SECRET: ${{ secrets.TEST_SECRET}}
-          WF_TEST_SECRET: 'workflow secret'
         with:
           flags: "--promote"
+      
+      - name: Destroy secrets.yaml
+        id: 'byesecrets'
+        run: 'rm secrets.yaml'
 
       - name: Delete Old Versions of the App
         run: |
