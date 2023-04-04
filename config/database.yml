@@ -20,7 +20,7 @@ production:
   pool: 5
   timeout: 5000
   username: <%= ENV['PG_USERNAME_PROD'] %>
-  password: r(H%eqp45+"n(o|J
+  password: <%= ENV['PG_PASSWORD_PROD'] %>
   database: ratemyskipper_production
   host: "/cloudsql/ratemyskipper:us-central1:ratemyskipper"
 
