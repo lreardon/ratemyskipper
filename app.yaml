@@ -3,8 +3,6 @@ env: standard
 runtime: ruby32
 
 env_variables:
-  SECRET_KEY_BASE: ${SECRET_KEY_BASE}
-  TEST_SECRET: ${TEST_SECRET}
   RAILS_ENV: "production"
   PG_USERNAME_PROD: "postgres"
   PG_PASSWORD_PROD: ${PROD_PG_PASSWORD}
