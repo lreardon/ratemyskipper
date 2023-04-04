@@ -24,14 +24,20 @@ jobs:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
+      - name: Fetch secrets from Secret Manager
+        id: 'secrets'
+        uses: 'google-github-actions/get-secretmanager-secrets@v1'
+        with:
+          secrets: |-
+            test_secret:ratemyskipper/TEST_SECRET
+
       - name: Deploy to Google App Engine
         id: "deploy"
         uses: "google-github-actions/deploy-appengine@v1.1.0"
+        env:
+          TEST_SECRET='${{ steps.secrets.outputs.test_secret}}'
         with:
           flags: "--promote"
-          env_vars: |-
-            DEVISE_MAILER_APP_PASSWORD={{ secrets.DEVISE_MAILER_APP_PASSWORD }}
-            PG_PASSWORD_PROD={{ secrets.PROD_PG_PASSWORD }}
 
       - name: Delete Old Versions of the App
         run: |
