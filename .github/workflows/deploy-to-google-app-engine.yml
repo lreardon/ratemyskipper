@@ -33,7 +33,19 @@ jobs:
 
       - name: Print secret
         id: 'print-secret'
-        run: 'echo ${{ steps.secrets.outputs.test_secret}}'
+        run: 'echo ${{ steps.secrets.outputs.test_secret }}'
+
+      - id: generate_dotenv_file
+        env:
+          MY_DOTENV: ${{ secrets.MY_DOTENV }}
+        run: echo "$MY_DOTENV" > .env-for-app-yaml
+
+    - id: prepare-app-yaml
+      uses: mshick/fast-envsubst@v1
+      with:
+        env-file: .env-for-app-yaml
+        in-file: app.yaml.template
+        out-file: app.yaml
 
       - name: Deploy to Google App Engine
         id: "deploy"
