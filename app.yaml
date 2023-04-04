@@ -3,13 +3,7 @@ env: standard
 runtime: ruby32
 
 env_variables:
-  SECRET_KEY_BASE: ${SECRET_KEY_BASE}
-  EX_TEST_SECRET: 'explicit secret'
   RAILS_ENV: "production"
-  PG_USERNAME_PROD: "postgres"
-  PG_PASSWORD_PROD: $PROD_PG_PASSWORD
-  DEVISE_MAILER_USERNAME: "leland6925"
-  DEVISE_MAILER_APP_PASSWORD: $DEVISE_MAILER_APP_PASSWORD
 
 beta_settings:
   cloud_sql_instances: 'ratemyskipper'

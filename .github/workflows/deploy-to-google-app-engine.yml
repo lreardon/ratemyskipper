@@ -24,16 +24,9 @@ jobs:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
-      - name: Fetch secrets from Secret Manager
-        id: 'sm'
-        uses: 'google-github-actions/get-secretmanager-secrets@v1'
-        with:
-          secrets: |-
-            test_secret:ratemyskipper/TEST_SECRET
-
-      - name: Create secrets.yaml from PROD_ENV github secret.
+      - name: Create secrets.yaml from PROD_ENV Github Secret
         id: 'hisecrets'
-        run: 'echo "${{ secrets.SECRETS_YAML }}" > secrets.yaml'
+        run: echo '${{ secrets.SECRETS_YAML }}' > secrets.yaml
 
       - name: Deploy to Google App Engine
         id: "deploy"
