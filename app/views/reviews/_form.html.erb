@@ -1,0 +1,51 @@
+<%= form_with(model: review, class: "contents") do |form| %>
+  <% if review.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
+      <ul>
+        <% review.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='flex flex-col justify-start gap-6'>
+    <div class='flex flex-col'>
+      <%= form.hidden_field :skipper_id, value: @skipper.id %>
+      <%= form.hidden_field :author_id, value: current_user.id %>
+      <%= form.label :would_return, "Would you fish for #{@skipper.firstname} again?" %>
+      <div class='flex flex-row gap-3'>
+        <div>
+          <%= form.radio_button :would_return, true %>
+          <%= form.label :would_return, 'Yes' %>
+        </div>
+        <div>
+          <%= form.radio_button :would_return, false %>
+          <%= form.label :would_return, 'No' %>
+        </div>
+      </div>
+    </div>
+    <div class='flex flex-col'>
+      <p>Any concerning behaviors?</p>
+      <div class="flex flex-row gap-5">
+        <div>
+          <%= form.label :reckless, Flags::Bad::RECKLESS %>
+          <%= form.check_box :reckless %>
+        </div>
+        <div>
+          <%= form.label :aggressive, Flags::Bad::AGGRESSIVE %>
+          <%= form.check_box :aggressive %>
+        </div>
+        <div>
+          <%= form.label :did_not_pay, Flags::Bad::DID_NOT_PAY %>
+          <%= form.check_box :did_not_pay %>
+        </div>
+      </div>
+    </div>
+    <div class='flex flex-col'>
+      <%= form.label :comment, 'Anything else?' %>
+      <%= form.text_area :comment, rows: 4 %>
+    </div>
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

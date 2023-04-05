@@ -1,0 +1,1 @@
+class NoReferenceObjectError < StandardError; end
