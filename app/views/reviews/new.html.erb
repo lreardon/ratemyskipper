@@ -1,5 +1,7 @@
 <div class="w-full">
+  <div class='flex flex-row justify-end'>
+    <%= link_to 'Back to Skipper', skipper_path(@skipper), class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  </div>
   <h1 class="font-bold text-4xl p-5">New review for <%= @skipper.name %></h1>
   <%= render "form", review: @review %>
-  <%= link_to 'Back to reviews', reviews_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
 </div>
