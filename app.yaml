@@ -1,6 +1,7 @@
-entrypoint: bundle exec rails server -p $PORT # WE NEED TO TAKE THE MIGRATION OUT OF THIS LINE OUT FOR SURE
-env: standard
 runtime: ruby32
+env: standard
+instance_class: F2
+entrypoint: bundle exec rails server -p $PORT
 
 env_variables:
   RAILS_ENV: "production"
