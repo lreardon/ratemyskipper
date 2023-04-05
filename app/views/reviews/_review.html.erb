@@ -1,6 +1,6 @@
 <div id="<%= dom_id review %>" class="flex flex-col gap-3 p-3 border">
   <p><%= review.comment %></p>
-  <div class='flex flex-row gap-4'>
+  <div class='flex flex-row gap-3'>
     <% if review.flags? %>
       <% review.flags.each do |flag| %>
         <p class='flex-null bg-red-100 p-3 text-l rounded-lg'><%= flag %></p>
@@ -9,6 +9,7 @@
       <p class='flex-null bg-green-100 p-3 text-l rounded-lg'>No Flags</p>
     <% end %>
   </div>
-  <p><%= review.author.id %></p>
-  <hr class="mt-6">
+  <div class='flex flex-row justify-end'>
+    <%= button_to review.author.name, user_path(review.author), method: :get, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
+  </div>
 </div>

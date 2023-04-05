@@ -4,9 +4,18 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.label :firstname %><br />
+    <%= f.email_field :firstname %>
   </div>
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.email_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email %>
+  </div>
+
 
   <div class="actions">
     <%= f.submit "Resend unlock instructions" %>

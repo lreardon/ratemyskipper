@@ -1,7 +1,7 @@
 runtime: ruby32
 env: standard
 instance_class: F2
-entrypoint: bundle exec rails db:migrate && bundle exec rails server -p $PORT # REMOVE MIGRATIONS FROM TIS COMMAND
+entrypoint: bundle exec rails db:migrate && bundle exec rails server -p $PORT # REMOVE MIGRATIONS FROM THIS COMMAND
 
 env_variables:
   RAILS_ENV: "production"
