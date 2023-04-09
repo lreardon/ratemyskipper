@@ -3,7 +3,19 @@ class SkippersController < ApplicationController
 
   # GET /skippers or /skippers.json
   def index
-    @skippers = Skipper.all
+    if (q = params[:q])
+      tokens = q.downcase.split(' ')
+      # This query is extremely naive.
+      # The nature of how I want to compute matchces suggests that
+      # a Document DB might be a more natural data architecture.
+      @skippers = Skipper.where('LOWER(firstname) in (?)', tokens).or(
+        Skipper.where('LOWER(lastname) in (?)', tokens).or(
+          Skipper.where('LOWER(boatname) = ?', q)
+        )
+      )
+    else
+      @skippers = Skipper.all
+    end
   end
 
   # GET /skippers/1 or /skippers/1.json
@@ -72,5 +84,9 @@ class SkippersController < ApplicationController
   # Only allow a list of trusted parameters through.
   def skipper_params
     params.fetch(:skipper, {}).permit(:firstname, :lastname, :boatname, :fishery)
+  end
+
+  def skippers_params
+    params.permit(:q)
   end
 end

@@ -6,7 +6,7 @@
     <% if current_user == @user %>
       <div class="flex flex-row gap-3">
         <%= link_to 'Edit', edit_user_path(@user), class: "rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
-        <%= button_to 'Delete', user_path(@user), method: :delete, class: "rounded-lg py-3 px-5 bg-red-100 font-medium" %>
+        <%= button_to 'Delete', user_path(@user), method: :delete,  data: {confirm: 'Are you sure? This action is permanent!'}, class: "rounded-lg py-3 px-5 bg-red-100 font-medium" %>
       </div>
     <% end %>
   </div>

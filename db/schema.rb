@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_05_060651) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_06_040907) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -25,6 +25,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_05_060651) do
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["aggressive"], name: "index_reviews_on_aggressive"
+    t.index ["author_id"], name: "index_reviews_on_author_id"
+    t.index ["did_not_pay"], name: "index_reviews_on_did_not_pay"
+    t.index ["reckless"], name: "index_reviews_on_reckless"
+    t.index ["skipper_id"], name: "index_reviews_on_skipper_id"
+    t.index ["would_return"], name: "index_reviews_on_would_return"
   end
 
   create_table "skippers", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
@@ -36,6 +42,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_05_060651) do
     t.string "fishery"
     t.boolean "active"
     t.uuid "creator_id"
+    t.index ["active"], name: "index_skippers_on_active"
+    t.index ["boatname"], name: "index_skippers_on_boatname"
+    t.index ["creator_id"], name: "index_skippers_on_creator_id"
+    t.index ["firstname"], name: "index_skippers_on_firstname"
+    t.index ["fishery"], name: "index_skippers_on_fishery"
+    t.index ["lastname"], name: "index_skippers_on_lastname"
   end
 
   create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
@@ -59,6 +71,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_05_060651) do
     t.string "lastname"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["firstname"], name: "index_users_on_firstname"
+    t.index ["lastname"], name: "index_users_on_lastname"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
