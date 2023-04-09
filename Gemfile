@@ -13,9 +13,9 @@ gem 'sprockets-rails'
 
 gem 'tailwindcss-rails', '~> 2.0'
 
-# Use postgres as the database for Active Record
-# gem 'sqlite3', '~> 1.4'
+# Select the gem to use for connecting to our RDBMS
 gem 'pg'
+# gem 'mysql2'
 
 gem 'appengine'
 

@@ -9,7 +9,10 @@
       <p class='flex-null bg-green-100 p-3 text-l rounded-lg'>No Flags</p>
     <% end %>
   </div>
-  <div class='flex flex-row justify-end'>
-    <%= button_to review.author.name, user_path(review.author), method: :get, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
+  <div class='flex flex-row justify-end gap-2'>
+    <% if current_user.wrote_review?(review) %>
+      <%= link_to 'Update Review', edit_review_path(@review), method: :get, class: "rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
+    <% end %>
+    <%= button_to review.author.name, user_path(review.author), method: :get, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
   </div>
 </div>

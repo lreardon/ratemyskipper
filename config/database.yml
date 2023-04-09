@@ -12,8 +12,9 @@
 #       Install PostgreSQL and put its /bin directory on your path.
 #
 # Configure Using Gemfile
+
 # gem 'pg'
-#
+
 production:
   adapter: postgresql
   encoding: unicode
@@ -32,6 +33,28 @@ development:
   username: <%= ENV['PG_USERNAME_DEV'] %>
   password: <%= ENV['PG_PASSWORD_DEV'] %>
   timeout: 5000
+
+
+#gem 'mariadb'
+
+# production:
+#   adapter: mysql2
+#   encoding: utf8
+#   pool: 5
+#   timeout: 5000
+#   username: <%= ENV['PG_USERNAME_PROD'] %>
+#   password: <%= ENV['PG_PASSWORD_PROD'] %>
+#   database: ratemyskipper_production
+#   host: "/cloudsql/ratemyskipper:us-central1:ratemyskipper"
+
+# development:
+#   adapter: mysql2
+#   encoding: utf8
+#   database: ratemyskipper_development
+#   pool: 5
+#   username: <%= ENV['MARIADB_USERNAME_DEV'] %>
+#   password: <%= ENV['MARIADB_PASSWORD_DEV'] %>
+#   timeout: 5000
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have

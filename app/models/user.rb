@@ -24,6 +24,10 @@ class User < ApplicationRecord
     authored_reviews.map(&:skipper_id).include?(skipper.id)
   end
 
+  def wrote_review?(review)
+    authored_reviews.map(&:id).include?(review.id)
+  end
+
   def name
     "#{firstname} #{lastname}"
   end

@@ -2,14 +2,19 @@
   <div class="flex flex-row justify-end">
     <%= link_to 'Back to skippers', skippers_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
   </div>
-  <div class='flex flex-col gap-2'>
-    <div class="flex flex-col border p-2">
+  <div class='flex flex-col border p-2 gap-2'>
+    <div class="flex flex-col">
       <p><%= @skipper.name %></p>
       <p><%= @skipper.boatname %></p>
       <p><%= @skipper.fishery %></p>
     </div>
     <div class="flex flex-row justify-end gap-2">
-      <% if current_user.can_edit_skipper?(@skipper) %>
+    <% if @review %>
+      <%= link_to 'Update Review', edit_review_path(@review), method: :get, class: "rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
+    <% else %>
+      <%= link_to 'Review', new_review_path(review: {skipper_id: @skipper.id}), method: :get, class: "rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
+    <% end %>
+    <% if current_user.can_edit_skipper?(@skipper) %>
         <%= button_to 'Edit', edit_skipper_path(@skipper), method: :get, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
       <% end %>
       <% if current_user.can_delete_skipper?(@skipper) %>
@@ -20,11 +25,6 @@
   <div class='flex flex-col gap-2'>
     <div class="flex flex-row justify-between items-end">
       <h3 class='text-xl'>Reviews</h3>
-      <% if @review %>
-        <%= link_to 'Update Review', edit_review_path(@review), method: :get, class: "mt-2 rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
-      <% else %>
-        <%= link_to 'Review', new_review_path(review: {skipper_id: @skipper.id}), method: :get, class: "mt-2 rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
-      <% end %>
     </div>
     <%= render @skipper.reviews %>
   </div>
