@@ -23,7 +23,7 @@ production:
   username: <%= ENV['PG_USERNAME_PROD'] %>
   password: <%= ENV['PG_PASSWORD_PROD'] %>
   database: ratemyskipper_production
-  host: "/cloudsql/ratemyskipper:us-central1:ratemyskipper"
+  host: <%= ENV['PG_HOST_PROD'] %>
 
 development:
   adapter: postgresql
