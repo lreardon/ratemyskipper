@@ -43,13 +43,14 @@ default: &default
 
 production:
   <<: *default
+  host: <%= ENV['PG_HOST_PROD'] %>
+  database: <%= ENV['PG_DATABASE_PROD'] %>
   username: <%= ENV['PG_USERNAME_PROD'] %>
   password: <%= ENV['PG_PASSWORD_PROD'] %>
-  database: <%= ENV['PG_DATABASE_PROD'] %>
-  host: <%= ENV['PG_HOST_PROD'] %>
 
 development:
   <<: *default
+  host: 'localhost'
   database: <%= ENV['PG_DATABASE_DEV'] %>
   username: <%= ENV['PG_USERNAME_DEV'] %>
   password: <%= ENV['PG_PASSWORD_DEV'] %>
