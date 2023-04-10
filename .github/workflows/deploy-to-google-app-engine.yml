@@ -24,7 +24,7 @@ jobs:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
-      - name: Create secrets.yaml from PROD_ENV Github Secret
+      - name: Create secrets.yaml from SECRETS_YAML Github Secret
         id: 'hisecrets'
         run: echo '${{ secrets.SECRETS_YAML }}' > secrets.yaml
 
