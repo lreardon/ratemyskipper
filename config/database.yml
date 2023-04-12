@@ -50,7 +50,7 @@ production:
 
 development:
   <<: *default
-  host: 'localhost'
+  host: 'localhost' # This line doesn't follow 'convention over configuration', but I don't care, I like the symmetry.
   database: <%= ENV['PG_DATABASE_DEV'] %>
   username: <%= ENV['PG_USERNAME_DEV'] %>
   password: <%= ENV['PG_PASSWORD_DEV'] %>
