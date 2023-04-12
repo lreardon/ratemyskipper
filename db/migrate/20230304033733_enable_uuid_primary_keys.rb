@@ -1,3 +1,5 @@
 class EnableUuidPrimaryKeys < ActiveRecord::Migration[7.0]
-  enable_extension 'pgcrypto' unless extension_enabled?('pgcrypto')
+  # This extension was enabled by a system administrator on heliohost, the current production hosting platform
+    enable_extension 'pgcrypto' unless (ENV['RAILS_ENV'] == 'production' or extension_enabled?('pgcrypto'))
+  end
 end
