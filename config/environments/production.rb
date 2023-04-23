@@ -107,3 +107,9 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
+ask(:password, nil, echo: false)
+server Rails.application.credentials.host,
+       user: 'deploy',
+       roles: %w{app},
+       password: fetch(:password)
