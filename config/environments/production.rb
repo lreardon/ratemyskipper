@@ -107,8 +107,3 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
-
-server '164.92.80.13',
-       user: 'deploy',
-       roles: %w{app},
-       password: Rails.application.credentials.digitalocean.deploy_user_password
