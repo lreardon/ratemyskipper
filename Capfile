@@ -47,8 +47,3 @@ Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 require 'capistrano/deploy'
-
-# Import environment variables from config/secrets.yml
-require 'capistrano/secrets_yml'
-
-set :ssh_options, {:forward_agent => true}
