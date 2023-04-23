@@ -176,6 +176,7 @@ GEM
       gapic-common (>= 0.18.0, < 2.a)
       google-cloud-errors (~> 1.0)
     google-protobuf (3.22.2-x86_64-darwin)
+    google-protobuf (3.22.2-x86_64-linux)
     google-serverless-exec (0.2.0)
     googleapis-common-protos (1.4.0)
       google-protobuf (~> 3.14)
@@ -191,6 +192,9 @@ GEM
       os (>= 0.9, < 2.0)
       signet (>= 0.16, < 2.a)
     grpc (1.53.0-x86_64-darwin)
+      google-protobuf (~> 3.21)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.53.0-x86_64-linux)
       google-protobuf (~> 3.21)
       googleapis-common-protos-types (~> 1.0)
     i18n (1.12.0)
@@ -240,6 +244,8 @@ GEM
     net-ssh (7.1.0)
     nio4r (2.5.9)
     nokogiri (1.14.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     os (1.1.4)
@@ -337,6 +343,8 @@ GEM
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.27-x86_64-darwin)
       railties (>= 6.0.0)
+    tailwindcss-rails (2.0.27-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.2)
     turbo-rails (1.4.0)
@@ -367,6 +375,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   appengine
