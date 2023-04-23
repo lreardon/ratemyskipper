@@ -24,6 +24,12 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
+
+set :puma_user, fetch(:user)
+set :puma_role, :web
+set :puma_service_unit_env_files, []
+set :puma_service_unit_env_vars, []
+
 ## Defaults:
 # set :scm,           :git
 # set :format,        :pretty
