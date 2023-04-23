@@ -1,5 +1,5 @@
 # These should be set in production.rb
-# server '164.92.80.13', port: your_port_num, roles: [:web, :app, :db], primary: true
+server '164.92.80.13', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:lreardon/ratemyskipper.git'
 set :branch,        :main
