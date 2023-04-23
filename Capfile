@@ -50,3 +50,5 @@ require 'capistrano/deploy'
 
 # Import environment variables from config/secrets.yml
 require 'capistrano/secrets_yml'
+
+set :ssh_options, {:forward_agent => true}
