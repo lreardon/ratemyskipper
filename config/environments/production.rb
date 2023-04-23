@@ -109,7 +109,7 @@ Rails.application.configure do
 end
 
 ask(:password, nil, echo: false)
-server Rails.application.credentials.host,
+server '164.92.80.13',
        user: 'deploy',
        roles: %w{app},
        password: fetch(:password)
