@@ -41,3 +41,6 @@
 # Don't upload environment variables
 .env
 secrets.yaml
+config/secrets.yml
+
+/config/credentials/production.key
