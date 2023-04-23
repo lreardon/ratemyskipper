@@ -11,6 +11,7 @@ class Skipper < ApplicationRecord
   has_many :reviews
 
   # Add validations for presence of all of the above properties
+  validates :firstname, :lastname, :boatname, presence: true
 
   def name
     "#{firstname} #{lastname}"
