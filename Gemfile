@@ -79,8 +79,8 @@ group :development do
   # gem "spring"
 
   gem "capistrano", "~> 3.10", require: false
-  gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano-rvm',     require: false
+  gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
 end
@@ -90,4 +90,9 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+end
+
+group :production do
+  gem 'ed25519', "~> 1.2"
+  gem 'bcrypt_pbkdf', "~> 1.0"
 end
