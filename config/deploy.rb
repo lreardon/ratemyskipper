@@ -1,5 +1,5 @@
 # These should be set in production.rb
-server '164.92.80.13', roles: [:web, :app, :db], primary: true
+server '164.92.80.13',  port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:lreardon/ratemyskipper.git'
 set :branch,        :main
@@ -39,7 +39,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 ## Linked Files & Directories (Default None):
 set :linked_files, %w{config/credentials/production.key}
 # set :linked_files, %w{config/database.yml}
-# set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'
