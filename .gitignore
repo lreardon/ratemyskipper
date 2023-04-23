@@ -43,4 +43,6 @@
 secrets.yaml
 config/secrets.yml
 
-/config/credentials/production.key
+/config/credentials/*.key
+
+/config/credentials/development.key

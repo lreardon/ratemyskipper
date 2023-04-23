@@ -4,7 +4,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # TODO: Experiment  taking out this line. I suspect that now that we set this somewhere else during the build phase, it's no longer necessary, and maybe unsafe.
-  config.secret_key_base = ENV['SECRET_KEY_BASE']
+  config.secret_key_base = Rails.application.credentials.secret_key_base
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -75,8 +75,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: ENV['HOST'] }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name: ENV['DEVISE_MAILER_USERNAME'],
-    password: ENV['DEVISE_MAILER_PASSWORD'],
+    user_name: Rails.application.credentials.devise.mailer.username,
+    password: Rails.application.credentials.devise.mailer.password,
     domain: 'gmail.com',
     address: 'smtp.gmail.com',
     port: '587',
