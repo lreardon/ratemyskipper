@@ -108,8 +108,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 end
 
-ask(:password, nil, echo: false)
-
 server '164.92.80.13',
        user: 'deploy',
        roles: %w{app},
