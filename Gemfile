@@ -17,7 +17,7 @@ gem 'tailwindcss-rails', '~> 2.0'
 gem 'pg'
 # gem 'mysql2'
 
-gem 'appengine'
+# gem 'appengine'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
