@@ -54,8 +54,6 @@ GEM
     activerecord (7.0.4.3)
       activemodel (= 7.0.4.3)
       activesupport (= 7.0.4.3)
-    activerecord-postgresql-adapter (0.0.1)
-      pg
     activestorage (7.0.4.3)
       actionpack (= 7.0.4.3)
       activejob (= 7.0.4.3)
@@ -380,7 +378,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activerecord-postgresql-adapter
   appengine
   bcrypt_pbkdf (~> 1.0)
   bootsnap
@@ -397,6 +394,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   jquery-rails
+  pg
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   rubocop-rails

@@ -14,8 +14,7 @@ gem 'sprockets-rails'
 gem 'tailwindcss-rails', '~> 2.0'
 
 # Select the gem to use for connecting to our RDBMS
-gem 'activerecord-postgresql-adapter'
-# gem 'pg'
+gem 'pg'
 # gem 'mysql2'
 
 gem 'appengine'
