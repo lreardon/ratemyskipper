@@ -46,6 +46,18 @@
       <%= form.label :comment, 'Anything else?' %>
       <%= form.text_area :comment, rows: 4 %>
     </div>
+      <%= form.label :anonymity, "What level of anonymity do you want?" %>
+      <div class='flex flex-row gap-3'>
+        <div>
+          <%= form.radio_button :anonymity, :anonymous %>
+          <%= form.label :anonymity, 'anonymous' %>
+        </div>
+        <div>
+          <%= form.radio_button :anonymity, :signed_for_all %>
+          <%= form.label :anonymity, 'signed_for_all' %>
+        </div>
+      </div>
+    </div>
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
   </div>
 <% end %>
