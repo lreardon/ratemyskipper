@@ -1,0 +1,1 @@
+class UnpermittedEnumValueError < StandardError; end

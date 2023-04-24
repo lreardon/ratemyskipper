@@ -11,8 +11,8 @@ class User < ApplicationRecord
   validates :firstname, :lastname, :email, presence: true
   validates :email, uniqueness: { case_sensitive: false }
 
-  has_many :created_skippers, class_name: 'Skipper', foreign_key: :creator_id
-  has_many :authored_reviews, class_name: 'Review', foreign_key: :author_id
+  has_many :created_skippers, class_name: 'Skipper', foreign_key: :creator_id, dependent: :nullify
+  has_many :authored_reviews, class_name: 'Review', foreign_key: :author_id, dependent: :destroy
 
 
   def can_delete_skipper?(skipper)

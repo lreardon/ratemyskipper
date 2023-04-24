@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '~> 3.2.0'
+ruby '~> 3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
@@ -36,6 +36,8 @@ gem 'jbuilder'
 
 # For popup alert support
 gem 'jquery-rails'
+
+gem 'chroma'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -83,6 +85,9 @@ group :development do
   gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
+
+  gem 'solargraph'
+  gem 'solargraph-rails'
 end
 
 group :test do

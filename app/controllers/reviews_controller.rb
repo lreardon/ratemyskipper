@@ -54,10 +54,11 @@ class ReviewsController < ApplicationController
 
   # DELETE /reviews/1 or /reviews/1.json
   def destroy
+    @skipper = @review.skipper
     @review.destroy
 
     respond_to do |format|
-      format.html { redirect_to reviews_url, notice: 'Review was successfully destroyed.' }
+      format.html { redirect_to skipper_url(@skipper), notice: 'Review was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

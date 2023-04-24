@@ -1,17 +1,26 @@
-<div id="<%= dom_id review %>" class="flex flex-col gap-3 p-3 border">
-  <p><%= review.comment %></p>
-  <div class='flex flex-row gap-3'>
-    <% if review.flags? %>
-      <% review.flags.each do |flag| %>
-        <p class='flex-null bg-red-100 p-3 text-l rounded-lg'><%= flag %></p>
-      <%end%>
-    <% else %>
-      <p class='flex-null bg-green-100 p-3 text-l rounded-lg'>No Flags</p>
-    <% end %>
-  </div>
-  <div class='flex flex-row justify-end gap-2'>
-    <% if current_user.wrote_review?(review) %>
-      <%= link_to 'Update Review', edit_review_path(@review), method: :get, class: "rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
-    <% end %>
+<div id="<%= dom_id review %>" class="flex flex-row gap-3 p-3 border-4 justify-between">
+    <div class='flex flex-col gap-2 justify-center'>
+      <% if review.flags? %>
+        <% review.flags.each do |flag| %>
+          <p class='text-center bg-red-100 p-3 text-lg rounded-lg'><%= flag %></p>
+        <%end%>
+      <% else %>
+        <p class='text-center bg-green-100 p-3 text-lg rounded-lg'>No Flags</p>
+      <% end %>
+    </div>
+    <div class='flex bg-gray-100 text-lg p-5 rounded-lg'>
+      <p><%= review.comment %></p>
+    </div>
+    <div class='flex flex-col gap-5 justify-center'>
+      <div>
+        <% if review.author_visible_for_user(current_user) %>
+          <%= button_to review.author.name, user_path(review.author), method: :get, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+        <% elsif review.author == current_user %>
+          <p class='flex-null bg-blue-100 p-3 text-lg rounded-lg'>My Review</p>
+        <% else %>
+          <p class='flex-null bg-orange-100 p-3 text-lg rounded-lg'>Author Hidden</p>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

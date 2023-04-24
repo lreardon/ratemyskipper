@@ -16,4 +16,5 @@ class Skipper < ApplicationRecord
   def name
     "#{firstname} #{lastname}"
   end
+
 end

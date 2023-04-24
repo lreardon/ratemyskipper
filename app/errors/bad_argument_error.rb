@@ -1,0 +1,1 @@
+class BadArgumentError < StandardError; end
