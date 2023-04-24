@@ -12,6 +12,19 @@ module SkippersHelper
         return interpolate_colors("#ffffff", mix, intensity.fdiv(1000))
     end
 
+    def color_for_skipper(skipper)
+        reviews = skipper.reviews
+        flagged_reviews = reviews.filter(&:flags?)
+        flag_proportion = flagged_reviews.count / reviews.count
+
+        green = "#00ff00"
+        red = "#ff0000"
+
+        mix = interpolate_colors(green, red, flag_proportion)
+
+        return interpolate_colors("#ffffff", mix, 0.1)
+    end
+
     private
 
     def interpolate_colors(color_string_1, color_string_2, amount)
