@@ -3,8 +3,20 @@ class UsersController < ApplicationController
 
   # GET /users or /users.json
   def index
+
+    if (q = params[:q])
+      tokens = q.downcase.split(' ')
+      # This query is extremely naive.
+      # The nature of how I want to compute matchces suggests that
+      # a Document DB might be a more natural data architecture.
+      @users = User.where('LOWER(firstname) in (?)', tokens).or(
+        User.where('LOWER(lastname) in (?)', tokens)
+      )
+  else
     @users = User.all
   end
+end
+
 
   # GET /users/1 or /users/1.json
   def show; end
