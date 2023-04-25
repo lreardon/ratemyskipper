@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
   has_many :created_skippers, class_name: 'Skipper', foreign_key: :creator_id, dependent: :nullify
   has_many :authored_reviews, class_name: 'Review', foreign_key: :author_id, dependent: :destroy
-  has_many :friendships, dependent: :destroy 
+  has_many :friendships, class_name: 'Friendship', foreign_key: :user_id, dependent: :destroy 
 
   def can_delete_skipper?(skipper)
     skipper.creator_id == id
@@ -36,7 +36,12 @@ class User < ApplicationRecord
   end
 
   def friendship_exists_with?(user)
-    friendships.map(&:friend).include?(user)
+    friends_user_added = Friendship.where(user_id: id).map(&:friend)
+    friends_friend_added = Friendship.where(friend_id: id).map(&:user)
+
+    users_in_some_kind_of_friendship = friends_user_added.union(friends_friend_added)
+
+    users_in_some_kind_of_friendship.include?(user)
   end
 
   def friends_with?(user)

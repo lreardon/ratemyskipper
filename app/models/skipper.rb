@@ -8,7 +8,7 @@ class Skipper < ApplicationRecord
   attribute :creator_id
 
   belongs_to :creator, class_name: 'User', foreign_key: :creator_id
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
 
   # Add validations for presence of all of the above properties
   validates :firstname, :lastname, :boatname, presence: true
