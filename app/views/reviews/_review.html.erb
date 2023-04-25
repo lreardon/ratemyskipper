@@ -1,4 +1,4 @@
-<div id="<%= dom_id review %>" class="flex flex-row gap-3 p-3 border-4 justify-between">
+<div id="<%= dom_id review %>" class="flex flex-col xs:flex-row gap-3 p-3 border-4 justify-between items-center">
     <div class='flex flex-col gap-2 justify-center'>
       <% if review.flags? %>
         <% review.flags.each do |flag| %>
@@ -8,7 +8,7 @@
         <p class='text-center bg-green-100 p-3 text-lg rounded-lg'>No Flags</p>
       <% end %>
     </div>
-    <div class='flex bg-gray-100 text-lg p-5 rounded-lg'>
+    <div class='flex bg-gray-100 text-lg py-3 px-5 rounded-lg'>
       <p><%= review.comment %></p>
     </div>
     <div class='flex flex-col gap-5 justify-center'>
