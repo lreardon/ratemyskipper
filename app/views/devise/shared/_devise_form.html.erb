@@ -1,11 +1,9 @@
 <div>
-  <div class="flex flex-row justify-around px-10 w-2/3 mx-auto">
+  <div class="flex flex-row justify-around px-10 gap-24 flex-wrap mx-auto">
     <div class='flex flex-col gap-16'>
       <h1 class="text-3xl font-bold"><%= form_title %></h1>
       <%= yield %>
     </div>
-    <div>
-      <%= render "devise/shared/links" %>
-    </div>
+    <%= render "devise/shared/links" %>
   </div>
 </div>

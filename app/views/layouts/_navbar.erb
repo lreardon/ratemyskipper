@@ -1,24 +1,30 @@
 <header>
-  <nav class="flex flex-row border justify-between items-center gap-3 py-3 pl-3 pr-5">
-    <div class='flex flex-row items-center gap-3'>
-      <%= link_to "/" do %>
-        <img src=<%= asset_path("buoy.png")%> width="70" height="auto" class="rounded-full" />
-      <% end %>
+  <nav class="flex flex-row border-b-2 items-center gap-3 py-3 pl-3 pr-5">
+    <%= link_to "/" do %>
+      <img src=<%= asset_path("buoy.png")%> width="70" height="auto" class="rounded-full" style="min-width: 70px;"/>
+    <% end %>
+
+    <div class='flex flex-row items-center justify-between w-full gap-3'>
       <div class='flex flex-row gap-3'>
         <% if current_user %>
-          <%= link_to "Skippers", skippers_path, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
+          <%= link_to "Skippers", skippers_path, class: "rounded-lg bg-gray-100 py-3 p-5 font-medium" %>
           <%= link_to "Users", users_path, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
         <% end %>
       </div>
+      <div class='flex flex-row gap-3 flex-nowrap'>
+        <% if current_user %>
+          <%= link_to user_path(current_user), title: 'My Profile', class: "rounded-lg bg-blue-100 py-3 px-5 font-medium items-center" do %>
+            <img style='max-height: 1.5rem;' src=<%= asset_path('person.svg')%>/>
+          <% end %>
+          <%= button_to destroy_user_session_path, method: :delete, title: 'Sign Out', class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" do %>
+            <img style='max-height: 1.5rem;' src=<%= asset_path('logout.svg')%>/>
+          <% end %>
+        <% else %>
+          <%= link_to 'Sign Up', new_user_registration_path, class: "rounded-lg bg-blue-100 py-3 px-5 font-medium" %>
+          <%= link_to 'Log In', new_user_session_path, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
+        <% end %>
+      </div>
     </div>
-    <div class='flex flex-row gap-3'>
-      <% if current_user %>
-        <%= button_to "My Profile", user_path(current_user), method: :get, class: "rounded-lg bg-blue-100 py-3 px-5 font-medium" %>
-        <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
-      <% else %>
-        <%= button_to 'Sign Up', new_user_registration_path, method: :get, class: "rounded-lg bg-blue-100 py-3 px-5 font-medium" %>
-        <%= button_to 'Log In', new_user_session_path, method: :get, class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" %>
-      <% end %>
-    </div>
+
   </nav>
 </header>

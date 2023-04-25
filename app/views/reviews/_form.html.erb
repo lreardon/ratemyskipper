@@ -9,55 +9,30 @@
       </ul>
     </div>
   <% end %>
-  <div class='flex flex-col justify-start gap-6'>
-    <div class='flex flex-col'>
-      <%= form.hidden_field :skipper_id, value: @skipper.id %>
-      <%= form.hidden_field :author_id, value: current_user.id %>
-      <%= form.label :would_return, "Would you fish for #{@skipper.firstname} again?" %>
-      <div class='flex flex-row gap-3'>
-        <div>
-          <%= form.radio_button :would_return, true %>
-          <%= form.label :would_return, 'Yes' %>
-        </div>
-        <div>
-          <%= form.radio_button :would_return, false %>
-          <%= form.label :would_return, 'No' %>
-        </div>
-      </div>
-    </div>
-    <div class='flex flex-col'>
+  <div class='flex flex-col justify-start gap-10'>
+    <%= form.hidden_field :skipper_id, value: @skipper.id %>
+    <%= form.hidden_field :author_id, value: current_user.id %>
+    <%= render 'shared/radio_field', form: form, field: :would_return, title: "Would you fish for #{@skipper.firstname} again?" do %>
+      <%= render 'shared/radio_option', form: form, label: 'Yes', field: :would_return, value: true %>
+      <%= render 'shared/radio_option', form: form, label: 'No', field: :would_return, value: false %>
+    <% end %>
+    <div class='flex flex-col gap-3'>
       <p>Any concerning behaviors?</p>
-      <div class="flex flex-row gap-5">
-        <div>
-          <%= form.label :reckless, Flags::Bad::RECKLESS %>
-          <%= form.check_box :reckless %>
-        </div>
-        <div>
-          <%= form.label :aggressive, Flags::Bad::AGGRESSIVE %>
-          <%= form.check_box :aggressive %>
-        </div>
-        <div>
-          <%= form.label :did_not_pay, Flags::Bad::DID_NOT_PAY %>
-          <%= form.check_box :did_not_pay %>
-        </div>
+      <div class="flex flex-col gap-1">
+        <%= render 'shared/checkbox_field', form: form, field: :reckless, label: Flags::Bad::RECKLESS %>
+        <%= render 'shared/checkbox_field', form: form, field: :aggressive, label: Flags::Bad::AGGRESSIVE %>
+        <%= render 'shared/checkbox_field', form: form, field: :did_not_pay, label: Flags::Bad::DID_NOT_PAY %>
       </div>
     </div>
-    <div class='flex flex-col'>
+    <div class='flex flex-col gap-3'>
       <%= form.label :comment, 'Anything else?' %>
       <%= form.text_area :comment, rows: 4 %>
     </div>
-      <%= form.label :anonymity, "What level of anonymity do you want?" %>
-      <div class='flex flex-row gap-3'>
-        <div>
-          <%= form.radio_button :anonymity, :anonymous %>
-          <%= form.label :anonymity, 'anonymous' %>
-        </div>
-        <div>
-          <%= form.radio_button :anonymity, :signed_for_all %>
-          <%= form.label :anonymity, 'signed_for_all' %>
-        </div>
-      </div>
-    </div>
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= render 'shared/radio_field', form: form, field: :anonymity, title: "What level of anonymity do you want?" do %>
+      <%= render 'shared/radio_option', form: form, label: 'Anonymous', field: :anonymity, value: :anonymous %>
+      <%= render 'shared/radio_option', form: form, label: 'Signed for Friends', field: :anonymity, value: :signed_for_friends %>
+      <%= render 'shared/radio_option', form: form, label: 'Signed for All (your name will be visible to all users)', field: :anonymity, value: :signed_for_all %>
+    <% end %>
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-100 text-lg cursor-pointer" %>
   </div>
 <% end %>

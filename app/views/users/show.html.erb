@@ -8,13 +8,25 @@
       <p class='text-xl'>Since <%= @user.created_at.localtime.strftime("%B %Y") %></p>
     </div>
     <p class='text-2xl'><%= @user.authored_reviews.count %> reviews</p>
+    <p class='text-2xl'><%= @user.friends.count %> friends</p>
   </div>
   <div class="w-full flex justify-end">
     <% if current_user == @user %>
-      <div class="flex flex-row gap-3">
-        <%= link_to 'Edit', edit_user_path(@user), class: "rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
-        <%= button_to 'Delete', user_path(@user), method: :delete,  data: {confirm: 'Are you sure? This action is permanent!'}, class: "rounded-lg py-3 px-5 bg-red-100 font-medium" %>
+      <div class='flex flex-col'>
+        <div class="flex flex-row gap-3">
+          <%= link_to 'Edit', edit_user_path(@user), class: "rounded-lg py-3 px-5 bg-yellow-100 inline-block font-medium" %>
+          <%= button_to 'Delete', user_path(@user), method: :delete,  data: {confirm: 'Are you sure? This action is permanent!'}, class: "rounded-lg py-3 px-5 bg-red-100 font-medium" %>
+        </div>
       </div>
+    <% elsif !current_user.friendship_exists_with?(@user) %>
+      <%= button_to 'Add Friend', friendships_path, method: :post, params: { friendship: {user_id: current_user.id, friend_id: @user.id}}, class: "rounded-lg py-3 px-5 bg-blue-100 inline-block font-medium" %>
+    <% elsif current_user.friends_with?(@user)%>
+      <p class="rounded-lg py-3 px-5 bg-blue-100 inline-block font-medium">Friends!</p>
+    <% else %>
+      <p class="rounded-lg py-3 px-5 bg-blue-100 inline-block font-medium">Friendship Pending</p>    
     <% end %>
+  </div>
+  <div class='flex flex-col gap-3 items-start'>
+    <%= render partial: 'friendships/pending_friendship', collection: @user.pending_friendships, as: :friendship %>
   </div>
 </div>

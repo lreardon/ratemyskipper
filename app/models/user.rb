@@ -14,7 +14,6 @@ class User < ApplicationRecord
   has_many :created_skippers, class_name: 'Skipper', foreign_key: :creator_id, dependent: :nullify
   has_many :authored_reviews, class_name: 'Review', foreign_key: :author_id, dependent: :destroy
   has_many :friendships, dependent: :destroy 
-  has_many :friends, through: :friendships
 
   def can_delete_skipper?(skipper)
     skipper.creator_id == id
@@ -36,14 +35,30 @@ class User < ApplicationRecord
     "#{firstname} #{lastname}"
   end
 
+  def friendship_exists_with?(user)
+    friendships.map(&:friend).include?(user)
+  end
+
   def friends_with?(user)
     friends.include?(user)
   end
 
-  def make_friends_with(user)
-    raise AlreadyExistsError if friends_with?(user) or user.friends_with?(self)
+  def pending_friends_with?(user)
+    friendships.pending.map(&:friend).include?(user)
+  end
 
-    Friendship.create!(user_id: id, friend_id: user.id)
-    Friendship.create!(user_id: user.id, friend_id: id)
+  def rejected_friends_with?(user)
+    friendships.rejected.map(&:friend).include?(user)
+  end
+
+  def pending_friendships
+    Friendship.pending.where(friend_id: id)
+  end
+
+  def friends
+    friends_user_added = Friendship.accepted.where(user_id: id).map(&:friend)
+    friends_friend_added = Friendship.accepted.where(friend_id: id).map(&:user)
+
+    friends_user_added.union(friends_friend_added)
   end
 end

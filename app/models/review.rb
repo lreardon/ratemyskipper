@@ -26,8 +26,7 @@ class Review < ApplicationRecord
   def author_visible_for_user(user)
     return false if anonymous?
 
-    # Reimplement when friendship is done
-    # return author.friends_with?(user) if signed_for_friends?
+    return author.friends_with?(user) if signed_for_friends?
 
     return true if signed_for_all?
 

@@ -88,6 +88,8 @@ group :development do
 
   gem 'solargraph'
   gem 'solargraph-rails'
+
+  gem 'seedbank'
 end
 
 group :test do

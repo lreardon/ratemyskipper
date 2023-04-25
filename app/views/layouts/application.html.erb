@@ -9,13 +9,15 @@
     <%= javascript_importmap_tags %>
     <%= favicon_link_tag asset_path('favicon.ico') %>
   </head>
-  <body>
+  <body class='flex flex-col mx-auto bg-blue-100' style="max-width: 1600px;">
+    <div class='min-h-screen bg-white'>
     <%= render 'layouts/navbar' %>
     <%= render 'shared/flashes' %>
-    <main class="container mx-auto mt-28 px-5 flex flex-col">
+    <main class="container mx-auto pt-5 pb-28 px-5 flex flex-col">
       <div class="flex flex-col">
         <%= yield %>
       </div>
     </main>
+    <div>
   </body>
 </html>
