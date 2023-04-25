@@ -13,11 +13,11 @@
       </div>
       <div class='flex flex-row gap-3 flex-nowrap'>
         <% if current_user %>
-          <%= link_to user_path(current_user), title: 'My Profile', class: "rounded-lg bg-blue-100 py-3 px-5 font-medium items-center" do %>
-            <img style='max-height: 1.5rem;' src=<%= asset_path('person.svg')%>/>
+          <%= link_to user_path(current_user), title: 'My Profile', class: "rounded-lg bg-blue-100 py-3 px-5 font-medium" do %>
+            <%= inline_svg_tag('person.svg', style: 'max-height: 1.5rem; max-width: 1.5rem;', class: 'flex items-center') %>
           <% end %>
-          <%= button_to destroy_user_session_path, method: :delete, title: 'Sign Out', class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" do %>
-            <img style='max-height: 1.5rem;' src=<%= asset_path('logout.svg')%>/>
+          <%= link_to destroy_user_session_path, method: :delete, title: 'Sign Out', class: "rounded-lg bg-gray-100 py-3 px-5 font-medium" do %>
+            <%= inline_svg_tag('logout.svg', style: 'max-height: 1.5rem; max-width: 1.5rem;', class: 'flex items-center') %>
           <% end %>
         <% else %>
           <%= link_to 'Sign Up', new_user_registration_path, class: "rounded-lg bg-blue-100 py-3 px-5 font-medium" %>
@@ -25,6 +25,5 @@
         <% end %>
       </div>
     </div>
-
   </nav>
 </header>

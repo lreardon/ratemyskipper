@@ -90,6 +90,8 @@ group :development do
   gem 'solargraph-rails'
 
   gem 'seedbank'
+
+  gem 'inline_svg'
 end
 
 group :test do
