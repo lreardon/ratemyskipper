@@ -6,7 +6,7 @@
   <%= link_to 'Add your skipper', new_skipper_path, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black text-lg" %>
   </div>
   
-  <%= render 'shared/searchbar', path: skippers_path, title: 'Find a Skipper' %>
+  <%= render 'shared/searchbar', path: skippers_path, title: 'Find a skipper' %>
   <%= turbo_frame_tag :search_skippers do %>
     <% unless @skippers.empty? %>
       <div id="skippers" class='flex flex-col gap-5'>
