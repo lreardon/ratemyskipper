@@ -1,6 +1,6 @@
 <% if resource.errors.any? %>
-    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(resource.errors.count, "error") %> prohibited this user from being saved:</h2>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 text-lg rounded-lg mt-3">
+      <h2><%= pluralize(resource.errors.count, "error") %> prohibited this <%= resource.class.name.downcase %> from being saved:</h2>
       <ul>
         <% resource.errors.each do |error| %>
           <li><%= error.full_message %></li>

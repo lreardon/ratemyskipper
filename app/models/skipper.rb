@@ -29,6 +29,6 @@ class Skipper < ApplicationRecord
     return if skippers.count == 0
     
     skipper = skippers.first
-    errors.add(:skipper_id, 'This skipper already exists') unless skipper.id == id
+    errors.add(:skipper_id, 'already exists') unless skipper.id == id
   end
 end

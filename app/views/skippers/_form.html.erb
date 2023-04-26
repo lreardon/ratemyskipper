@@ -1,15 +1,15 @@
 <%= form_with(model: skipper, class: "contents") do |form| %>
   <%= render 'shared/errors', resource: skipper %>
   <div class='flex flex-col justify-start gap-6'>
-    <div>
+    <div class='flex flex-col xs:flex-row xs:items-center gap-3'>
       <%= form.label :firstname, 'First name' %>
       <%= form.text_field :firstname %>
     </div>
-    <div>
+    <div class='flex flex-col xs:flex-row xs:items-center gap-3'>
       <%= form.label :lastname, 'Last name' %>
       <%= form.text_field :lastname %>
     </div>
-    <div>
+    <div class='flex flex-col xs:flex-row xs:items-center gap-3'>
       <%= form.label :boatname, "Boat name (exclude F/V)" %>
       <%= form.text_field :boatname %>
     </div>

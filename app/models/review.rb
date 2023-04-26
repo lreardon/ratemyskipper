@@ -16,8 +16,8 @@ class Review < ApplicationRecord
   belongs_to :author, class_name: 'User', foreign_key: :author_id
   belongs_to :skipper, class_name: 'Skipper'
 
-  validates :fished_for_skipper, presence: true, acceptance: { message: 'You can only review a skipper with whom you have personally fished.' }
-  validates :review_is_truthful, presence: true, acceptance: { message: 'You must certify that your review is truthful. Accounts caught submitting untruthful reviews will be banned.' }
+  validates :fished_for_skipper, inclusion: {in: [true, false], message: 'must be selected'}, acceptance: { message: 'must be certified' }
+  validates :review_is_truthful, inclusion: {in: [true, false], message: 'must be selected'}, acceptance: { message: 'must be certified' }
 
   def flags?
     aggressive || did_not_pay || reckless

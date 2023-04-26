@@ -1,14 +1,18 @@
-<div class="w-full">
+<div class="mx-auto md:w-2/3 flex flex-col gap-10">
   <% if @skipper.present? %>
     <div class='flex flex-row justify-end'>
-      <%= link_to 'Back to skipper', skipper_path(@skipper), class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+      <%= link_to 'Back to skipper', skipper_path(@skipper), class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 text-lg" %>
     </div>
     <h1 class="font-bold text-4xl p-5">New review for <%= @skipper.name %></h1>
       <%= render "form", review: @review %>
   <% else %>
-    <p>Look up a skipper to review</p>
-    <%= turbo_frame_tag :search_skippers do %>
-      <%= render 'shared/searchbar', path: skippers_path, title: 'Find a Skipper' %>
+    <%= form_tag skippers_path, method: :get, data: {turbo_frame: :search_skippers} do %>
+      <div class='flex flex-col xs:flex-row flex-nowrap gap-3 xs:items-center'>
+        <%= label_tag :q, 'Find a skipper to review', class: 'text-xl' %>
+        <%= text_field_tag :q %>
+        <%= submit_tag 'Search', class: 'bg-gray-100 rounded-lg py-3 px-5 bg-gray-100 text-lg'%>
+      </div>
     <% end %>
+    <%= turbo_frame_tag :search_skippers %>
   <% end %>
 </div>
