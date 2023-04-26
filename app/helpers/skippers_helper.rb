@@ -14,6 +14,7 @@ module SkippersHelper
 
     def color_for_skipper(skipper)
         reviews = skipper.reviews
+        return '#f5f5f5' if review.empty?
         flagged_reviews = reviews.filter(&:flags?)
         flag_proportion = flagged_reviews.count / reviews.count
 
