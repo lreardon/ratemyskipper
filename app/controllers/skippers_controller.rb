@@ -51,6 +51,9 @@ class SkippersController < ApplicationController
 
   # PATCH/PUT /skippers/1 or /skippers/1.json
   def update
+    puts 'yooooooo'
+    puts skipper_params
+
     respond_to do |format|
       if @skipper.update(skipper_params)
         format.html { redirect_to skipper_url(@skipper), notice: 'Skipper was successfully updated.' }
@@ -65,8 +68,6 @@ class SkippersController < ApplicationController
   # DELETE /skippers/1 or /skippers/1.json
   def destroy
     @skipper.destroy
-
-    puts 'HEY WE DESTROYED THAT SKIPPER'
 
     respond_to do |format|
       format.html { redirect_to skippers_url, notice: 'Skipper was successfully destroyed.' }
@@ -83,7 +84,10 @@ class SkippersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def skipper_params
-    params.fetch(:skipper, {}).permit(:firstname, :lastname, :boatname, :fishery)
+    puts permitted_params = params.fetch(:skipper, {}).permit(:firstname, :lastname, :boatname, :fishery)
+    permitted_params[:boatname] = helpers.sanitize_boatname(permitted_params[:boatname]) if permitted_params[:boatname]
+
+    permitted_params
   end
 
   def skippers_params

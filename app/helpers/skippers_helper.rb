@@ -26,6 +26,20 @@ module SkippersHelper
         return interpolate_colors("#ffffff", mix, 0.1)
     end
 
+    def sanitize_boatname(boatname)
+        fv_match_data = boatname.match(/\s*[Ff]\/[Vv]\s*/)
+        return boatname unless fv_match_data
+
+        match_string = fv_match_data[0]
+        no_fv_boatname = boatname.gsub(match_string, "")
+        
+        no_fv_boatname.titleize
+    end
+
+    def fv_boatname(boatname)
+        "F/V #{boatname}"
+    end
+
     private
 
     def interpolate_colors(color_string_1, color_string_2, amount)

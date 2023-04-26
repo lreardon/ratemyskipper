@@ -1,16 +1,24 @@
 <div class="w-full flex flex-col gap-10">
   <h1 class="font-bold text-4xl">Skippers</h1>
-  <%= render 'shared/searchbar', path: skippers_path, title: 'Find a Skipper' %>
-  <% unless @skippers.empty? %>
-    <div id="skippers" class='flex flex-col gap-5'>
-      <%= render @skippers %>
-    </div>
-  <% else %>
-    <div class='flex flex-row'>
-      <div class='flex flex-col gap-10'>
-        <p class='text-xl'>Oops, we couldn't find any skippers matching your search!</p>
-        <%= link_to 'Add your skipper!', new_skipper_path, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black block font-medium" %>
+
+  <div class='flex flex-col sm:flex-row sm:justify-around'>
+  <%= link_to 'Review a skipper', new_review_path, class: "text-xl rounded-lg py-3 px-5 bg-orange-100 text-center text-black block font-medium" %>
+  <%= link_to 'Add your skipper!', new_skipper_path, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black block font-medium" %>
+  </div>
+  
+  <%= render 'shared/searchbar', path: skippers_path, title: 'Find a Skipper' %>    
+  <%= turbo_frame_tag :search_skippers do %>
+    <% unless @skippers.empty? %>
+      <div id="skippers" class='flex flex-col gap-5'>
+        <%= render @skippers %>
       </div>
-    </div>
+    <% else %>
+      <div class='flex flex-row'>
+        <div class='flex flex-col gap-10'>
+          <p class='text-xl'>Oops, we couldn't find any skippers matching your search!</p>
+          <%= link_to 'Add your skipper!', new_skipper_path, data: {turbo: false}, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black block font-medium" %>
+        </div>
+      </div>
+    <% end %>
   <% end %>
 </div>

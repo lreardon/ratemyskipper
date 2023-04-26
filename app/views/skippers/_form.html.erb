@@ -1,14 +1,5 @@
 <%= form_with(model: skipper, class: "contents") do |form| %>
-  <% if skipper.errors.any? %>
-    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(skipper.errors.count, "error") %> prohibited this skipper from being saved:</h2>
-      <ul>
-        <% skipper.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render 'shared/errors', resource: skipper %>
   <div class='flex flex-col justify-start gap-6'>
     <div>
       <%= form.label :firstname, 'First name' %>
@@ -22,17 +13,24 @@
       <%= form.label :boatname, "Boat name (exclude F/V)" %>
       <%= form.text_field :boatname %>
     </div>
-    <div class='flex flex-row gap-6'>
-      <%= form.label :fishery, 'Fishery' %>
-      <div class='flex flex-row gap-3'>
-        <% Fisheries.constants.map { |c| Fisheries.const_get c }.each do |fishery| %>
+    <!--
+      <div class='flex flex-col xs:flex-row gap-6'>
+        <%= form.label :fishery, 'Fishery' %>
+        <div class='flex flex-col xs:flex-row gap-3'>
+          <% Fisheries.constants.map { |c| Fisheries.const_get c }.each do |fishery| %>
+            <div>
+              <%= form.radio_button :fishery, fishery %>
+              <%= form.label :fishery, fishery %>
+            </div>
+          <% end %>
           <div>
-            <%= form.radio_button :fishery, fishery %>
-            <%= form.label :fishery, fishery %>
+            <%= form.radio_button :fishery, '' %>
+            <%= form.label :fishery, 'Other' %>
+            <%= form.text_field :fishery, value: '' %>
           </div>
-        <% end %>
+        </div>
       </div>
-    </div>
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    -->
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-100 text-lg cursor-pointer" %>
   </div>
 <% end %>

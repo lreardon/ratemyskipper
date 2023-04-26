@@ -4,12 +4,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-  attribute :firstname
-  attribute :lastname
-  attribute :email
+  attribute :firstname, :string
+  attribute :lastname, :string
+  attribute :email, :string
 
-  validates :firstname, :lastname, :email, presence: true
-  validates :email, uniqueness: { case_sensitive: false }
+  validates :firstname, :lastname, presence: true
+  validates :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: Devise.email_regexp }
 
   has_many :created_skippers, class_name: 'Skipper', foreign_key: :creator_id, dependent: :nullify
   has_many :authored_reviews, class_name: 'Review', foreign_key: :author_id, dependent: :destroy

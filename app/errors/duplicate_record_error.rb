@@ -1,0 +1,1 @@
+class DuplicateRecordError < StandardError; end

@@ -1,14 +1,5 @@
 <%= form_with(model: review, class: "contents") do |form| %>
-  <% if review.errors.any? %>
-    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
-      <ul>
-        <% review.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render 'shared/errors', resource: review %>
   <div class='flex flex-col justify-start gap-10'>
     <%= form.hidden_field :skipper_id, value: @skipper.id %>
     <%= form.hidden_field :author_id, value: current_user.id %>
@@ -28,11 +19,23 @@
       <%= form.label :comment, 'Anything else?' %>
       <%= form.text_area :comment, rows: 4 %>
     </div>
+
+    <%= render 'shared/radio_field', form: form, field: :fished_for_skipper, title: "Have you fished for #{@skipper.firstname} personally?" do %>
+      <%= render 'shared/radio_option', form: form, label: 'Yes', field: :fished_for_skipper, value: true %>
+      <%= render 'shared/radio_option', form: form, label: 'No', field: :fished_for_skipper, value: false %>
+    <% end %>
+
+    <%= render 'shared/radio_field', form: form, field: :review_is_truthful, title: "Do you certify that the content of this review is truthful?" do %>
+      <%= render 'shared/radio_option', form: form, label: 'Yes', field: :review_is_truthful, value: true %>
+      <%= render 'shared/radio_option', form: form, label: 'No', field: :review_is_truthful, value: false %>
+    <% end %>
+
     <%= render 'shared/radio_field', form: form, field: :anonymity, title: "What level of anonymity do you want?" do %>
       <%= render 'shared/radio_option', form: form, label: 'Anonymous', field: :anonymity, value: :anonymous %>
       <%= render 'shared/radio_option', form: form, label: 'Signed for Friends', field: :anonymity, value: :signed_for_friends %>
       <%= render 'shared/radio_option', form: form, label: 'Signed for All (your name will be visible to all users)', field: :anonymity, value: :signed_for_all %>
     <% end %>
+
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-100 text-lg cursor-pointer" %>
   </div>
 <% end %>

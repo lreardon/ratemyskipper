@@ -46,3 +46,6 @@ config/secrets.yml
 /config/credentials/*.key
 
 /config/credentials/development.key
+
+
+/node_modules

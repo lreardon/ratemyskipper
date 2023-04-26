@@ -12,10 +12,13 @@ class ReviewsController < ApplicationController
   # GET /reviews/new
   def new
     skipper_id = review_params[:skipper_id]
-    raise AlreadyExistsError if current_user.authored_reviews.map(&:skipper_id).include?(skipper_id)
-
     @review = Review.new
-    @skipper = Skipper.find(skipper_id)
+
+    if skipper_id.present?
+      raise AlreadyExistsError if current_user.authored_reviews.map(&:skipper_id).include?(skipper_id)
+
+      @skipper = Skipper.find(skipper_id)
+    end
   end
 
   # GET /reviews/1/edit
@@ -41,6 +44,11 @@ class ReviewsController < ApplicationController
 
   # PATCH/PUT /reviews/1 or /reviews/1.json
   def update
+    @skipper = Skipper.find(review_params[:skipper_id])
+
+    puts 'yo yo yo yo yo'
+    puts review_params
+
     respond_to do |format|
       if @review.update(review_params)
         format.html { redirect_to skipper_url(@review.skipper), notice: 'Review was successfully created.' }
@@ -73,6 +81,6 @@ class ReviewsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def review_params
     params.fetch(:review, {}).permit(:skipper_id, :author_id, :reckless, :aggressive, :did_not_pay, :would_return,
-                                     :comment, :anonymity)
+                                     :comment, :anonymity, :fished_for_skipper, :review_is_truthful)
   end
 end

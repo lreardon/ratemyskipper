@@ -1,15 +1,23 @@
 class Review < ApplicationRecord
-  attribute :author_id
-  attribute :skipper_id
-  attribute :would_return
-  attribute :reckless
-  attribute :did_not_pay
-  attribute :aggressive
-  attribute :comment
+  attribute :author_id, :uuid
+  attribute :skipper_id, :uuid
+  attribute :would_return, :boolean
+  attribute :reckless, :boolean
+  attribute :did_not_pay, :boolean
+  attribute :aggressive, :boolean
+  attribute :comment, :string
   enum anonymity: Reviews::Anonymities.constants.map { |c| Reviews::Anonymities.const_get c }.index_with(&:to_s), _default: Reviews::Anonymities::ANONYMOUS
+
+  # Virtual Attributes, for validating POST/PUT
+  attribute :fished_for_skipper, :boolean
+  attribute :review_is_truthful, :boolean
+
 
   belongs_to :author, class_name: 'User', foreign_key: :author_id
   belongs_to :skipper, class_name: 'Skipper'
+
+  validates :fished_for_skipper, presence: true, acceptance: { message: 'You can only review a skipper with whom you have personally fished.' }
+  validates :review_is_truthful, presence: true, acceptance: { message: 'You must certify that your review is truthful. Accounts caught submitting untruthful reviews will be banned.' }
 
   def flags?
     aggressive || did_not_pay || reckless

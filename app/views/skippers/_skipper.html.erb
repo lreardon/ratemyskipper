@@ -1,11 +1,9 @@
-<%= link_to skipper do %>
+<%= link_to skipper, data: { turbo: "false" } do %>
   <div id="<%= dom_id skipper %>">
-    <% if action_name != "show" %>
-      <div class='flex flex-col md:flex-row rounded-lg border-2 p-10 gap-5 md:gap-20 md:items-center items-start' style="background-color: <%= color_for_skipper(skipper) %>;">
-        <p class='text-2xl'><%= skipper.name %></p>
-        <p class='text-xl'><%= skipper.boatname %></p>
-        <p class='text-lg'><%= skipper.fishery %></p>
-      </div>
-    <% end %>
+    <div class='flex flex-col md:flex-row rounded-lg border-2 p-10 gap-5 md:gap-20 md:items-center items-start' style="background-color: <%= color_for_skipper(skipper) %>;">
+      <p class='text-2xl'><%= skipper.name %></p>
+      <p class='text-xl'><%= fv_boatname(skipper.boatname) %></p>
+      <p class='text-lg'><%= skipper.fishery %></p>
+    </div>
   </div>
 <% end %>

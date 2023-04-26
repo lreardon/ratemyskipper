@@ -2,8 +2,8 @@
 class Skipper < ApplicationRecord
   attribute :firstname
   attribute :lastname
-  attribute :boatname
-  enum fishery: Fisheries.constants.map { |c| Fisheries.const_get c }.index_with(&:to_s)
+  attribute :boatname, :boatname
+  attribute :fishery
   attribute :active, default: true
   attribute :creator_id
 
@@ -13,8 +13,22 @@ class Skipper < ApplicationRecord
   # Add validations for presence of all of the above properties
   validates :firstname, :lastname, :boatname, presence: true
 
+  validate :is_unique
+
   def name
     "#{firstname} #{lastname}"
   end
 
+  private
+
+  def is_unique
+    skippers = Skipper.where(firstname: firstname, lastname: lastname, boatname: boatname)
+
+    raise DuplicateRecordError if skippers.count > 1
+    
+    return if skippers.count == 0
+    
+    skipper = skippers.first
+    errors.add(:skipper_id, 'This skipper already exists') unless skipper.id == id
+  end
 end
