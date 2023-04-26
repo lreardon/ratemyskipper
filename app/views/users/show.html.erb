@@ -26,7 +26,9 @@
       <p class="rounded-lg py-3 px-5 bg-blue-100 inline-block font-medium">Friendship Pending</p>    
     <% end %>
   </div>
-  <div class='flex flex-col gap-3 items-start'>
-    <%= render partial: 'friendships/pending_friendship', collection: @user.pending_friendships, as: :friendship %>
-  </div>
+  <% if current_user == @user %>
+    <div class='flex flex-col gap-3 items-start'>
+      <%= render partial: 'friendships/pending_friendship', collection: @user.pending_friendships, as: :friendship %>
+    </div>
+  <% end %>
 </div>
