@@ -1,9 +1,9 @@
 <div class="w-full flex flex-col gap-10">
   <h1 class="font-bold text-4xl">Skippers</h1>
 
-  <div class='flex flex-col sm:flex-row sm:justify-around'>
+  <div class='flex flex-col sm:flex-row sm:justify-around gap-3'>
   <%= link_to 'Review a skipper', new_review_path, class: "text-xl rounded-lg py-3 px-5 bg-orange-100 text-center text-black block font-medium" %>
-  <%= link_to 'Add your skipper!', new_skipper_path, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black block font-medium" %>
+  <%= link_to 'Add your skipper', new_skipper_path, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black block font-medium" %>
   </div>
   
   <%= render 'shared/searchbar', path: skippers_path, title: 'Find a Skipper' %>    
@@ -16,7 +16,7 @@
       <div class='flex flex-row'>
         <div class='flex flex-col gap-10'>
           <p class='text-xl'>Oops, we couldn't find any skippers matching your search!</p>
-          <%= link_to 'Add your skipper!', new_skipper_path, data: {turbo: false}, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black block font-medium" %>
+          <%= link_to 'Add your skipper', new_skipper_path, data: {turbo: false}, class: "text-xl rounded-lg py-3 px-5 bg-blue-100 text-center text-black block font-medium" %>
         </div>
       </div>
     <% end %>
