@@ -5,9 +5,9 @@
   <div class='flex flex-col gap-3'>
     <div class='flex flex-row justify-start items-center gap-3'>
       <% if @review %>
-        <%= link_to 'Edit My Review', edit_review_path(@review), method: :get, class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
+        <%= link_to 'Edit My Review', edit_review_path(@review), class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
       <% else %>
-        <%= link_to "Review #{@skipper.firstname}", new_review_path(review: {skipper_id: @skipper.id}), method: :get, class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
+        <%= link_to "Review #{@skipper.firstname}", new_review_path(review: {skipper_id: @skipper.id}), class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
       <% end %>
     </div>
     <div class='flex flex-col border-8 p-10 gap-10'>
