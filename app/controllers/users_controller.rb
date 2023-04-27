@@ -10,11 +10,11 @@ class UsersController < ApplicationController
       # This query is extremely naive.
       # The nature of how I want to compute matchces suggests that
       # a Document DB might be a more natural data architecture.
-      @users = User.where('LOWER(firstname) in (?)', tokens).or(
-        User.where('LOWER(lastname) in (?)', tokens)
+      @users = User.confirmed.where('LOWER(firstname) in (?)', tokens).or(
+        User.confirmed.where('LOWER(lastname) in (?)', tokens)
       )
   else
-    @users = User.all
+    @users = User.confirmed
   end
 end
 
