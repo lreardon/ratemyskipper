@@ -2,13 +2,12 @@
   <div class='flex flex-row justify-end'>
     <%= link_to 'Back to skippers', skippers_path, class: 'ml-2 rounded-lg py-3 px-5 bg-gray-100 text-lg' %>
   </div>
-  <div>
-    <div class='flex flex-row justify-end py-2 gap-2'>
-      <% if current_user.can_edit_skipper?(@skipper) %>
-        <%= button_to 'Edit', edit_skipper_path(@skipper), method: :get, class: 'rounded-lg py-3 px-5 bg-yellow-100 text-lg' %>
-      <% end %>
-      <% if current_user.can_delete_skipper?(@skipper) %>
-        <%= button_to 'Delete', skipper_path(@skipper), method: :delete, class: 'rounded-lg py-3 px-5 bg-red-100 text-lg' %>
+  <div class='flex flex-col gap-3'>
+    <div class='flex flex-row justify-start items-center gap-3'>
+      <% if @review %>
+        <%= link_to 'Edit My Review', edit_review_path(@review), method: :get, class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
+      <% else %>
+        <%= link_to "Review #{@skipper.firstname}", new_review_path(review: {skipper_id: @skipper.id}), method: :get, class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
       <% end %>
     </div>
     <div class='flex flex-col border-8 p-10 gap-10'>
@@ -30,14 +29,14 @@
         <% end %>
       </div>
     </div>
-  </div>
-
-  <div class='flex flex-row justify-center'>
-    <% if @review %>
-      <%= link_to 'Edit My Review', edit_review_path(@review), method: :get, class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100 text-lg' %>
-    <% else %>
-      <%= link_to "Review #{@skipper.firstname}", new_review_path(review: {skipper_id: @skipper.id}), method: :get, class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100 text-lg' %>
-    <% end %>
+    <div class='flex flex-col xs:flex-row items-end justify-end gap-3'>
+      <% if current_user.can_edit_skipper?(@skipper) %>
+        <%= button_to "Edit #{@skipper.firstname}", edit_skipper_path(@skipper), method: :get, class: 'rounded-lg py-3 px-5 bg-yellow-100 text-lg' %>
+      <% end %>
+      <% if current_user.can_delete_skipper?(@skipper) %>
+        <%= button_to "Delete #{@skipper.firstname}", skipper_path(@skipper), method: :delete, data: {confirm: 'Are you sure? This action is permanent!'}, class: 'rounded-lg py-3 px-5 bg-red-100 text-lg' %>
+      <% end %>
+    </div>
   </div>
 
   <div class='flex flex-col gap-10'>
