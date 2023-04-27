@@ -7,8 +7,8 @@
     <div class='flex flex-col-reverse xs:flex-row items-center xs:justify-between w-full gap-3'>
       <div class='flex flex-row gap-3 flex-nowrap'>
         <% if current_user %>
-          <%= link_to "Skippers", skippers_path, class: "rounded-lg bg-gray-100 py-3 px-5 text-lg" %>
-          <%= link_to "Users", users_path, class: "rounded-lg bg-gray-100 py-3 px-5 text-lg" %>
+          <%= render 'shared/button/link', title: 'Skippers', path: skippers_path, twcss_color: 'bg-gray-100' %>
+          <%= render 'shared/button/link', title: 'Users', path: users_path, twcss_color: 'bg-gray-100' %>
         <% end %>
       </div>
       <div class='flex flex-row gap-3 flex-nowrap'>
@@ -20,8 +20,8 @@
             <%= inline_svg_tag('logout.svg', style: 'max-height: 1.5rem; max-width: 1.5rem;', class: 'flex items-center') %>
           <% end %>
         <% else %>
-          <%= link_to 'Sign Up', new_user_registration_path, class: "rounded-lg bg-blue-100 py-3 px-5 text-lg" %>
-          <%= link_to 'Log In', new_user_session_path, class: "rounded-lg bg-gray-100 py-3 px-5 text-lg" %>
+          <%= render 'shared/button/link', title: 'Sign Up', path: new_user_registration_path, twcss_color: 'bg-blue-100' %>
+          <%= render 'shared/button/link', title: 'Log In', path: new_user_session_path, twcss_color: 'bg-gray-100' %>
         <% end %>
       </div>
     </div>

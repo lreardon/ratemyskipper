@@ -1,11 +1,6 @@
 <div>
   <div class="flex justify-between mb-16 items-end">
     <h1 class="text-7xl font-bold">Skipper Buoy</h1>
-    <div>
-      <% if current_user %>
-        <%= button_to "logout", destroy_user_session_path, method: :delete  %>
-      <% end %>
-    </div>
   </div>
   <p>
     This site aims to provide clarity to crew and accountability for skippers

@@ -3,6 +3,6 @@
 
   <%= render "form", friendship: @friendship %>
 
-  <%= link_to "Show this friendship", @friendship, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 text-lg" %>
-  <%= link_to "Back to friendships", friendships_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 text-lg" %>
+  <%= render 'shared/button/link', title: 'Show this friendship', path: @friendship, twcss_color: 'bg-gray-100' %>
+  <%= render 'shared/button/link', title: 'Back to friendships', path: friendships_path, twcss_color: 'bg-gray-100' %>
 </div>

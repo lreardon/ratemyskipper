@@ -1,13 +1,13 @@
 <div class='flex flex-col gap-16'>
   <div class='flex flex-row justify-end'>
-    <%= link_to 'Back to skippers', skippers_path, class: 'ml-2 rounded-lg py-3 px-5 bg-gray-100 text-lg' %>
+      <%= render 'shared/button/link', title: 'Back to skippers', path: skippers_path, twcss_color: 'bg-gray-100' %>
   </div>
   <div class='flex flex-col gap-3'>
     <div class='flex flex-row justify-start items-center gap-3'>
       <% if @review %>
-        <%= link_to 'Edit My Review', edit_review_path(@review), class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
+        <%= render 'shared/button/link', title: 'Edit My Review', path: edit_review_path(@review), twcss_color: 'bg-yellow-100' %>
       <% else %>
-        <%= link_to "Review #{@skipper.firstname}", new_review_path(review: {skipper_id: @skipper.id}), class: 'text-lg rounded-lg py-3 px-5 bg-yellow-100' %>
+        <%= render 'shared/button/link', title: "Review #{@skipper.firstname}", path: new_review_path(review: {skipper_id: @skipper.id}), twcss_color: 'bg-blue-100' %>
       <% end %>
     </div>
     <div class='flex flex-col border-8 p-10 gap-10'>
@@ -31,10 +31,10 @@
     </div>
     <div class='flex flex-col xs:flex-row items-end justify-end gap-3'>
       <% if current_user.can_edit_skipper?(@skipper) %>
-        <%= button_to "Edit #{@skipper.firstname}", edit_skipper_path(@skipper), method: :get, class: 'rounded-lg py-3 px-5 bg-yellow-100 text-lg' %>
+        <%= render 'shared/button/link', title: "Edit #{@skipper.firstname}", path: edit_skipper_path(@skipper), twcss_color: 'bg-yellow-100'%>
       <% end %>
       <% if current_user.can_delete_skipper?(@skipper) %>
-        <%= button_to "Delete #{@skipper.firstname}", skipper_path(@skipper), method: :delete, data: {confirm: 'Are you sure? This action is permanent!'}, class: 'rounded-lg py-3 px-5 bg-red-100 text-lg' %>
+        <%= render 'shared/button/form', title: "Delete #{@skipper.firstname}", path: @skipper, method: :delete, twcss_color: 'bg-red-100', data: {confirm: 'Are you sure? This action is permanent!'} %>
       <% end %>
     </div>
   </div>

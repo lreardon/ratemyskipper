@@ -1,9 +1,9 @@
 <div class="mx-auto md:w-2/3 w-full flex">
   <div class="mx-auto">
     <%= render @review %>
-    <%= link_to 'Edit this review', edit_review_path(@review), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 text-lg" %>
+    <%= render 'shared/button/link', title: 'Edit this review', path: edit_review_path(@review), twcss_color: 'bg-gray-100' %>
     <div class="inline-block ml-2">
-      <%= button_to 'Destroy this review', review_path(@review), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 text-lg" %>
+      <%= render 'shared/button/form', title: 'Destroy this review', path: @review, method: :delete, twcss_color: 'bg-red-100' %>
     </div>
   </div>
 </div>

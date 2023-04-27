@@ -1,7 +1,7 @@
 <div id="<%= dom_id friendship %>">
   <% if action_name != "show" %>
-    <%= link_to "Show this friendship", friendship, class: "rounded-lg py-3 px-5 bg-gray-100 text-lg" %>
-    <%= link_to 'Edit this friendship', edit_friendship_path(friendship), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 text-lg" %>
+    <%= render 'shared/button/link', title: 'Show this friendship', path: friendship, twcss_color: 'bg-gray-100' %>
+    <%= render 'shared/button/link', title: 'Edit this friendship', path: edit_friendship_path(friendship), twcss_color: 'bg-gray-100' %>
     <hr class="mt-6">
   <% end %>
 </div>

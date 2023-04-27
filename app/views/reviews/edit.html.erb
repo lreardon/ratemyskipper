@@ -1,8 +1,8 @@
 <div class="flex flex-col mx-auto md:w-2/3 w-full gap-16">
   <div class='flex flex-row justify-end'>
-    <%= link_to 'Back to skipper', skipper_path(@skipper), class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 text-lg" %>
+    <%= render 'shared/button/link', title: 'Back to skipper', path: @skipper, twcss_color: 'bg-gray-100' %>
   </div>
   <h1 class="font-bold text-4xl">Editing Review</h1>
   <%= render "form", review: @review %>
-  <%= button_to 'Delete Review', review_path(@review), method: :delete, class: "text-center rounded-lg py-3 px-5 bg-red-100 text-lg" %>
+  <%= render 'shared/button/form', title: 'Delete Review', path: @review, method: :delete, twcss_color: 'bg-red-100' %>
 </div>

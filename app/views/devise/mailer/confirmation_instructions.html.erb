@@ -2,4 +2,4 @@
 
 <p>You can confirm your account email through the link below:</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p><%= render 'shared/button/link', title: 'Confirm my account', path: confirmation_url(@resource, confirmation_token: @token), twcss_color: 'bg-blue-100' %><p>

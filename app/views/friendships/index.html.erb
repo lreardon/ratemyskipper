@@ -1,7 +1,7 @@
 <div class="w-full">
   <div class="flex justify-between items-center">
     <h1 class="font-bold text-4xl">Friendships</h1>
-    <%= link_to 'New friendship', new_friendship_path, class: "rounded-lg py-3 px-5 bg-blue-100 text-lg" %>
+    <%= render 'shared/button/link', title: 'New friendship', path: new_friendship_path, twcss_color: 'bg-blue-100' %>
   </div>
   <div id="friendships" class="min-w-full">
     <%= render @friendships %>
