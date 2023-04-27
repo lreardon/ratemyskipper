@@ -1,7 +1,7 @@
 # The Skipper class represents a human skipper, who employees those humans who create User accounts.
 class Skipper < ApplicationRecord
-  attribute :firstname
-  attribute :lastname
+  attribute :firstname, :name
+  attribute :lastname, :name
   attribute :boatname, :boatname
   attribute :fishery
   attribute :active, default: true

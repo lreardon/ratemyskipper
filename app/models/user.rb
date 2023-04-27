@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-  attribute :firstname, :string
-  attribute :lastname, :string
+  attribute :firstname, :name
+  attribute :lastname, :name
   attribute :email, :string
 
   validates :firstname, :lastname, presence: true
@@ -34,7 +34,7 @@ class User < ApplicationRecord
   end
 
   def name
-    "#{firstname} #{lastname}"
+    "#{firstname} #{lastname}".titleize
   end
 
   def friendship_exists_with?(user)
