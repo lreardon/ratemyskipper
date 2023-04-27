@@ -1,25 +1,19 @@
-<div id="<%= dom_id review %>" class="flex flex-col xs:flex-row gap-3 p-3 border-4 justify-between items-center">
-    <div class='flex flex-col gap-2 justify-center'>
-      <% if review.flags? %>
-        <% review.flags.each do |flag| %>
-          <p class='text-center bg-red-100 p-3 text-lg rounded-lg'><%= flag %></p>
-        <%end%>
-      <% else %>
-        <p class='text-center bg-green-100 p-3 text-lg rounded-lg'>No Flags</p>
-      <% end %>
-    </div>
-    <div class='flex bg-gray-100 text-lg py-3 px-5 rounded-lg'>
+<div id="<%= dom_id review %>" class="flex flex-col gap-3 p-3 border-4 justify-between items-center">
+    <div class='flex bg-gray-100 text-lg py-3 px-5 rounded-lg items-center w-full'>
       <p><%= review.comment %></p>
     </div>
-    <div class='flex flex-col justify-center'>
-      <div>
-        <% if review.author_visible_for_user?(current_user) %>
-          <%= render 'shared/button/link', title: @review.author.name, path: review.author, twcss_color: 'bg-blue-100' %>
-        <% elsif review.author == current_user %>
-          <p class='flex-null bg-blue-100 p-3 text-lg rounded-lg'>My Review</p>
+    <div class='flex flex-row justify-around gap-3 w-full'>
+      <div class='flex flex-col gap-2 justify-center'>
+        <% if review.flags? %>
+          <% review.flags.each do |flag| %>
+            <p class='text-center bg-red-100 p-3 text-lg rounded-lg'><%= flag %></p>
+          <%end%>
         <% else %>
-          <p class='flex-null bg-orange-100 p-3 text-lg rounded-lg'>Author Hidden</p>
+          <p class='text-center bg-green-100 p-3 text-lg rounded-lg'>No Flags</p>
         <% end %>
+      </div>
+      <div class='flex flex-col justify-center'>
+        <%= render 'reviews/signature', review: review %>
       </div>
     </div>
   </div>

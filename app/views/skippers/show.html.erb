@@ -29,7 +29,7 @@
         <% end %>
       </div>
     </div>
-    <div class='flex flex-col xs:flex-row items-end justify-end gap-3'>
+    <div class='flex flex-row items-end justify-end gap-3'>
       <% if current_user.can_edit_skipper?(@skipper) %>
         <%= render 'shared/button/link', title: "Edit #{@skipper.firstname}", path: edit_skipper_path(@skipper), twcss_color: 'bg-yellow-100'%>
       <% end %>
