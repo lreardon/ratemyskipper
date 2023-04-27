@@ -1,4 +1,5 @@
 class SkippersController < ApplicationController
+  before_action :redirect_unless_logged_in
   before_action :set_skipper, only: %i[show edit update destroy]
 
   # GET /skippers or /skippers.json

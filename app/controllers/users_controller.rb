@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :redirect_unless_logged_in
   before_action :set_user, only: %i[show edit update destroy]
 
   # GET /users or /users.json

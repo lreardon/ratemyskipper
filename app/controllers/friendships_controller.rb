@@ -1,4 +1,5 @@
 class FriendshipsController < ApplicationController
+  before_action :redirect_unless_logged_in
   before_action :set_friendship, only: %i[ show edit update destroy ]
 
   # GET /friendships or /friendships.json

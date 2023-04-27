@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_action :redirect_unless_logged_in
   before_action :set_review, only: %i[show edit update destroy]
 
   # GET /reviews or /reviews.json
