@@ -34,7 +34,7 @@
         <%= render 'shared/button/link', title: "Edit #{@skipper.firstname}", path: edit_skipper_path(@skipper), twcss_color: 'bg-yellow-100'%>
       <% end %>
       <% if current_user.can_delete_skipper?(@skipper) %>
-        <%= render 'shared/button/form', title: "Delete #{@skipper.firstname}", path: @skipper, method: :delete, twcss_color: 'bg-red-100', data: {confirm: 'Are you sure? This action is permanent!'} %>
+        <%= render 'shared/button/form', title: "Delete #{@skipper.firstname}", path: @skipper, method: :delete, twcss_color: 'bg-red-100', data: {turbo_confirm: 'Are you sure? This action is permanent!'} %>
       <% end %>
     </div>
   </div>

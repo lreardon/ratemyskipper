@@ -6,6 +6,9 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# For some reason I need to require this explicitly before I use it, even though I have the gem in the Gemfile.
+require 'capitalize_names'
+
 module Ratemyskipper
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

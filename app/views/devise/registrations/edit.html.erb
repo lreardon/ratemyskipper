@@ -38,6 +38,6 @@
 
 <h3>Cancel my account</h3>
 
-<div>Unhappy? <%= render 'shared/button/form', title: 'Cancel my account', path: registration_path(resource_name), method: :delete, data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, twcss_color: 'bg-red-100' %></div>
+<div>Unhappy? <%= render 'shared/button/form', title: 'Cancel my account', path: registration_path(resource_name), method: :delete, data: { turbo_confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, twcss_color: 'bg-red-100' %></div>
 
 <%= render 'shared/button/link', title: 'Back', path: :back, twcss_color: 'bg-bray-100' %>
