@@ -9,9 +9,15 @@ class SkippersController < ApplicationController
       # This query is extremely naive.
       # The nature of how I want to compute matchces suggests that
       # a Document DB might be a more natural data architecture.
-      @skippers = Skipper.where('LOWER(firstname) in (?)', tokens).or(
-        Skipper.where('LOWER(lastname) in (?)', tokens).or(
-          Skipper.where('LOWER(boatname) = ?', q)
+
+      pattern = "%(#{tokens.join('|')})%"
+
+      puts 'yo yo yo yo'
+      puts pattern
+
+      @skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
+        Skipper.where('LOWER(lastname) SIMILAR TO ?', pattern).or(
+          Skipper.where('LOWER(boatname) SIMILAR TO ?', pattern)
         )
       )
     else

@@ -57,7 +57,7 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# Use Devise for user authentication
+# Use Devise for user authentication. The repo and branch specifications were given by a tutorial about which I am currently a little dubious.
 gem 'devise'
 
 gem 'rubocop-rails'
@@ -65,6 +65,11 @@ gem 'rubocop-rails'
 gem 'inline_svg'
 
 gem 'capitalize-names'
+
+# Gems required from facebook omniauth tutorial
+gem 'omniauth-facebook'
+gem 'omniauth'
+gem 'omniauth-rails_csrf_protection'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
