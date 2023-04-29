@@ -1,7 +1,7 @@
-<%= form_tag path, method: :get do %>
+<%= form_with url: path, method: :get, data: {controller: 'form-submission', turbo_frame: :search_results, turbo_action: 'advance'} do |f| %>
   <div class='flex flex-col xs:flex-row flex-nowrap gap-3 xs:items-center'>
-    <%= label_tag :q, title, class: 'text-xl' %>
-    <%= text_field_tag :q, params[:q] %>
-    <%= submit_tag 'Search', class: 'bg-gray-100 rounded-lg py-3 px-5 bg-gray-100 text-lg'%>
+    <%= f.label :q, title, class: 'text-xl' %>
+    <%= f.text_field :q, data: { action: 'input->form-submission#search'} %>
+    <%= f.submit 'Search', class: 'bg-gray-100 rounded-lg py-3 px-5 bg-gray-100 text-lg'%>
   </div>
 <% end %>

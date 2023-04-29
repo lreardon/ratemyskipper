@@ -6,13 +6,7 @@
     <h1 class="font-bold text-4xl p-5">New review for <%= @skipper.name %></h1>
       <%= render "form", review: @review %>
   <% else %>
-    <%= form_tag skippers_path, method: :get, data: {turbo_frame: :search_skippers} do %>
-      <div class='flex flex-col xs:flex-row flex-nowrap gap-3 xs:items-center'>
-        <%= label_tag :q, 'Find a skipper to review', class: 'text-xl' %>
-        <%= text_field_tag :q %>
-        <%= submit_tag 'Search', class: 'bg-gray-100 rounded-lg py-3 px-5 bg-gray-100 text-lg'%>
-      </div>
-    <% end %>
-    <%= turbo_frame_tag :search_skippers %>
+    <%= render 'shared/searchbar', path: skippers_path, title: 'Find a skipper to review' %>
+    <%= turbo_frame_tag :search_results %>
   <% end %>
 </div>

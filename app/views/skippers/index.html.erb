@@ -7,7 +7,7 @@
   </div>
   
   <%= render 'shared/searchbar', path: skippers_path, title: 'Find a skipper' %>
-  <%= turbo_frame_tag :search_skippers do %>
+  <%= turbo_frame_tag :search_results do %>
     <% unless @skippers.empty? %>
       <div id="skippers" class='flex flex-col gap-5'>
         <%= render @skippers %>
