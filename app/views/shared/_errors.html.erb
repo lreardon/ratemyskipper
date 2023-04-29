@@ -1,9 +1,12 @@
 <% if resource.errors.any? %>
-    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 text-lg rounded-lg mt-3">
-      <h2><%= pluralize(resource.errors.count, "error") %> prohibited this <%= resource.class.name.downcase %> from being saved:</h2>
-      <ul>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 text-lg rounded-lg">
+      <div class='flex flex-row font-bold text-xl p-3 justify-center'>
+        <h2><%= resource.class.name %> could not be saved</h2>
+      </div>
+      <ul style='list-style-type: disc; list-style-position: inside;' class='flex flex-col list-disc list-inside'>
         <% resource.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <% puts error.full_message %>
+          <li class='list-item'><%= error.full_message %></li>
         <% end %>
       </ul>
     </div>

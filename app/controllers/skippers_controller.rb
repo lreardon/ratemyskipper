@@ -18,12 +18,10 @@ class SkippersController < ApplicationController
       @skippers = Skipper.all
     end
 
-    puts 'yo yo yo'
     # TODO: Make this only render the minimum amount of information necessary.
-    if turbo_frame_request?
-      puts "HEY HEY"
+    # if turbo_frame_request?
     #   render 'shared/search_results', 
-    end
+    # end
   end
 
   # GET /skippers/1 or /skippers/1.json
@@ -59,9 +57,6 @@ class SkippersController < ApplicationController
 
   # PATCH/PUT /skippers/1 or /skippers/1.json
   def update
-    puts 'yooooooo'
-    puts skipper_params
-
     respond_to do |format|
       if @skipper.update(skipper_params)
         format.html { redirect_to skipper_url(@skipper), notice: 'Skipper was successfully updated.' }

@@ -4,7 +4,9 @@
   <div id="users" class='flex flex-col gap-5'>
     <%= turbo_frame_tag :search_results do %>
       <% unless @users.empty? %>
-        <% render @users %>
+        <div id="users" class='flex flex-col gap-5'>
+          <%= render @users %>
+        </div>
       <% else %>
         <div class='flex flex-row'>
           <div class='flex flex-col gap-10'>
