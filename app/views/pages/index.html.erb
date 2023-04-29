@@ -1,12 +1,14 @@
 <%= render 'pages/call_to_action' %>
-<div class='flex flex-col items-start justify-between gap-16 p-16'>
+<div class='flex flex-col items-start justify-start gap-16 p-16'>
   <h1 class='text-5xl xs:text-7xl font-bold'>Skipper Buoy</h1>
-  <div class='flex flex-col items-center gap-10'>
-    <p class='text-2xl xs:text-3xl'>
+  <div class='flex flex-col justify-start gap-5 text-2xl xs:text-3xl'>
+    <p>
       This site aims to provide clarity to crew and accountability for skippers
-      within the commercial fishing industry. Read more on our <%= link_to 'about page', about_path, class: 'text-purple-600' %>.
-    </p>
-    <%= link_to 'Create an account', new_user_registration_path, class: "text-2xl xs:text-3xl rounded-lg text-center py-12 px-16 block bg-blue-100" %>
-    <%= link_to 'Log in', new_user_session_path, class: "text-2xl rounded-lg text-center py-8 px-16 block bg-gray-100" %>
+      within the commercial fishing industry.</p>
+    <p>Read more on our <%= link_to 'about page', about_path, class: 'text-purple-600' %>.</p>
+  </div>
+  <div class='flex flex-col self-center justify-center gap-10'>
+    <%= link_to 'Create an account', new_user_registration_path, class: "text-2xl xs:text-3xl rounded-lg text-center py-8 px-12 xs:py-12 xs:px-16 block bg-blue-100" %>
+    <%= link_to 'Log in', new_user_session_path, class: "text-2xl rounded-lg text-center py-6 px-8 xs:py-8 xs:px-16 block bg-gray-100" %>
   </div>
 </div>
