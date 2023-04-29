@@ -1,7 +1,12 @@
 class PagesController < ApplicationController
-  before_action :redirect_if_signed_in
 
-  def index; end
+  def index
+    redirect_if_signed_in
+  end
+
+  def about; end
+
+  def contact; end
 
   private
 

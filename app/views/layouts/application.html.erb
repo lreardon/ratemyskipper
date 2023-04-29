@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class='bg-blue-100'>
   <head>
     <title>Skipper Buoy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,15 +10,16 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
     <%= favicon_link_tag asset_path('favicon.ico') %>
   </head>
-  <body class='flex flex-col mx-auto bg-blue-100' style="max-width: 1600px;">
-    <div class='min-h-screen bg-white'>
-    <%= render 'layouts/navbar' %>
-    <%= render 'shared/flashes' %>
-    <main class="container mx-auto pt-5 pb-28 px-5 flex flex-col">
-      <div class="flex flex-col">
-        <%= yield %>
-      </div>
-    </main>
-    <div>
+  <body class='flex flex-col justify-between min-h-screen mx-auto bg-white' style="max-width: 1600px;">
+    <div class='flex flex-col'>
+      <%= render 'layouts/navbar' %>
+      <%= render 'shared/flashes' %>
+      <main class="container mx-auto pt-5 pb-28 px-5 flex flex-col">
+        <div class="flex flex-col">
+          <%= yield %>
+        </div>
+      </main>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

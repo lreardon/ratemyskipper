@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root to: 'pages#index'
+  get 'pages/about' => 'pages#about', as: 'about'
+  get 'pages/contact' => 'pages#contact', as: 'contact'
 end
