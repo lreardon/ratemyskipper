@@ -12,9 +12,6 @@ class SkippersController < ApplicationController
 
       pattern = "%(#{tokens.join('|')})%"
 
-      puts 'yo yo yo yo'
-      puts pattern
-
       @skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
         Skipper.where('LOWER(lastname) SIMILAR TO ?', pattern).or(
           Skipper.where('LOWER(boatname) SIMILAR TO ?', pattern)
