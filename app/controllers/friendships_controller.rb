@@ -1,6 +1,7 @@
 class FriendshipsController < ApplicationController
   before_action :redirect_unless_logged_in
   before_action :set_friendship, only: %i[ show edit update destroy ]
+  after_action :discard_flash_notices
 
   # GET /friendships or /friendships.json
   def index

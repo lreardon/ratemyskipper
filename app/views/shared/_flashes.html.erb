@@ -1,16 +1,16 @@
 <% if flash.any? %>
   <% flash.each do |type, msg| %>
     <% if type == 'notice' %>
-      <div class="bg-blue-100 border border-blue-500 rounded-lg text-blue-700 m-3 p-5" role="alert">
-        <p class="text-lg"><%= msg %></p>
+      <div class="bg-blue-100 border border-blue-500 rounded-lg text-blue-700 m-10 p-8" role="notice">
+        <p class="text-3xl font-bold"><%= msg %></p>
       </div>
     <% elsif type == 'alert' %>
-      <div class="bg-red-100 border border-red-500 rounded-lg text-red-700 m-3 p-5" role="alert">
-        <p class="text-lg"><%= msg %></p>
+      <div class="bg-red-100 border border-red-500 rounded-lg text-red-700 m-10 p-8" role="alert">
+        <p class="text-3xl font-bold"><%= msg %></p>
       </div>
     <% else %>
-      <div class="bg-red-100 border border-red-500 rounded-lg text-red-700 m-3 p-5" role="alert">
-        <p class="text-lg"><%= msg %></p>
+      <div class="bg-red-100 border border-red-500 rounded-lg text-red-700 m-10 p-8" role="alert">
+        <p class="text-3xl font-bold"><%= msg %></p>
       </div>
     <% end %>
   <% end %>
