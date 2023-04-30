@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get 'pages/about' => 'pages#about', as: 'about'
   get 'pages/contact' => 'pages#contact', as: 'contact'
   get 'pages/privacy_policy' => 'pages#privacy_policy', as: 'privacy_policy'
+  get 'pages/terms_of_service' => 'pages#terms_of_service', as: 'terms_of_service'
 end

@@ -8,6 +8,10 @@ class PagesController < ApplicationController
 
   def contact; end
 
+  def privacy_policy; end
+
+  def terms_of_service; end
+
   private
 
   def redirect_if_signed_in
