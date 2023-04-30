@@ -6,6 +6,5 @@ class AddIndexesToReviews < ActiveRecord::Migration[7.0]
     add_index :reviews, :reckless
     add_index :reviews, :did_not_pay
     add_index :reviews, :aggressive
-    # Ex:- add_index("admin_users", "username")
   end
 end

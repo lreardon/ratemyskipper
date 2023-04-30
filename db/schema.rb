@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_30_135950) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_30_140830) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -44,6 +44,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_30_135950) do
     t.index ["aggressive"], name: "index_reviews_on_aggressive"
     t.index ["author_id"], name: "index_reviews_on_author_id"
     t.index ["did_not_pay"], name: "index_reviews_on_did_not_pay"
+    t.index ["good_teacher"], name: "index_reviews_on_good_teacher"
+    t.index ["paid_food"], name: "index_reviews_on_paid_food"
+    t.index ["paid_fuel"], name: "index_reviews_on_paid_fuel"
+    t.index ["paid_retros"], name: "index_reviews_on_paid_retros"
     t.index ["reckless"], name: "index_reviews_on_reckless"
     t.index ["skipper_id"], name: "index_reviews_on_skipper_id"
     t.index ["would_return"], name: "index_reviews_on_would_return"
