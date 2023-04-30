@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   root to: 'pages#index'
   get 'pages/about' => 'pages#about', as: 'about'
   get 'pages/contact' => 'pages#contact', as: 'contact'
+  get 'pages/privacy_policy' => 'pages#privacy_policy', as: 'privacy_policy'
 end
