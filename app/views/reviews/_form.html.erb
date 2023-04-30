@@ -7,6 +7,16 @@
       <%= render 'shared/radio_option', form: form, label: 'Yes', field: :would_return, value: true %>
       <%= render 'shared/radio_option', form: form, label: 'No', field: :would_return, value: false %>
     <% end %>
+    <div class=''>
+    <div class='flex flex-col gap-3'>
+      <p>Any notable perks?</p>
+      <div class="flex flex-col gap-1">
+        <%= render 'shared/checkbox_field', form: form, field: :good_teacher, label: Flags::Good::GOOD_TEACHER %>
+        <%= render 'shared/checkbox_field', form: form, field: :paid_fuel, label: Flags::Good::PAID_FUEL %>
+        <%= render 'shared/checkbox_field', form: form, field: :paid_retros, label: Flags::Good::PAID_RETROS %>
+        <%= render 'shared/checkbox_field', form: form, field: :paid_food, label: Flags::Good::PAID_FOOD %>
+      </div>
+    </div>
     <div class='flex flex-col gap-3'>
       <p>Any concerning behaviors?</p>
       <div class="flex flex-col gap-1">

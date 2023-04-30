@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_29_125105) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_30_135950) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -37,6 +37,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_125105) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "anonymity"
+    t.boolean "good_teacher"
+    t.boolean "paid_fuel"
+    t.boolean "paid_retros"
+    t.boolean "paid_food"
     t.index ["aggressive"], name: "index_reviews_on_aggressive"
     t.index ["author_id"], name: "index_reviews_on_author_id"
     t.index ["did_not_pay"], name: "index_reviews_on_did_not_pay"
@@ -83,9 +87,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_125105) do
     t.string "lastname"
     t.string "provider"
     t.string "uid"
+    t.boolean "is_phantom", default: false
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["firstname"], name: "index_users_on_firstname"
+    t.index ["is_phantom"], name: "index_users_on_is_phantom"
     t.index ["lastname"], name: "index_users_on_lastname"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

@@ -22,9 +22,15 @@
         <p class='text-2xl'><%= pluralize(@skipper.reviews.count, 'review') %></p>
         <% if @skipper.reviews.count > 0 %>
           <div class='flex flex-col sm:flex-row gap-5'>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :aggressive, 100)%>;"><%= @skipper.reviews.filter { |r| r.aggressive }.count %> Aggressive</p>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :reckless, 100)%>;"><%= @skipper.reviews.filter { |r| r.reckless }.count %> Reckless</p>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :did_not_pay, 100)%>;"><%= @skipper.reviews.filter { |r| r.did_not_pay }.count %> Did Not Pay</p>
+            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :good_teacher, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.good_teacher }.count %> Good teacher</p>
+            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :paid_retros, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.paid_retros }.count %> Paid retros</p>
+            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :paid_fuel, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.paid_fuel }.count %> Paid fuel</p>
+            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :paid_food, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.paid_food }.count %> Paid food</p>
+          </div>
+          <div class='flex flex-col sm:flex-row gap-5'>
+            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :aggressive, 100, false)%>;"><%= @skipper.reviews.filter { |r| r.aggressive }.count %> Aggressive</p>
+            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :reckless, 100, false)%>;"><%= @skipper.reviews.filter { |r| r.reckless }.count %> Reckless</p>
+            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :did_not_pay, 100, false)%>;"><%= @skipper.reviews.filter { |r| r.did_not_pay }.count %> Did not pay</p>
           </div>
         <% end %>
       </div>

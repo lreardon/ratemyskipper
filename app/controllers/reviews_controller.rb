@@ -52,7 +52,7 @@ class ReviewsController < ApplicationController
 
     respond_to do |format|
       if @review.update(review_params)
-        format.html { redirect_to skipper_url(@review.skipper), notice: 'Review was successfully created.' }
+        format.html { redirect_to skipper_url(@review.skipper), notice: 'Review was successfully updated.' }
         format.json { render :show, status: :ok, location: @review }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -81,7 +81,7 @@ class ReviewsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def review_params
-    params.fetch(:review, {}).permit(:skipper_id, :author_id, :reckless, :aggressive, :did_not_pay, :would_return,
+    params.fetch(:review, {}).permit(:skipper_id, :author_id, :good_teacher, :paid_retros, :paid_fuel, :paid_food, :reckless, :aggressive, :did_not_pay, :would_return,
                                      :comment, :anonymity, :fished_for_skipper, :review_is_truthful)
   end
 end

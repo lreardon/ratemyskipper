@@ -1,21 +1,25 @@
 module SkippersHelper
-    def color_for_skipper_flag(skipper, flag, intensity)
+    def color_for_skipper_flag(skipper, flag, intensity, is_good)
         reviews = skipper.reviews
         flagged_reviews = reviews.filter { |r| r.send(flag) }
         flag_proportion = flagged_reviews.count / reviews.count
 
-        green = "#00ff00"
-        red = "#ff0000"
+        bg_gray_100 = "f3f4f6"
+        if is_good
+            color = "#00ff00"
+        else
+            color = "#ff0000"
+        end
 
-        mix = interpolate_colors(green, red, flag_proportion)
+        mix = interpolate_colors(bg_gray_100, color, flag_proportion)
 
         return interpolate_colors("#ffffff", mix, intensity.fdiv(1000))
     end
 
     def color_for_skipper(skipper)
         reviews = skipper.reviews
-        return '#f5f5f5' if reviews.empty?
-        flagged_reviews = reviews.filter(&:flags?)
+        return '#f5f5f5' if reviews.count < 3
+        flagged_reviews = reviews.filter(&:bad_flags?)
         flag_proportion = flagged_reviews.count.fdiv(reviews.count)
 
         green = "#00ff00"

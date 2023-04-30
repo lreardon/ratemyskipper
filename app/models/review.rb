@@ -6,6 +6,11 @@ class Review < ApplicationRecord
   attribute :did_not_pay, :boolean
   attribute :aggressive, :boolean
   attribute :comment, :string
+  attribute :paid_retros, :boolean
+  attribute :paid_fuel, :boolean
+  attribute :paid_food, :boolean
+  attribute :good_teacher, :boolean
+
   enum anonymity: Reviews::Anonymities.constants.map { |c| Reviews::Anonymities.const_get c }.index_with(&:to_s), _default: Reviews::Anonymities::ANONYMOUS
 
   # Virtual Attributes, for validating POST/PUT
@@ -20,14 +25,31 @@ class Review < ApplicationRecord
   validates :review_is_truthful, inclusion: {in: [true, false], message: 'must be selected'}, acceptance: { message: 'must be certified' }
 
   def flags?
+    bad_flags? || good_flags?
+  end
+
+  def bad_flags?
     aggressive || did_not_pay || reckless
   end
 
-  def flags
+  def good_flags?
+    good_teacher || paid_retros || paid_fuel || paid_food
+  end
+
+  def bad_flags
     f = []
     f.append(Flags::Bad::RECKLESS) if reckless
     f.append(Flags::Bad::DID_NOT_PAY) if did_not_pay
     f.append(Flags::Bad::AGGRESSIVE) if aggressive
+    f
+  end
+
+  def good_flags
+    f = []
+    f.append(Flags::Good::GOOD_TEACHER) if good_teacher
+    f.append(Flags::Good::PAID_RETROS) if paid_retros
+    f.append(Flags::Good::PAID_FUEL) if paid_fuel
+    f.append(Flags::Good::PAID_FOOD) if paid_food
     f
   end
 

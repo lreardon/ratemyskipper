@@ -6,9 +6,10 @@ class User < ApplicationRecord
 
   devise :omniauthable, omniauth_providers: %i[facebook]
 
-  attribute :firstname, :name
-  attribute :lastname, :name
+  attribute :firstname, :firstname
+  attribute :lastname, :lastname
   attribute :email, :string
+  attribute :is_phantom, :boolean
 
   validates :firstname, :lastname, presence: true
   validates :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: Devise.email_regexp }
