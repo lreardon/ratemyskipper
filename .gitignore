@@ -49,3 +49,5 @@ config/secrets.yml
 
 
 /node_modules
+
+notes.txt

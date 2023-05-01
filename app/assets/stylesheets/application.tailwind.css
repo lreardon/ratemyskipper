@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-bold text-3xl xs:text-4xl;
+  }
+  h2 {
+    @apply text-2xl xs:text-3xl;
+  }
+  h3 {
+    @apply text-xl xs:text-2xl;
+  }
+  h4 {
+    @apply text-lg xs:text-xl;
+  }
+
+  hr {
+    @apply border-2;
+  }
+
+  p,a,button,input {
+    @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg;
+  }
+
+  input[type=submit] {
+    @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg rounded-md 2xs:rounded-lg py-2 2xs:py-3 px-3 3xs:px-4 2xs:px-5;
+  }
+}
+
+#navbar a,button {
+  @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg;
+}
+
+#navbar-image {
+  @apply rounded-full;
+  height: auto;            
+  min-width: 40px;
+  width: 40px;
+
+  @media screen and (min-width: 400px) {
+    min-width: 50px;
+    width: 50px;
+  }
+
+  @media screen and (min-width: 500px) {
+      min-width: 70px;
+      width: 70px;
+  }
+}
+
+#searchbar input {
+  @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg;
+}
+
+.buttonlike {
+  @apply rounded-md 2xs:rounded-lg py-2 2xs:py-3 px-3 3xs:px-4 2xs:px-5;
+}

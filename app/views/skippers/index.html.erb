@@ -1,24 +1,26 @@
-<div class="w-full flex flex-col gap-10">
-  <h1 class="font-bold text-4xl">Skippers</h1>
+<div class="flex flex-col gap-10">
+  <h1>Skippers</h1>
+  <%= render 'shared/searchbar', path: skippers_path, title: 'Find or review a skipper' %>
+  <%= turbo_frame_tag :search_results do %>
+    <div id="skippers" class='flex flex-col gap-5'>
+      <% if @skippers.present? %>
+          <%= render @skippers %>
+        </div>
+      <% elsif !@skippers.nil? %>
+        <div class='flex flex-row justify-center'>
+          <div class='flex flex-col gap-10 items-center'>
+            <p class='text-xl'>Oops, we couldn't find any skippers matching your search!</p>
+            <%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100', data: {turbo: false} %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
 
+<!--
   <div class='flex flex-col items-start xs:flex-row justify-center gap-3'>
     <%= render 'shared/button/link', title: 'Review a skipper', path: new_review_path, twcss_color: 'bg-orange-100' %>
     <%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100' %>
   </div>
-  
-  <%= render 'shared/searchbar', path: skippers_path, title: 'Find a skipper' %>
-  <%= turbo_frame_tag :search_results do %>
-    <% unless @skippers.empty? %>
-      <div id="skippers" class='flex flex-col gap-5'>
-        <%= render @skippers %>
-      </div>
-    <% else %>
-      <div class='flex flex-row'>
-        <div class='flex flex-col gap-10'>
-          <p class='text-xl'>Oops, we couldn't find any skippers matching your search!</p>
-          <%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100', data: {turbo: false} %>
-        </div>
-      </div>
-    <% end %>
-  <% end %>
-</div>
+-->

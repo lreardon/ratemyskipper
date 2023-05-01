@@ -14,10 +14,8 @@
     <div class='flex flex-col'>
       <%= render 'layouts/navbar' %>
       <%= render 'shared/flashes' %>
-      <main class="container mx-auto pt-5 pb-28 px-5 flex flex-col">
-        <div class="flex flex-col">
+      <main class="flex flex-col pt-5 pb-28 px-5">
           <%= yield %>
-        </div>
       </main>
     </div>
     <%= render 'layouts/footer' %>

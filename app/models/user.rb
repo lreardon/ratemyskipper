@@ -27,6 +27,10 @@ class User < ApplicationRecord
       user
   end
 
+  def can_edit_or_delete_skipper?(skipper)
+    skipper.creator_id == id
+  end
+
   def can_delete_skipper?(skipper)
     skipper.creator_id == id
   end

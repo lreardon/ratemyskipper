@@ -17,10 +17,10 @@ class SkippersController < ApplicationController
           Skipper.where('LOWER(boatname) SIMILAR TO ?', pattern)
         )
       )
-    else
-      @skippers = Skipper.all
     end
 
+    puts 'yoooooooooo'
+    puts @skippers.nil?
     # TODO: Make this only render the minimum amount of information necessary.
     # if turbo_frame_request?
     #   render 'shared/search_results', 

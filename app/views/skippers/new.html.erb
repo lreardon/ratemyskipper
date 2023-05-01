@@ -1,6 +1,6 @@
-<div class="mx-auto md:w-2/3 flex flex-col gap-10">
-    <div class='flex flex-row justify-end'>
-      <%= render 'shared/button/link', title: 'Back to skippers', path: skippers_path, twcss_color: 'bg-gray-100' %>
+<div class="flex flex-col gap-10">
+    <div class='flex flex-row'>
+      <%= render 'shared/button/link', title: 'Skippers', path: skippers_path, twcss_color: 'bg-gray-100' %>
     </div>
   <h1 class="font-bold text-4xl">New skipper</h1>
   <%= render "form", skipper: @skipper %>

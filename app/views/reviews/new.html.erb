@@ -1,6 +1,6 @@
-<div class="mx-auto md:w-2/3 flex flex-col gap-10">
+<div class="flex flex-col gap-10">
   <% if @skipper.present? %>
-    <div class='flex flex-row justify-end'>
+    <div class='flex flex-row'>
       <%= render 'shared/button/link', title: 'Back to skipper', path: @skipper, twcss_color: 'bg-gray-100' %>
     </div>
     <h1 class="font-bold text-4xl p-5">New review for <%= @skipper.name %></h1>

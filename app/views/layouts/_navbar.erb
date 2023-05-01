@@ -1,26 +1,22 @@
 <header>
-  <nav class="flex flex-row border-b-2 items-center gap-3 py-3 pl-3 pr-5">
+  <nav id='navbar' class="flex flex-row border-b-2 items-center gap-5 py-3 pl-3 pr-3 2xs:pr-5 md:pr-8 md:pl-5">
     <%= link_to "/" do %>
-      <img src=<%= asset_path("buoy.png")%> width="70" height="auto" class="rounded-full" style="min-width: 70px;"/>
+      <img id='navbar-image' src=<%= asset_path("buoy.png")%> />
     <% end %>
-    <div class='flex flex-col-reverse xs:flex-row items-center <%= if current_user then 'xs:justify-between' else 'justify-end' end %> w-full gap-3'>
+    <div class='flex flex-row <%= if current_user then 'justify-between' else 'justify-end' end %> w-full gap-3'>
       <% if current_user %>
-        <div class='flex flex-row gap-3 flex-nowrap xs:items-center'>
-          <%= render 'shared/button/link', title: 'Skippers', path: skippers_path, twcss_color: 'bg-gray-100' %>
-          <%= render 'shared/button/link', title: 'Users', path: users_path, twcss_color: 'bg-gray-100' %>
+        <div class='flex flex-row items-center gap-3 3xs:gap-4 2xs:gap-5 flex-nowrap xs:items-center'>
+          <%= link_to 'Skippers', skippers_path %>
+          <%= link_to 'Users', users_path %>
         </div>
       <% end %>
-      <div class='flex flex-row gap-3 flex-nowrap'>
+      <div class='flex flex-row gap-3 3xs:gap-4 2xs:gap-5 flex-nowrap items-center'>
         <% if current_user %>
-          <%= link_to user_path(current_user), title: 'My Profile', class: "rounded-lg bg-blue-100 py-3 px-5 text-lg" do %>
-            <%= inline_svg_tag('person.svg', style: 'max-height: 1.5rem; max-width: 1.5rem;', class: 'flex items-center') %>
-          <% end %>
-          <%= button_to destroy_user_session_path, method: :delete, title: 'Sign Out', class: "rounded-lg bg-gray-100 py-3 px-5 text-lg" do %>
-            <%= inline_svg_tag('logout.svg', style: 'max-height: 1.5rem; max-width: 1.5rem;', class: 'flex items-center') %>
-          <% end %>
+          <%= link_to 'Profile', user_path(current_user) %>
+          <%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'block' %>
         <% else %>
-          <%= render 'shared/button/link', title: 'Sign up', path: new_user_registration_path, twcss_color: 'bg-blue-100' %>
-          <%= render 'shared/button/link', title: 'Log in', path: new_user_session_path, twcss_color: 'bg-gray-100' %>
+          <%= link_to 'Sign up', new_user_registration_path %>
+          <%= link_to 'Log in', new_user_session_path %>
         <% end %>
       </div>
     </div>

@@ -1,40 +1,17 @@
 <div class='flex flex-col gap-16'>
-  <div class='flex flex-row justify-end'>
-      <%= render 'shared/button/link', title: 'Back to skippers', path: skippers_path, twcss_color: 'bg-gray-100' %>
+  <div class='flex flex-row'>
+      <%= render 'shared/button/link', title: 'Skippers', path: skippers_path, twcss_color: 'bg-gray-100' %>
   </div>
+
   <div class='flex flex-col gap-3'>
-    <div class='flex flex-row justify-start items-center gap-3'>
-      <% if @review %>
-        <%= render 'shared/button/link', title: 'Edit My Review', path: edit_review_path(@review), twcss_color: 'bg-yellow-100' %>
-      <% else %>
-        <%= render 'shared/button/link', title: "Review #{@skipper.firstname}", path: new_review_path(review: {skipper_id: @skipper.id}), twcss_color: 'bg-blue-100' %>
-      <% end %>
-    </div>
-    <div class='flex flex-col border-8 p-10 gap-10'>
-      <div class='flex flex-row justify-center'>
-        <div class='flex flex-col border-4 items-start sm:items-center p-5 gap-3'>
-          <p class='text-3xl'><%= @skipper.name %></p>
-          <p class='text-2xl'><%= fv_boatname(@skipper.boatname) %></p>
-          <p class='text-xl'><%= @skipper.fishery %></p>
-        </div>
-      </div>
-      <div class='flex flex-col gap-5 items-start'>
-        <p class='text-2xl'><%= pluralize(@skipper.reviews.count, 'review') %></p>
-        <% if @skipper.reviews.count > 0 %>
-          <div class='flex flex-col sm:flex-row gap-5'>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :good_teacher, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.good_teacher }.count %> Good teacher</p>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :paid_retros, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.paid_retros }.count %> Paid retros</p>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :paid_fuel, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.paid_fuel }.count %> Paid fuel</p>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :paid_food, 100, true)%>;"><%= @skipper.reviews.filter { |r| r.paid_food }.count %> Paid food</p>
-          </div>
-          <div class='flex flex-col sm:flex-row gap-5'>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :aggressive, 100, false)%>;"><%= @skipper.reviews.filter { |r| r.aggressive }.count %> Aggressive</p>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :reckless, 100, false)%>;"><%= @skipper.reviews.filter { |r| r.reckless }.count %> Reckless</p>
-            <p class='text-lg rounded-lg py-3 px-5' style="background-color:<%= color_for_skipper_flag(@skipper, :did_not_pay, 100, false)%>;"><%= @skipper.reviews.filter { |r| r.did_not_pay }.count %> Did not pay</p>
-          </div>
-        <% end %>
-      </div>
-    </div>
+    <h1><%= @skipper.name %></h1>
+    <h3 class='text-2xl'><%= fv_boatname(@skipper.boatname) %></h3>
+    <% if @skipper.fishery %>
+      <h3 class='text-2xl'><%= @skipper.fishery %></h3>
+    <% end %>
+  </div>
+
+  <% if current_user.can_edit_or_delete_skipper?(@skipper) %>
     <div class='flex flex-row items-end justify-end gap-3'>
       <% if current_user.can_edit_skipper?(@skipper) %>
         <%= render 'shared/button/link', title: "Edit #{@skipper.firstname}", path: edit_skipper_path(@skipper), twcss_color: 'bg-yellow-100'%>
@@ -43,11 +20,17 @@
         <%= render 'shared/button/form', title: "Delete #{@skipper.firstname}", path: @skipper, method: :delete, twcss_color: 'bg-red-100', data: {turbo_confirm: 'Are you sure? This action is permanent!'} %>
       <% end %>
     </div>
-  </div>
-
-  <div class='flex flex-col gap-10'>
-    <h2 class='text-3xl'>Reviews</h2>
-    <% if !@skipper.reviews.empty? %>
+  <% end %>
+  <div class='flex flex-col gap-5'>
+    <div class='flex flex-row justify-between items-center'>
+      <h2>Reviews</h2>
+      <% if @review %>
+        <%= render 'shared/button/link', title: 'Edit My Review', path: edit_review_path(@review), twcss_color: 'bg-yellow-100' %>
+      <% else %>
+        <%= render 'shared/button/link', title: "Review #{@skipper.firstname}", path: new_review_path(review: {skipper_id: @skipper.id}), twcss_color: 'bg-blue-100' %>
+      <% end %>
+    </div>
+    <% if @skipper.reviews.present? %>
       <%= render @skipper.reviews %>
     <% else %>
       <p><%= @skipper.firstname %> has not yet been reviewed.</p>

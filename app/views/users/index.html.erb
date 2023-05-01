@@ -3,7 +3,7 @@
   <%= render 'shared/searchbar', path: users_path, title: 'Find a user' %>
   <div id="users" class='flex flex-col gap-5'>
     <%= turbo_frame_tag :search_results do %>
-      <% unless @users.empty? %>
+      <% if @users.present? %>
         <div id="users" class='flex flex-col gap-5'>
           <%= render @users %>
         </div>

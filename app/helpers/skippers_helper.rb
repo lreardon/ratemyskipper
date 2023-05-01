@@ -41,7 +41,7 @@ module SkippersHelper
     end
 
     def fv_boatname(boatname)
-        "F/V #{boatname}"
+        "FV #{boatname}"
     end
 
     private

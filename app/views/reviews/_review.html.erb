@@ -1,28 +1,26 @@
-<div id="<%= dom_id review %>" class="flex flex-col gap-3 p-3 border-4 justify-between items-center">
-    <div class='flex bg-gray-100 text-lg py-3 px-5 rounded-lg items-center w-full'>
-      <p><%= review.comment %></p>
+<div id="<%= dom_id review %>" class="flex flex-col gap-5 p-3 border-4 justify-between items-start">
+    <div class='flex bg-gray-100 text-lg py-3 px-5 rounded-lg w-full'>
+      <p style='min-height: 3em;'><%= review.comment %></p>
     </div>
-    <div class='flex flex-row justify-around gap-3 w-full'>
-      <div class='flex flex-col gap-2 justify-center'>
-        <% if !review.flags? %>
-          <p class='text-center bg-green-100 p-3 text-lg rounded-lg'>No Flags</p>
-        <% end %>
-        <% if review.good_flags? %>
-          <% review.good_flags.each do |flag| %>
-            <p class='text-center bg-green-100 p-3 text-lg rounded-lg'><%= flag %></p>
-          <%end%>
-        <% if review.bad_flags? %>
-          <% review.bad_flags.each do |flag| %>
-            <p class='text-center bg-red-100 p-3 text-lg rounded-lg'><%= flag %></p>
-          <%end%>
-        <% end %>
-        <% else %>
-          
-        <% end %>
-      </div>
-      <div class='flex flex-col justify-center'>
-        <%= render 'reviews/signature', review: review %>
-      </div>
+    <div class='flex flex-grid gap-2 flex-wrap'>
+      <% if !review.flags? %>
+        <p class='buttonlike text-center bg-green-100'>No Flags</p>
+      <% end %>
+      <% if review.good_flags? %>
+        <% review.good_flags.each do |flag| %>
+          <p class='buttonlike text-center bg-green-100'><%= flag %></p>
+        <%end%>
+      <% if review.bad_flags? %>
+        <% review.bad_flags.each do |flag| %>
+          <p class='buttonlike text-center bg-red-100'><%= flag %></p>
+        <%end%>
+      <% end %>
+      <% else %>
+        
+      <% end %>
+    </div>
+    <div class='flex flex-col'>
+      <%= render 'reviews/signature', review: review %>
     </div>
   </div>
 </div>

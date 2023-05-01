@@ -1,4 +1,3 @@
-<%= render 'pages/call_to_action' %>
 <div class='flex flex-col items-start justify-start gap-16 p-16'>
   <h1 class='text-5xl xs:text-7xl font-bold'>Skipper Buoy</h1>
   <div class='flex flex-col justify-start gap-5 text-2xl xs:text-3xl'>
@@ -6,10 +5,10 @@
       This site aims to provide clarity to crew and accountability for skippers
       within the commercial fishing industry.</p>
     <p><%= link_to 'Read', about_path, class: 'text-purple-600' %> more on the about page.</p>
-   <p>Suggestions? <%= link_to 'Send', contact_path, class: 'text-purple-600' %>  us an email!</p>
   </div>
-  <div class='flex flex-col self-center justify-center gap-10'>
-    <%= link_to 'Walk the docks!', new_user_registration_path, class: "text-2xl xs:text-3xl rounded-lg text-center py-8 px-12 xs:py-12 xs:px-16 block bg-blue-100" %>
-    <%= link_to 'Log in', new_user_session_path, class: "text-2xl rounded-lg text-center py-6 px-8 xs:py-8 xs:px-16 block bg-gray-100" %>
+  <div class='flex flex-row self-center justify-center gap-10'>
+    <%= render 'shared/button/link', title: 'Sign up', path: new_user_registration_path, twcss_color: 'bg-blue-100' %>
+    <%= render 'shared/button/link', title: 'Log in', path: new_user_session_path, twcss_color: 'bg-gray-100' %>
   </div>
+  <p class='text-2xl xs:text-3xl'>Suggestions? <%= link_to 'Send', contact_path, class: 'text-purple-600' %>  us an email!</p>
 </div>
