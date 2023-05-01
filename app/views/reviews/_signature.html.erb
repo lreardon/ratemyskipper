@@ -1,16 +1,16 @@
 <div class='flex flex-col justify-center'>
     <% if review.author == current_user %>
-        <div class='bg-orange-100 rounded-md 2xs:rounded-lg py-2 2xs:py-3 px-3 3xs:px-4 2xs:px-5 rounded-lg'>
+        <div class='bg-orange-100 rounded-md md:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5 rounded-lg'>
             <p>My Review</p>
             <p><%= readable_datetime_month_year(review.updated_at) %></p>
         </div>
     <% elsif review.author_visible_for_user?(current_user) %>
-        <%= link_to review.author, class: 'bg-orange-100 rounded-md 2xs:rounded-lg py-2 2xs:py-3 px-3 3xs:px-4 2xs:px-5 rounded-lg' do %>
+        <%= link_to review.author, class: 'bg-orange-100 rounded-md md:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5 rounded-lg' do %>
             <p><%= review.author.name %></p>
             <p><%= readable_datetime_month_year(review.updated_at) %></p>
         <% end %>
     <% else %>
-        <div class='bg-orange-100 rounded-md 2xs:rounded-lg py-2 2xs:py-3 px-3 3xs:px-4 2xs:px-5 rounded-lg'>
+        <div class='bg-orange-100 rounded-md md:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5 rounded-lg'>
             <p>Author Hidden</p>
             <p><%= readable_datetime_month_year(review.updated_at) %></p>
         </div>

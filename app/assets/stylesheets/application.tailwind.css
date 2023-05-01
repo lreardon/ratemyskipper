@@ -4,30 +4,16 @@
 
 @layer base {
   h1 {
-    @apply font-bold text-3xl;
+    @apply font-bold text-3xl xl:text-4xl;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-2xl xl:text-3xl;
   }
   h3 {
-    @apply text-xl;
+    @apply text-xl xl:text-2xl;
   }
   h4 {
-    @apply text-lg;
-  }
-  @screen xs {
-    h1 {
-      @apply text-4xl;
-    }
-    h2 {
-      @apply text-3xl;
-    }
-    h3 {
-      @apply text-2xl;
-    }
-    h4 {
-      @apply text-xl;
-    }
+    @apply text-lg xl:text-xl;
   }
 
   hr {
@@ -35,111 +21,49 @@
   }
 
   p,a,button,input {
-    @apply text-xs;
+    @apply text-xs sm:text-sm md:text-base lg:text-lg;
   }
-  @screen 3xs {
-    p,a,button,input {
-      @apply text-sm;
-    }
-  }
-  @screen 2xs {
-    p,a,button,input {
-      @apply text-base;
-    }
-  }
-  @screen xs {
-    p,a,button,input {
-      @apply text-lg;
-    }
-  }
-  
 
   input[type=submit] {
-    @apply text-xs rounded-md py-2 px-3;
+    @apply text-xs sm:text-sm md:text-base lg:text-lg rounded-md md:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5;
   }
-  @screen 3xs {
-    input[type=submit] {
-      @apply text-sm px-4
+}
+
+@layer components {
+  #navbar a,button {
+    @apply text-xs sm:text-sm md:text-base lg:text-lg;
+  }
+
+  #navbar-image {
+    @apply rounded-full;
+    height: auto;
+    min-width: 40px;
+    width: 40px;
+
+    @media screen and (min-width: 400px) {
+      min-width: 50px;
+      width: 50px;
+    }
+
+    @media screen and (min-width: 500px) {
+        min-width: 70px;
+        width: 70px;
     }
   }
-  @screen 2xs {
-    input[type=submit] {
-      @apply text-base rounded-lg py-3 px-5
-    }
-  }
-  @screen xs {
-    input[type=submit] {
-      @apply text-lg
-    }
-  }
-}
 
-#navbar a,button {
-  @apply text-xs;
-}
-@screen 3xs {
-  #navbar a,button {
-    @apply text-sm
-  }
-}
-@screen 2xs {
-  #navbar a,button {
-    @apply text-base
-  }
-}
-@screen xs {
-  #navbar a,button {
-    @apply text-lg
-  }
-}
-
-
-#navbar-image {
-  @apply rounded-full;
-  height: auto;            
-  min-width: 40px;
-  width: 40px;
-
-  @screen 2xs {
-    min-width: 50px;
-    width: 50px;
-  }
-
-  @screen xs {
-      min-width: 70px;
-      width: 70px;
-  }
-}
-
-#searchbar input {
-  @apply text-xs
-}
-@screen 3xs {
   #searchbar input {
-    @apply text-sm;
-  } 
-}
-@screen 2xs {
-  #searchbar input {
-    @apply text-base;
-  } 
-}
-@screen xs {
-  #searchbar input {
-    @apply text-lg;
-  } 
-}
+    @apply text-xs sm:text-sm md:text-base lg:text-lg;
+  }
 
-.buttonlike {
-  @apply rounded-md py-2 px-3;
-}
-@screen 3xs {
   .buttonlike {
-    @apply px-4
+    @apply rounded-md sm:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5;
   }
-}
-@screen 2xs {
-  .buttonlike {
-    @apply px-5 py-3 rounded-lg
+
+  #footer a {
+    font-size: 0.5rem;
+  }
+
+  #footer p {
+    font-size: 0.5rem;
   }
 }

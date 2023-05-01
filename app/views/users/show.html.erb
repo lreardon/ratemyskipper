@@ -1,15 +1,16 @@
-<div class='flex flex-col gap-16'>
-  <div class="flex flex-row justify-end">
+<div class='flex flex-col gap-10'>
+  <div class="flex flex-row">
     <%= render 'shared/button/link', title: 'Users', path: users_path, twcss_color: 'bg-gray-100' %>
   </div>
-  <div class='flex flex-col border-8 p-10 gap-10'>
+  <div class='flex flex-col gap-10'>
     <div>
-      <p class='text-3xl'><%= @user.name %></p>
-      <p class='text-xl'>Since <%= readable_datetime_month_year(@user.created_at) %></p>
+      <h1><%= @user.name %></h1>
+      <h3>Since <%= readable_datetime_month_year(@user.created_at) %></h3>
     </div>
-    <p class='text-2xl'><%= pluralize(@user.authored_reviews.count, 'review') %></p>
-    <p class='text-2xl'><%= pluralize(@user.friends.count, 'friend') %></p>
-  </div>
+    <div>
+      <p class='text-2xl'><%= pluralize(@user.authored_reviews.count, 'review') %></p>
+      <p class='text-2xl'><%= pluralize(@user.friends.count, 'friend') %></p>
+    </div>
   <div class="w-full flex justify-end">
     <% if current_user == @user %>
       <div class='flex flex-col'>
@@ -31,4 +32,5 @@
       <%= render partial: 'friendships/pending_friendship', collection: @user.pending_friendships, as: :friendship %>
     </div>
   <% end %>
+  </div>
 </div>

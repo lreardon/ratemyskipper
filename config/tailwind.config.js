@@ -9,10 +9,11 @@ module.exports = {
   ],
   theme: {
     screens: {
-      '3xs': '365px',
-      '2xs': '425px',
-      'xs': '500px',
-      ...defaultTheme.screens
+      'sm': '365px',
+      'md': '425px',
+      'lg': '500px',
+      'xl': '640px',
+      '2xl': '800px'
     },  
     extend: {
       fontFamily: {
