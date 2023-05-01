@@ -10,13 +10,11 @@
         <% review.good_flags.each do |flag| %>
           <p class='buttonlike text-center bg-green-100'><%= flag %></p>
         <%end%>
+      <% end %>
       <% if review.bad_flags? %>
         <% review.bad_flags.each do |flag| %>
           <p class='buttonlike text-center bg-red-100'><%= flag %></p>
         <%end%>
-      <% end %>
-      <% else %>
-        
       <% end %>
     </div>
     <div class='flex flex-col'>
