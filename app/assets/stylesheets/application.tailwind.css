@@ -15,7 +15,6 @@
   h4 {
     @apply text-lg;
   }
-
   @screen xs {
     h1 {
       @apply text-4xl;
@@ -36,17 +35,64 @@
   }
 
   p,a,button,input {
-    @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg;
+    @apply text-xs;
   }
+  @screen 3xs {
+    p,a,button,input {
+      @apply text-sm;
+    }
+  }
+  @screen 2xs {
+    p,a,button,input {
+      @apply text-base;
+    }
+  }
+  @screen xs {
+    p,a,button,input {
+      @apply text-lg;
+    }
+  }
+  
 
   input[type=submit] {
-    @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg rounded-md 2xs:rounded-lg py-2 2xs:py-3 px-3 3xs:px-4 2xs:px-5;
+    @apply text-xs rounded-md py-2 px-3;
+  }
+  @screen 3xs {
+    input[type=submit] {
+      @apply text-sm px-4
+    }
+  }
+  @screen 2xs {
+    input[type=submit] {
+      @apply text-base rounded-lg py-3 px-5
+    }
+  }
+  @screen xs {
+    input[type=submit] {
+      @apply text-lg
+    }
   }
 }
 
 #navbar a,button {
-  @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg;
+  @apply text-xs;
 }
+@screen 3xs {
+  #navbar a,button {
+    @apply text-sm
+  }
+}
+@screen 2xs {
+  #navbar a,button {
+    @apply text-base
+  }
+}
+@screen xs {
+  #navbar a,button {
+    @apply text-lg
+  }
+}
+
 
 #navbar-image {
   @apply rounded-full;
@@ -54,21 +100,46 @@
   min-width: 40px;
   width: 40px;
 
-  @media screen and (min-width: 400px) {
+  @screen 2xs {
     min-width: 50px;
     width: 50px;
   }
 
-  @media screen and (min-width: 500px) {
+  @screen xs {
       min-width: 70px;
       width: 70px;
   }
 }
 
 #searchbar input {
-  @apply text-xs 3xs:text-sm 2xs:text-base xs:text-lg;
+  @apply text-xs
+}
+@screen 3xs {
+  #searchbar input {
+    @apply text-sm;
+  } 
+}
+@screen 2xs {
+  #searchbar input {
+    @apply text-base;
+  } 
+}
+@screen xs {
+  #searchbar input {
+    @apply text-lg;
+  } 
 }
 
 .buttonlike {
-  @apply rounded-md 2xs:rounded-lg py-2 2xs:py-3 px-3 3xs:px-4 2xs:px-5;
+  @apply rounded-md py-2 px-3;
+}
+@screen 3xs {
+  .buttonlike {
+    @apply px-4
+  }
+}
+@screen 2xs {
+  .buttonlike {
+    @apply px-5 py-3 rounded-lg
+  }
 }
