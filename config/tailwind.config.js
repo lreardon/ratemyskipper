@@ -8,15 +8,16 @@ module.exports = {
     './app/views/**/*.{erb,haml,html,slim}'
   ],
   theme: {
+    screens: {
+      '3xs': '365px',
+      '2xs': '425px',
+      'xs': '500px',
+      ...defaultTheme.screens
+    },  
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
-      screens: {
-        '3xs': '365px',
-        '2xs': '425px',
-        'xs': '500px'
-      }
     },
   },
   plugins: [
