@@ -1,7 +1,7 @@
 <header>
   <nav id='navbar' class="flex flex-row border-b-2 items-center gap-5 py-3 pl-3 pr-3 md:pr-5 md:pr-8 md:pl-5">
     <%= link_to "/" do %>
-      <img id='navbar-image' src=<%= asset_path("buoy.png")%> />
+      <img id='navbar-image' src=<%= asset_path("buoy-small.png")%> />
     <% end %>
     <div class='flex flex-row <%= if current_user then 'justify-between' else 'justify-end' end %> w-full gap-3'>
       <% if current_user %>
