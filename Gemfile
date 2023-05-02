@@ -78,6 +78,8 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem 'pry', '~> 0.14.2'
+  gem 'pry-rails'
   gem 'web-console'
   gem 'dotenv-rails'
 
@@ -110,5 +112,3 @@ group :production do
   gem 'ed25519', "~> 1.2"
   gem 'bcrypt_pbkdf', "~> 1.0"
 end
-
-gem "importmap-rails", "~> 1.1"
