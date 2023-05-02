@@ -74,6 +74,8 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { host: 'skipperbuoy.landho.me', protocol: 'https' }
   config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.asset_host = 'https://skipperbuoy.landho.me'
   config.action_mailer.smtp_settings = {
     **Rails.application.credentials.devise.mailer,
     authentication: :plain,
