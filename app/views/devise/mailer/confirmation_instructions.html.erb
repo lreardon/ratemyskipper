@@ -361,8 +361,8 @@ img {
     <div class="bg-white p-5">
         <table cellpadding="0" cellspacing="0" role="presentation">
             <tr>
-                <td align="center">
-                    <img src="<%= asset_path('buoy-small.png') %>" width="100" alt="SkipperBuoy" class="rounded-full">
+                <td align="center" class='pb-5'>
+                    <img src="<%= asset_path('buoy-small.png') %>" width="120" alt="SkipperBuoy" class="rounded-full">
                 </td>
             </tr>
             <tr>
@@ -378,7 +378,7 @@ img {
             </tr>
             <tr>
                 <td align="center" class="py-8">
-                    <a href="<%= confirmation_url(@resource, confirmation_token: @token) %>" class="no-underline rounded-lg text-lg text-black bg-blue-100 py-5 px-3">Confirm email</a>
+                    <a href="<%= confirmation_url(@resource, confirmation_token: @token) %>" class="no-underline rounded-lg text-lg text-black bg-blue-100 py-5 px-3" style='text-decoration: none;'>Confirm email</a>
                 </td>                
             </tr>                
             <tr>
@@ -388,7 +388,7 @@ img {
             </tr>
             <tr>
                 <td>
-                    <p class="text-sm text-gray-600 pt-2 pb-5">If you did not sign up for SkipperBuoy, you may safely ignore this message.</p>
+                    <p class="text-sm text-gray-600 pt-5 pb-2">If you did not sign up for SkipperBuoy, you may safely ignore this message.</p>
                 </td>
             </tr>
         </table>
