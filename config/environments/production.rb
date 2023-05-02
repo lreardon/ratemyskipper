@@ -75,11 +75,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'skipperbuoy.landho.me', protocol: 'https' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name: Rails.application.credentials.devise.mailer.username,
-    password: Rails.application.credentials.devise.mailer.password,
-    domain: 'gmail.com',
-    address: 'smtp.gmail.com',
-    port: '587',
+    **Rails.application.credentials.devise.mailer,
     authentication: :plain,
     enable_starttls_auto: true
   }
