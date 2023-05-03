@@ -1,7 +1,7 @@
 <%= link_to user, data: { turbo: "false" } do %>
-  <div id="<%= dom_id user %>">
-    <div class='flex flex-row rounded-lg border-2 p-10 gap-20 items-end bg-gray-100'>
-      <p class='text-2xl'><%= user.name %></p>
+  <div id="<%= dom_id user %>" class='flex flex-row'>
+    <div class='flex flex-col p-5 xl:px-8 xl:flex-row rounded-lg xl:gap-20 xl:items-center items-start bg-gray-100'>
+      <h4 class='font-bold'><%= user.name %></h4>
     </div>
   </div>
 <% end %>
