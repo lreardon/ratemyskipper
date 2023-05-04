@@ -17,6 +17,7 @@ class User < ApplicationRecord
   has_many :created_skippers, class_name: 'Skipper', foreign_key: :creator_id, dependent: :nullify
   has_many :authored_reviews, class_name: 'Review', foreign_key: :author_id, dependent: :destroy
   has_many :friendships, class_name: 'Friendship', foreign_key: :user_id, dependent: :destroy
+  has_many :added_friendships, class_name: 'Friendship', foreign_key: :friend_id, dependent: :destroy
 
   scope :confirmed, -> { where.not(confirmed_at: nil) }
 
@@ -74,6 +75,18 @@ class User < ApplicationRecord
 
   def pending_friendships
     Friendship.pending.where(friend_id: id)
+  end
+
+  def pending_friends
+    pending_friendships.map(&:user_id)
+  end
+
+  def rejected_friendships
+    Friendship.rejected.where(friend_id: id)
+  end
+
+  def rejected_friends
+    rejected_friendships.map(&:user_id)
   end
 
   def friends

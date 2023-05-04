@@ -5,7 +5,19 @@ class FriendshipsController < ApplicationController
 
   # GET /friendships or /friendships.json
   def index
-    @friendships = Friendship.all
+    params = index_params
+    return @friendships = Friendship.all unless (for_user_id = params[:for_user_id])
+
+    case (friendships_type = index_params[:friendships_type])
+    when :accepted
+      @friendships = Friendship.accepted.with_user(:for_user_id)
+    when :pending
+      @friendships = Friendship.pending.where(friend_id: :for_user_id)
+    when :rejected
+      @friendships = Friendship.rejected.where(friend_id: :for_usr_id)
+    else
+      raise BadArgumentError
+    end
   end
 
   # GET /friendships/1 or /friendships/1.json
@@ -60,7 +72,7 @@ class FriendshipsController < ApplicationController
     @friendship.destroy
 
     respond_to do |format|
-      format.html { redirect_to friendships_url, notice: "Friendship was successfully destroyed." }
+      format.html { redirect_to current_user, notice: "Friendship was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -74,5 +86,9 @@ class FriendshipsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def friendship_params
       params.fetch(:friendship, {}).permit(:user_id, :friend_id, :status)
+    end
+
+    def index_params
+      params.permit(:for_user_id)
     end
 end

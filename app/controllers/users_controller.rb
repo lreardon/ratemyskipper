@@ -4,20 +4,46 @@ class UsersController < ApplicationController
 
   # GET /users or /users.json
   def index
-
     if (q = params[:q]).present?
       tokens = q.downcase.split(' ')
+      pattern = "%(#{tokens.join('|')})%"
       # This query is extremely naive.
       # The nature of how I want to compute matchces suggests that
       # a Document DB might be a more natural data architecture.
-      @users = User.confirmed.where('LOWER(firstname) in (?)', tokens).or(
-        User.confirmed.where('LOWER(lastname) in (?)', tokens)
+      @users = User.confirmed.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
+        User.confirmed.where('LOWER(lastname) SIMILAR TO ?', pattern)
       )
-  else
-    @users = User.confirmed
+    else
+      @users = User.confirmed
+    end
   end
-end
 
+  def index_friends
+    user_id = params[:user_id]
+    friendship_type = params[:user_id]
+
+    case friendship_type
+    when :accepted
+      @users = User.find(user_id).friends
+    when :pending
+      raise AccessDeniedError unless user_id == current_user.id
+
+      @users = User.find(user_id).pending_friends
+    when :rejected
+      raise AccessDeniedError unless user_id == current_user.id
+
+      @users = User.find(user_id).rejected_friends
+    else
+      raise BadRequestError
+    end
+
+    if (q = params[:q]).present?
+      tokens = q.downcase.split(' ')
+      @users = @users.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
+        User.confirmed.where('LOWER(lastname) SIMILAR TO ?', pattern)
+      )
+    end
+  end
 
   # GET /users/1 or /users/1.json
   def show; end

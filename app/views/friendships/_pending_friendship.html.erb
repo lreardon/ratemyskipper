@@ -1,7 +1,5 @@
-<div class='flex flex-row gap-3 items-center border-4 p-5'>
-    <p class='text-lg'><%= friendship.user.name %> wants to be friends with you!</p>
+<div class='flex flex-row gap-3 items-center p-5 bg-gray-100 rounded-lg'>
+    <h3><%= friendship.user.name %> wants to be friends with you!</h3>
     <%= render 'shared/button/form', title: 'Accept', path: friendship_path(friendship), method: :put, twcss_color: 'bg-blue-100', params: {friendship: {status: Friendships::Statuses::ACCEPTED}} %>
     <%= render 'shared/button/form', title: 'Reject', path: friendship_path(friendship), method: :put, twcss_color: 'bg-blue-100', params: {friendship: {status: Friendships::Statuses::ACCEPTED}} %>
 </div>
-
-<%= render 'shared/button/form', title: , path: , method: , twcss_color: 'bg--100' %>

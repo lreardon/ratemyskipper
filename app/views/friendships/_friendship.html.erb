@@ -1,7 +1,6 @@
-<div id="<%= dom_id friendship %>">
-  <% if action_name != "show" %>
-    <%= render 'shared/button/link', title: 'Show this friendship', path: friendship, twcss_color: 'bg-gray-100' %>
-    <%= render 'shared/button/link', title: 'Edit this friendship', path: edit_friendship_path(friendship), twcss_color: 'bg-gray-100' %>
-    <hr class="mt-6">
-  <% end %>
+<% friend = [friendship.user, friendship.friend].filter{|u| u.id != current_user.id }[0] %>
+
+<div class='flex flex-row gap-3 items-center p-5 bg-gray-100 rounded-lg'>
+    <p class='text-lg'><%= friend.name %></p>
+    <%= render 'shared/button/form', title: 'Remove Friend', path: friendship_path(friendship), method: :delete, twcss_color: 'bg-red-100' %>
 </div>
