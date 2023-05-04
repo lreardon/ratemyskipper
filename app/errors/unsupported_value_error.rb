@@ -1,0 +1,1 @@
+class UnsupportedValueError < StandardError; end

@@ -36,7 +36,7 @@
           <% if (friendships = @user.friendships).present? %>
             <%= render partial: 'friendships/friendship', collection: friendships, as: :friendship %>
           <% else %>
-            <p>You don't have any friends yet! Why not?</p>
+            <p class='text-light'>You don't have any friends yet! Why not?</p>
           <% end %>
         <div>
       </div>
@@ -46,7 +46,7 @@
           <% if (pending_friendships = @user.pending_friendships).present? %>
             <%= render partial: 'friendships/pending_friendship', collection: pending_friendships, as: :friendship %>
           <% else %>
-            <p>No friend requests.</p>
+            <p class='text-light'>No friend requests.</p>
           <% end %>
         </div>
       </div>

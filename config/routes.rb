@@ -9,16 +9,14 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     omniauth_callbacks: 'users/omniauth_callbacks'
   }, path_prefix: 'devise'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
 
   root to: 'pages#index'
-  get 'pages/about' => 'pages#about', as: 'about'
-  get 'pages/contact' => 'pages#contact', as: 'contact'
-  get 'pages/privacy_policy' => 'pages#privacy_policy', as: 'privacy_policy'
-  get 'pages/terms_of_service' => 'pages#terms_of_service', as: 'terms_of_service'
-
+  get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
+  get 'privacy_policy' => 'pages#privacy_policy'
+  get 'terms_of_service' => 'pages#terms_of_service'
+  get 'invite' => 'pages#invite'
+  post 'invite' => 'pages#send_invite'
+  
   get 'users/friends' => 'users#index_friends'
 end

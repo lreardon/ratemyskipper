@@ -10,11 +10,11 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
     <%= favicon_link_tag asset_path('favicon.ico') %>
   </head>
-  <body class='flex flex-col justify-between min-h-screen mx-auto bg-white' style="max-width: 1000px;">
+  <body class='flex flex-col justify-between min-h-screen mx-auto bg-white' style="max-width: 1024px;">
     <div class='flex flex-col'>
       <%= render 'layouts/navbar' %>
-      <%= render 'shared/flashes' %>
       <main class="flex flex-col pt-2 px-2 pb-16 md:pt-3 md:px-3 md:pb-22 lg:pt-5 lg:pb-28 lg:px-5">
+          <%= render 'shared/flashes' %>
           <%= yield %>
       </main>
     </div>

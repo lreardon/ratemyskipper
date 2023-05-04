@@ -7,14 +7,9 @@ class UsersController < ApplicationController
     if (q = params[:q]).present?
       tokens = q.downcase.split(' ')
       pattern = "%(#{tokens.join('|')})%"
-      # This query is extremely naive.
-      # The nature of how I want to compute matchces suggests that
-      # a Document DB might be a more natural data architecture.
       @users = User.confirmed.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
         User.confirmed.where('LOWER(lastname) SIMILAR TO ?', pattern)
       )
-    else
-      @users = User.confirmed
     end
   end
 

@@ -7,10 +7,10 @@
         <div id="users" class='flex flex-col gap-5'>
           <%= render @users %>
         </div>
-      <% else %>
+      <% elsif !@users.nil? %>
         <div class='flex flex-row'>
           <div class='flex flex-col gap-10'>
-            <p class='text-xl'>Oops, we couldn't find any users matching your search!</p>
+            <p>We couldn't find any users matching your search. Would you like to <%= link_to 'send', invite_path, data: {turbo: false } %> someone an invite?</p>
           </div>
         </div>
       <% end %>

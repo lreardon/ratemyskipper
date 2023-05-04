@@ -27,6 +27,18 @@
   input[type=submit] {
     @apply text-xs sm:text-sm md:text-base lg:text-lg rounded-md md:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5;
   }
+
+  .text-light {
+    @apply text-gray-400;
+  }
+
+  .text-link {
+    @apply text-purple-600;
+  }
+
+  p a {
+    @apply text-link;
+  }
 }
 
 @layer components {

@@ -6,25 +6,13 @@ class SkippersController < ApplicationController
   def index
     if (q = params[:q]).present?
       tokens = q.downcase.split(' ')
-      # This query is extremely naive.
-      # The nature of how I want to compute matchces suggests that
-      # a Document DB might be a more natural data architecture.
-
       pattern = "%(#{tokens.join('|')})%"
-
       @skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
         Skipper.where('LOWER(lastname) SIMILAR TO ?', pattern).or(
           Skipper.where('LOWER(boatname) SIMILAR TO ?', pattern)
         )
       )
     end
-
-    puts 'yoooooooooo'
-    puts @skippers.nil?
-    # TODO: Make this only render the minimum amount of information necessary.
-    # if turbo_frame_request?
-    #   render 'shared/search_results', 
-    # end
   end
 
   # GET /skippers/1 or /skippers/1.json

@@ -62,7 +62,9 @@ gem 'devise'
 
 gem 'rubocop-rails'
 
+# Currently used for icons. inline_svg might be phased out by font-awesome-rails
 gem 'inline_svg'
+gem "font-awesome-rails"
 
 gem 'capitalize-names'
 
