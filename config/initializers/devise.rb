@@ -273,7 +273,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :facebook, Rails.application.credentials.omniauth.facebook.app_id, Rails.application.credentials.omniauth.facebook.app_secret, scope: 'email',  info_fields: 'email,name', token_params: { parse: :json }, callback_url: "#{Rails.application.credentials.root_url}/devise/users/auth/facebook/callback"
-  config.omniauth :google, Raiils.application.credentials.omniauth.google.app_id, Rails.application.credentials.omniauth.google.app_secret
+  # config.omniauth :google, Rails.application.credentials.omniauth.google.app_id, Rails.application.credentials.omniauth.google.app_secret, scope: 'email', info_fields: 'email,name', token_params: { parse: :json }, callback_url: "#{Rails.application.credentials.root_url}/devise/users/auth/google/callback"
 
 
   # ==> Warden configuration
