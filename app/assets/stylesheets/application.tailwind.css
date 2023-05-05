@@ -73,9 +73,11 @@
 
   #footer a {
     font-size: 0.5rem;
+    line-height: 0.7rem;
   }
 
   #footer p {
     font-size: 0.5rem;
+    line-height: 0.7rem;
   }
 }
