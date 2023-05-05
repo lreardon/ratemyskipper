@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-  devise :omniauthable, omniauth_providers: %i[facebook google]
+  devise :omniauthable, omniauth_providers: %i[facebook google_oauth2]
 
   attribute :firstname, :firstname
   attribute :lastname, :lastname
@@ -83,6 +83,10 @@ class User < ApplicationRecord
 
   def rejected_friendships
     Friendship.rejected.where(friend_id: id)
+  end
+
+  def accepted_friendships
+    Friendship.accepted.where(friend_id: id).or(Friendship.accepted.where(user_id: id))
   end
 
   def rejected_friends
