@@ -10,4 +10,10 @@ class ApplicationMailer < ActionMailer::Base
     puts 'sent to'
     puts params[:email] 
   end
+
+  def contact_email
+    @message = params[:message]
+    @email = params[:email]
+    mail(to: 'leland@skipperbuoy.com', subject: "SkipperBuoy Contact")
+  end
 end

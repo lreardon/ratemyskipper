@@ -10,11 +10,20 @@ class PagesController < ApplicationController
 
   def contact; end
 
+  def send_contact
+    params = invite_params
+
+    ApplicationMailer.with(email: params[:email], message: params[:message], from_user: current_user).contact_email.deliver_now
+    flash[:notice] = 'Your email was sent successfully!'
+
+    redirect_to contact_path
+  end
+
   def invite; end
 
   def send_invite
     raise AccessDeniedError unless current_user
-    params = send_invite_params
+    params = invite_params
 
     @user = current_user
     # @message = params[:message]
@@ -34,7 +43,7 @@ class PagesController < ApplicationController
     redirect_to skippers_path if signed_in?
   end
 
-  def send_invite_params
+  def invite_params
     params.permit(:email, :message)
   end
 end

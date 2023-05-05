@@ -7,12 +7,14 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions',
-    omniauth_callbacks: 'users/omniauth_callbacks'
+    omniauth_callbacks: 'users/omniauth_callbacks',
+    confirmations: 'users/confirmations'
   }, path_prefix: 'devise'
 
   root to: 'pages#index'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
+  post 'contact' => 'pages#send_contact'
   get 'privacy_policy' => 'pages#privacy_policy'
   get 'terms_of_service' => 'pages#terms_of_service'
   get 'invite' => 'pages#invite'
