@@ -1,19 +1,23 @@
-<% twcss_bg_color = case type %>
+<% case type %>
 <% when 'notice' %>
-    <% 'bg-blue-100' %>
+    <% twcss_bg_color = 'bg-blue-100' %>
+    <% twcss_text_color = 'text-blue-700' %>
+    <% twcss_border_color = 'border-blue-500' %>
 <% when 'alert' %>
-    <% 'bg-red-100' %>
+    <% twcss_bg_color = 'bg-red-100' %>
+    <% twcss_text_color = 'text-red-700' %>
+    <% twcss_border_color = 'border-red-500' %>
 <% else %>
     <% raise UnsupportedValueError %>
 <% end %>
 
-<div data-controller='removals' class="flex flex-row-reverse notice-dismissible <%= twcss_bg_color %> border border-blue-500 rounded-lg text-blue-700" role="<%= type %>">
+<div data-controller='removals' class="flex flex-row notice-dismissible <%= twcss_bg_color %> border <%= twcss_border_color %> rounded-lg <%= twcss_text_color %>" role="<%= type %>">
+    <div class='flex flex-row w-full justify-start py-3 px-4 xl:py-4 xl:px-5'>
+        <p class='font-bold'><%= msg %></p>
+    </div>
     <div class='flex flex-row justify-end pt-2 pr-2 xl:pt-3 xl:pr-3'>
         <div class='cursor-pointer'>
-            <%= fa_icon "x", data: {action: "click->removals#remove"} %>
+        <%= fa_icon "x", data: {action: "click->removals#remove"} %>
         </div>
-    </div>
-    <div class='py-3 px-4 xl:py-4 xl:px-5'>
-        <p class='font-bold'><%= msg %></p>
     </div>
 </div>
