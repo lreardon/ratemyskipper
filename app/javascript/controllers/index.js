@@ -9,3 +9,6 @@ application.register("removals", RemovalsController)
 
 import FormSubmissionController from "./form_submission_controller"
 application.register("form-submission", FormSubmissionController)
+
+import FriendsController from "./friends_controller"
+application.register("friends", FriendsController)

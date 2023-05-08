@@ -68,7 +68,7 @@
   }
 
   .buttonlike {
-    @apply rounded-md sm:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5;
+    @apply rounded-md sm:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5 bg-gray-100;
   }
 
   #footer a {
