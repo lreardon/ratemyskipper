@@ -64,6 +64,9 @@ development:
 #   encoding: unicode
 #   database: ratemyskipper_test
 #   pool: 5
-#   username: ratemyskipper_user
+#   username: ratemyskipper
 #   password: ratemyskipper
 #   timeout: 5000
+
+test:
+  <<: *default

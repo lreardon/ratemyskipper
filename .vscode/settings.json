@@ -1,7 +1,8 @@
 {
-    "solargraph.useBundler": false,
-    "ruby.useLanguageServer": true,
-    "ruby.intellisense": "rubyLocate",
-    "solargraph.commandPath": "/var/folders/q2/1cb0try95cx3ll70t6yybsfr0000gn/T/frum_34004_1682325757510/bin/solargraph",
-
+	"solargraph.useBundler": false,
+	"ruby.useLanguageServer": true,
+	"ruby.intellisense": "rubyLocate",
+	"solargraph.commandPath": "/Users/landho/.frum/versions/3.2.2/bin/solargraph",
+	"editor.formatOnSave": true,
+	"ruby.format": "rubocop",
 }

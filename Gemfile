@@ -19,7 +19,7 @@ gem 'pg'
 gem 'puma', '~> 5.0'
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
-gem "jsbundling-rails"
+gem 'jsbundling-rails'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
@@ -28,7 +28,7 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
-gem "cssbundling-rails"
+gem 'cssbundling-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
@@ -63,55 +63,59 @@ gem 'devise'
 gem 'rubocop-rails'
 
 # Currently used for icons. inline_svg might be phased out by font-awesome-rails
+gem 'font-awesome-rails'
 gem 'inline_svg'
-gem "font-awesome-rails"
 
 gem 'capitalize-names'
 
 # Gems required for omniauth
 gem 'omniauth'
-gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+	# See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+	gem 'capybara'
+	gem 'debug', platforms: %i[mri mingw x64_mingw]
+	gem 'factory_bot_rails'
+	gem 'faker'
+	gem 'rspec-rails'
 end
 
 group :development do
-  # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'pry', '~> 0.14.2'
-  gem 'pry-rails'
-  gem 'web-console'
-  gem 'dotenv-rails'
+	# Use console on exceptions pages [https://github.com/rails/web-console]
+	gem 'dotenv-rails'
+	gem 'pry', '~> 0.14.2'
+	gem 'pry-rails'
+	gem 'web-console'
 
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler"
+	# Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
+	# gem "rack-mini-profiler"
 
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+	# Speed up commands on slow machines / big apps [https://github.com/rails/spring]
+	# gem "spring"
 
-  gem "capistrano", "~> 3.10", require: false
-  gem 'capistrano-rvm',     require: false
-  gem "capistrano-rails", "~> 1.6", require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
+	gem 'capistrano', '~> 3.10', require: false
+	gem 'capistrano3-puma', require: false
+	gem 'capistrano-bundler', require: false
+	gem 'capistrano-rails', '~> 1.6', require: false
+	gem 'capistrano-rvm', require: false
 
-  gem 'solargraph'
-  gem 'solargraph-rails'
+	gem 'solargraph'
+	gem 'solargraph-rails'
 
-  gem 'seedbank'
+	gem 'seedbank'
 end
 
 group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+	# Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+	gem 'capybara'
+	gem 'selenium-webdriver'
+	gem 'webdrivers'
 end
 
 group :production do
-  gem 'ed25519', "~> 1.2"
-  gem 'bcrypt_pbkdf', "~> 1.0"
+	gem 'bcrypt_pbkdf', '~> 1.0'
+	gem 'ed25519', '~> 1.2'
 end
