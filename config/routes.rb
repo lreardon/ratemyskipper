@@ -1,25 +1,32 @@
+require 'sidekiq/web'
+require 'sidekiq-scheduler/web'
+
 Rails.application.routes.draw do
-  resources :friendships
-  resources :reviews
-  resources :skippers
-  resources :users
+	# authenticate :user, -> (u) { u.admin? } do
+	mount Sidekiq::Web => '/sidekiq'
+	# end
 
-  devise_for :users, controllers: {
-    registrations: 'users/registrations',
-    sessions: 'users/sessions',
-    omniauth_callbacks: 'users/omniauth_callbacks',
-    confirmations: 'users/confirmations',
-    passwords: 'users/passwords'
-  }, path_prefix: 'devise'
+	resources :friendships
+	resources :reviews
+	resources :skippers
+	resources :users
 
-  root to: 'pages#index'
-  get 'about' => 'pages#about'
-  get 'contact' => 'pages#contact'
-  post 'contact' => 'pages#send_contact'
-  get 'privacy_policy' => 'pages#privacy_policy'
-  get 'terms_of_service' => 'pages#terms_of_service'
-  get 'invite' => 'pages#invite'
-  post 'invite' => 'pages#send_invite'
-  
-  get 'users/friends' => 'users#index_friends'
+	devise_for :users, controllers: {
+		registrations: 'users/registrations',
+		sessions: 'users/sessions',
+		omniauth_callbacks: 'users/omniauth_callbacks',
+		confirmations: 'users/confirmations',
+		passwords: 'users/passwords'
+	}, path_prefix: 'devise'
+
+	root to: 'pages#index'
+	get 'about' => 'pages#about'
+	get 'contact' => 'pages#contact'
+	post 'contact' => 'pages#send_contact'
+	get 'privacy_policy' => 'pages#privacy_policy'
+	get 'terms_of_service' => 'pages#terms_of_service'
+	get 'invite' => 'pages#invite'
+	post 'invite' => 'pages#send_invite'
+
+	get 'users/friends' => 'users#index_friends'
 end

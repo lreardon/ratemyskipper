@@ -74,6 +74,10 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection'
 
+# Redis and Sidekiq will be used for queueing jobs
+gem 'sidekiq', '~> 7.1.0'
+gem 'sidekiq-scheduler'
+
 group :development, :test do
 	# See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
 	gem 'capybara'
@@ -110,7 +114,6 @@ end
 
 group :test do
 	# Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-	gem 'capybara'
 	gem 'selenium-webdriver'
 	gem 'webdrivers'
 end

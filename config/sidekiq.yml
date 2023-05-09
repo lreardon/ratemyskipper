@@ -1,0 +1,8 @@
+:queues:
+ - default
+ - mailers
+
+# :schedule:
+#   scheduled_job:
+#     cron: '*/10 * * * *'   # Runs every 10 minutes
+#     class: ScheduledJob
