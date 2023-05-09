@@ -122,9 +122,6 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-async (1.0.0)
-      activejob (>= 5.0)
-      devise (>= 4.0)
     diff-lcs (1.5.0)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
@@ -429,7 +426,6 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
-  devise-async
   dotenv-rails
   ed25519 (~> 1.2)
   factory_bot_rails
