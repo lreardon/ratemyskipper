@@ -25,7 +25,6 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
-
 # set :puma_user, fetch(:user)
 # set :puma_role, :web
 # set :puma_service_unit_env_files, []
@@ -41,6 +40,9 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 set :linked_files, %w{config/credentials/production.key}
 # set :linked_files, %w{config/database.yml}
 set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
+set :service_unit_name, "sidekiq.service"
+set :sidekiq_monit_default_hooks, false
 
 namespace :puma do
 	desc 'Create Directories for Puma Pids and Socket'
