@@ -37,13 +37,9 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 # set :keep_releases, 5
 
 ## Linked Files & Directories (Default None):
-set :linked_files, %w{config/credentials/production.key}
+set :linked_files, %w[config/credentials/production.key]
 # set :linked_files, %w{config/database.yml}
-set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-
-set :service_unit_name, "sidekiq.service"
-set :sidekiq_monit_default_hooks, false
-set :sidekiq_default_hooks, false
+set :linked_dirs,  %w[bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system]
 
 namespace :puma do
 	desc 'Create Directories for Puma Pids and Socket'
@@ -58,12 +54,12 @@ namespace :puma do
 end
 
 namespace :deploy do
-	desc "Make sure local git is in sync with remote."
+	desc 'Make sure local git is in sync with remote.'
 	task :check_revision do
 		on roles(:app) do
 			unless `git rev-parse HEAD` == `git rev-parse origin/main`
-				puts "WARNING: HEAD is not the same as origin/main"
-				puts "Run `git push` to sync changes."
+				puts 'WARNING: HEAD is not the same as origin/main'
+				puts 'Run `git push` to sync changes.'
 				exit
 			end
 		end
@@ -77,10 +73,17 @@ namespace :deploy do
 		end
 	end
 
+	desc 'Restart sidekiq to use the newly deployed version.'
+	task :restart_sidekiq do
+		on roles(:app) do
+			execute 'sudo systemctl restart sidekiq'
+		end
+	end
+
 	before :starting,     :check_revision
+	after  :finishing,    :restart_sidekiq
 	after  :finishing,    :compile_assets
 	after  :finishing,    :cleanup
-	after  :finishing,    'sidekiq:restart'
 end
 
 # ps aux | grep puma    # Get puma pid
