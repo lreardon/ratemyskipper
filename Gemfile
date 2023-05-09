@@ -105,7 +105,7 @@ group :development do
 	gem 'capistrano-bundler', require: false
 	gem 'capistrano-rails', '~> 1.6', require: false
 	gem 'capistrano-rvm', require: false
-	gem 'capistrano-sidekiq-systemd', require: false
+	# gem 'capistrano-sidekiq-systemd', require: false
 	
 	gem 'solargraph'
 	gem 'solargraph-rails'
