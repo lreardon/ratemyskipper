@@ -43,6 +43,7 @@ set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle publi
 
 set :service_unit_name, "sidekiq.service"
 set :sidekiq_monit_default_hooks, false
+set :sidekiq_default_hooks, false
 
 namespace :puma do
 	desc 'Create Directories for Puma Pids and Socket'
@@ -79,6 +80,7 @@ namespace :deploy do
 	before :starting,     :check_revision
 	after  :finishing,    :compile_assets
 	after  :finishing,    :cleanup
+	after  :finishing,    'sidekiq:restart'
 end
 
 # ps aux | grep puma    # Get puma pid
