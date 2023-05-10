@@ -14,7 +14,7 @@ class Skipper < ApplicationRecord
 	# Add validations for presence of all of the above properties
 	validates :firstname, :lastname, :boatname, presence: true
 
-	validate :is_unique
+	validate :unique?
 
 	def name
 		"#{firstname} #{lastname}"
@@ -22,14 +22,14 @@ class Skipper < ApplicationRecord
 
 	private
 
-	def is_unique
-		skippers = Skipper.where(firstname: firstname, lastname: lastname, boatname: boatname)
+	def unique?
+		skippers = Skipper.where(firstname:, lastname:, city:, state:)
 
 		raise DuplicateRecordError if skippers.count > 1
-		
-		return if skippers.count == 0
-		
+
+		return if skippers.count.zero?
+
 		skipper = skippers.first
-		errors.add(:skipper_id, "named #{name} with boat name #{boatname} already exists") unless skipper.id == id
+		errors.add(:skipper_id, "named #{name} in #{city}, #{state} already exists") unless skipper.id == id
 	end
 end
