@@ -13,24 +13,14 @@
       <%= form.label :boatname, "Boat name (exclude F/V)" %>
       <%= form.text_field :boatname %>
     </div>
-    <!--
-      <div class='flex flex-col lg:flex-row gap-6'>
-        <%= form.label :fishery, 'Fishery' %>
-        <div class='flex flex-col lg:flex-row gap-3'>
-          <% Fisheries.constants.map { |c| Fisheries.const_get c }.each do |fishery| %>
-            <div>
-              <%= form.radio_button :fishery, fishery %>
-              <%= form.label :fishery, fishery %>
-            </div>
-          <% end %>
-          <div>
-            <%= form.radio_button :fishery, '' %>
-            <%= form.label :fishery, 'Other' %>
-            <%= form.text_field :fishery, value: '' %>
-          </div>
-        </div>
-      </div>
-    -->
+		<div class='flex flex-col lg:flex-row gap-6'>
+			<%= form.label :city, 'City' %>
+      <%= form.text_field :city %>
+		</div>
+		<div class='flex flex-col lg:flex-row lg:items-center gap-3'>
+      <%= form.label :state, "State" %>
+      <%= form.select :state, options_for_select(Places::STATES.map { |state_double| state_double[1] }, skipper.state || 'AK') %>
+    </div>
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-100 text-lg cursor-pointer" %>
   </div>
 <% end %>

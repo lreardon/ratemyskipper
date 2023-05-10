@@ -78,7 +78,7 @@ class SkippersController < ApplicationController
 
 	# Only allow a list of trusted parameters through.
 	def skipper_params
-		puts permitted_params = params.fetch(:skipper, {}).permit(:firstname, :lastname, :boatname, :fishery)
+		puts permitted_params = params.fetch(:skipper, {}).permit(:firstname, :lastname, :boatname, :city, :state)
 		permitted_params[:boatname] = helpers.sanitize_boatname(permitted_params[:boatname]) if permitted_params[:boatname]
 
 		permitted_params

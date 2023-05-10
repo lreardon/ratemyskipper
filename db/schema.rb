@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_09_072613) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_10_022153) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -59,15 +59,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_09_072613) do
     t.string "firstname"
     t.string "lastname"
     t.string "boatname"
-    t.string "fishery"
+    t.string "city"
     t.boolean "active"
     t.uuid "creator_id"
+    t.string "state"
     t.index ["active"], name: "index_skippers_on_active"
     t.index ["boatname"], name: "index_skippers_on_boatname"
+    t.index ["city"], name: "index_skippers_on_city"
     t.index ["creator_id"], name: "index_skippers_on_creator_id"
     t.index ["firstname"], name: "index_skippers_on_firstname"
-    t.index ["fishery"], name: "index_skippers_on_fishery"
     t.index ["lastname"], name: "index_skippers_on_lastname"
+    t.index ["state"], name: "index_skippers_on_state"
   end
 
   create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|

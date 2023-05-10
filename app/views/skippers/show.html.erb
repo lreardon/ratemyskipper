@@ -6,8 +6,8 @@
   <div class='flex flex-col gap-3'>
     <h1><%= @skipper.name %></h1>
     <h3 class='text-2xl'><%= fv_boatname(@skipper.boatname) %></h3>
-    <% if @skipper.fishery %>
-      <h3 class='text-2xl'><%= @skipper.fishery %></h3>
+    <% if @skipper.city %>
+      <h3 class='text-2xl'><%= @skipper.city %>, <%= @skipper.state %></h3>
     <% end %>
   </div>
 
