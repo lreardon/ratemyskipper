@@ -52,5 +52,3 @@ config/secrets.yml
 
 notes.txt
 /config/credentials/test.key
-
-data/

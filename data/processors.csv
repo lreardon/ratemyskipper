@@ -1,0 +1,684 @@
+﻿Processor Code,Processor Type Name,Processor Type Code,ADFG Vessel Number,Company Business Name,Port Code,Port Name,Processor Contact Full Name,Operation Year,Operation Processor Facility Vessel Name,Address,City, State,Zip
+C10017,Catcher/Seller,CASO,45456,Charles R Seater,FCS,Floating Catcher Seller,Charles  R Seater,2023,Set net,PO Box 7552,Nikiski,AK,99635
+C10023,Catcher/Seller,CASO,43192,Fedor Z Kuzmin,FCS,Floating Catcher Seller,Fedor  Z Kuzmin,2023,Revolution,PO Box 896,Delta Junction,AK,99737
+C10025,Catcher/Seller,CASO,69300,David Chessik,FCS,Floating Catcher Seller,David Chessik,2023,Lucky Dog,PO Box 1824,Kenai,AK,99611
+C10038,Catcher/Seller,CASO,77806,Ellias G Brock,FCS,Floating Catcher Seller,Ellias G Brock,2023,Grandpa,19313 Inlet View Drive,Chugiak,AK,99567
+C10051,Catcher/Seller,CASO,32832,Brett W Roth,FCS,Floating Catcher Seller,Brett W Roth,2023,Missy,7810 Casey Circle,Anchorage,AK,99507
+C10075,Catcher/Seller,CASO,,James T Jorgensen,FCS,Floating Catcher Seller,James T Jorgensen,2023,,3237 S Treasure Cove Pl,Tucson,AZ,85713
+C10084,Catcher/Seller,CASO,77630,Doll Fisheries LLC,FCS,Floating Catcher Seller,Nathan S Doll,2023,Granite Bay,PO Box 23,Cordova,AK,99574
+C10099,Catcher/Seller,CASO,77691,Clifford M Dejax,FCS,Floating Catcher Seller,Clifford  M Dejax,2023,Knot Mine,35000 James Street,Soldotna,AK,99669
+C10170,Catcher/Seller,CASO,,Curt A Rudd,FCS,Floating Catcher Seller,Curt  A Rudd,2023,Set net,5603 Dalzell CR,Anchorage,AK,99507
+C10174,Catcher/Seller,CASO,76964,Michael Bobo,FCS,Floating Catcher Seller,Michael Bobo,2023,Moonspirit,PO Box 373,Craig,AK,99921
+C10221,Catcher/Seller,CASO,,Brad L Langvardt,FCS,Floating Catcher Seller,Brad L Langvardt,2023,Richmond Star,PO Box 74,Seldovia,AK,99663
+C10257,Catcher/Seller,CASO,50636,Jason M Rooney,FCS,Floating Catcher Seller,Jason  M Rooney,2023,Mandi J,PO Box 307,Wrangell,AK,99929
+C10300,Catcher/Seller,CASO,99999,Falls Creek Fisheries,FCS,Floating Catcher Seller,Megan Smith,2023,Set Net Operation,2405 Watergate Way,Kenai,AK,99611
+C10326,Catcher/Seller,CASO,75356,Heritage Fisheries,FCS,Floating Catcher Seller,Brenda Brenda,2023,Timber Wolf,PO Box 1996,Wrangell,AK,99929
+C10349,Catcher/Seller,CASO,,Su Salmon Co,FCS,Floating Catcher Seller,Michael  E Wood,2023,Set Net,PO Box 773,Talkeetna,AK,99676
+C10359,Catcher/Seller,CASO,58082,Jeffrey Glosser,FCS,Floating Catcher Seller,Jeffre A Glosser,2023,Aquari Ann,P O Box 39315,Ninilchik,AK,99639
+C10381,Catcher/Seller,CASO,,Susan A Ryherd,FCS,Floating Catcher Seller,Susan  A Ryherd,2023,,101 Linda Lane,Soldotna,AK,99669
+C10507,Catcher/Seller,CASO,67358,Zinon F Kuzmin,FCS,Floating Catcher Seller,Zinon F Kuzmin,2023,Coral,P O Box 873414,Wasilla,AK,99687
+C10523,Catcher/Seller,CASO,01016,Jim L Farmer,FCS,Floating Catcher Seller,Jim  L Farmer,2023,William,P O Box 692,Craig,AK,99921
+C10525,Catcher/Seller,CASO,52923,Cody Wegener,FCS,Floating Catcher Seller,Cody Wegener,2023,Jenny Lynn,PO Box 2078,Petersburg,AK,99833
+C10564,Catcher/Seller,CASO,69078,Andrew J Bean,FCS,Floating Catcher Seller,Andrew J Bean,2023,Keku Strait,P O Box 593,Kake,AK,99830
+C10592,Catcher/Seller,CASO,53403,Michael J Lockabey,FCS,Floating Catcher Seller,Michael J Lockabey,2023,Pacific Nomad,P O BOX 1542,WRANGELL,AK,99929
+C11536,Catcher/Seller,CASO,31231,Kory H Versteeg,FCS,Floating Catcher Seller,Kory H Versteeg,2023,Confidence,PO Box 1752,Petersburg,AK,99833
+C11548,Catcher/Seller,CASO,78178,Brian S Jurenka,FCS,Floating Catcher Seller,Brian S Jurenka,2023,Line Stretcher,2630 W River Drive,Eagle River,AK,99577
+C11550,Catcher/Seller,CASO,22363,Jeremy T Darcangelo,FCS,Floating Catcher Seller,Jeremy  T Darcangelo,2023,Canvas Back,P.O. Box 188,Manokotak,AK,99628
+C11570,Catcher/Seller,CASO,,Anne L Barnett,FCS,Floating Catcher Seller,Anne  L Barnett,2023,set net,8101 E 18TH AVE,Anchorage,AK,99504
+C11571,Catcher/Seller,CASO,44071,Brad Von Wichman,FCS,Floating Catcher Seller,Brad Von Wichman,2023,Alexandra,2940 Mallard Lane,Anchorage,AK,99508
+C11578,Catcher/Seller,CASO,,Fred Thoerner,FCS,Floating Catcher Seller,Fred Thoerner,2023,,9033 Washburn Street,Anchorage,AK,99502
+C11584,Catcher/Seller,CASO,39339,FV Elle,FCS,Floating Catcher Seller,John H Stelling,2023,Elle,PO Box 929,Valdez,AK,99686
+C11598,Catcher/Seller,CASO,76123,Ryan D Cropper,FCS,Floating Catcher Seller,Ryan Cropper,2023,Seaclusion,1111 E Dowling RD,Anchorage,AK,99518
+C11610,Catcher/Seller,CASO,32560,Paul E Warner,FCS,Floating Catcher Seller,Paul  E Warner,2023,Papa Whiskey,P O BOX 1015,KASILOF,AK,99610
+C11618,Catcher/Seller,CASO,78165,Dylan S Braund,FCS,Floating Catcher Seller,Dylan  S Braund,2023,Skiff,PO Box 50,Homer,AK,99603
+C11765,Catcher/Seller,CASO,17825,Ronald R Henry,FCS,Floating Catcher Seller,Ronald  R Henry,2023,Josie J,2450 Tongass Ave # 141,Ketchikan,AK,99901
+C11814,Catcher/Seller,CASO,18649,Amanda Dunaway,FCS,Floating Catcher Seller,Amanda Dunaway,2023,Pegge,General Delivery,Gustavus,AK,99826
+C11828,Catcher/Seller,CASO,43192,Kallistrat Kuzmin,FCS,Floating Catcher Seller,Kallistrat Kuzmin,2023,Sea Glider,PO Box 896,Delta Junction,AK,99737
+C11845,Catcher/Seller,CASO,74651,Lance J Miethe,FCS,Floating Catcher Seller,Lance J Miethe,2023,Crystal Grady,PO Box PPV,Ketchikan,AK,99950
+C11863,Catcher/Seller,CASO,73936,Jared L Grams,FCS,Floating Catcher Seller,Jared L Grams,2023,Kingfisher,PO Box 437,Hoonah,AK,99829
+C11891,Catcher/Seller,CASO,69508,Wendi J Stickwan,FCS,Floating Catcher Seller,Wendi  J Stickwan,2023,Shekinah,848 BROWN DEER RD,KETCHIKAN,AK,99901
+C11892,Catcher/Seller,CASO,77391,Mark E Mahan,FCS,Floating Catcher Seller,Mark E Mahan,2023,Three Sisters,BOX 2405,HOMER,AK,99603
+C11906,Catcher/Seller,CASO,,Gregorio D Mendez,FCS,Floating Catcher Seller,Gregorio  D Mendez,2023,,P O Box 996,Nome,AK,99762
+C11919,Catcher/Seller,CASO,,Scott T Payenna,FCS,Floating Catcher Seller,Scott T Payenna,2023,,PO Box 1614,Nome,AK,99762
+C11929,Catcher/Seller,CASO,19786,Mark Knight,FCS,Floating Catcher Seller,Mark Knight,2023,Mighty O,12620 Neher Ridge Drive,Anchorage,AK,99516
+C11942,Catcher/Seller,CASO,11034,Lyle G Myrvold,FCS,Floating Catcher Seller,Lyle  G Myrvold,2023,Nakchamik,PO Box 870181,Wasilla,AK,99687
+C11948,Catcher/Seller,CASO,68010,Steve Smith,FCS,Floating Catcher Seller,Steve Smith,2023,Banshee,PO Box 39143,Ninilchik,AK,99639
+C11971,Catcher/Seller,CASO,76911,Joseph E Person,FCS,Floating Catcher Seller,Joseph E Person,2023,Traveler,24120 RAMBLER RD.,Chugiak,AK,99567
+C11972,Catcher/Seller,CASO,76976,Eugene B Desjarlais,FCS,Floating Catcher Seller,Eugene B Desjarlais,2023,Amelia Rose,6550 Limestone Circle,Anchorage,AK,99507
+C11976,Catcher/Seller,CASO,49311,Sonak Fisheries,FCS,Floating Catcher Seller,Kyle A Zimin,2023,Fischer,PO Box 387,Naknek,AK,99633
+C11980,Catcher/Seller,CASO,78845,Raymond G Nix jr,FCS,Floating Catcher Seller,Raymond G Nix jr,2023,Strait Crazy,PO BOX 3632,PALMER,AK,99645
+C12123,Catcher/Seller,CASO,61689,Ron Kavanaugh,FCS,Floating Catcher Seller,Ron Kavanaugh,2023,Sylvia Star,1533 Sawmill Circle,Kodiak,AK,99615
+C12128,Catcher/Seller,CASO,25928,Nels K Otness,FCS,Floating Catcher Seller,Nels  K Otness,2023,Commander,P O Box 2058,Petersburg,AK,99833
+C12138,Catcher/Seller,CASO,58172,Avraamy D Ruetov,FCS,Floating Catcher Seller,Avraamy D Ruetov,2023,Recovery,P O BOX 3207,HOMER,AK,99603
+C12145,Catcher/Seller,CASO,,David D Evans,FCS,Floating Catcher Seller,David D Evans,2023,,PO Box 1158,Nome,AK,99762
+C12152,Catcher/Seller,CASO,78356,Richard Ragan,FCS,Floating Catcher Seller,Richard  Ragan,2023,Choptank,5940 Greece Drive,Anchorage,AK,99516
+C12159,Catcher/Seller,CASO,77647,Michael J Towle,FCS,Floating Catcher Seller,Michael J Towle,2023,May Run,PO Box 2234,Cordova,AK,99574
+C12160,Catcher/Seller,CASO,77370,Alimpi N Reutov,FCS,Floating Catcher Seller,Alimpi N Reutov,2023,Tin Can,8537 W Carmel Road,Wasilla,AK,99623
+C12185,Catcher/Seller,CASO,78556,Dillon M Pogue,FCS,Floating Catcher Seller,Dillon  M Pogue,2023,Akutan Zero,P O BOX 2352,KENAI,AK,99611
+C12193,Catcher/Seller,CASO,78720,Linda Ragan,FCS,Floating Catcher Seller,Linda  Ragan,2023,Relentless,5940 Greece Drive,Anchorage,AK,99516
+C12213,Catcher/Seller,CASO,60160,Josh L Osborne,FCS,Floating Catcher Seller,Josh L Osborne,2023,Taituiq,PO Box 1561,Nome,AK,99762
+C12401,Catcher/Seller,CASO,17719,Brandon Synder,FCS,Floating Catcher Seller,Brandon Ruger Synder,2023,Half Moon,1421 Halibut Point Road,Sitka,AK,99835
+C12422,Catcher/Seller,CASO,72711,Lynn H Keogh,FCS,Floating Catcher Seller,Merry Keogh,2023,The Hunter II,3417 N Slaton Street,Wasilla,AK,99654
+C12428,Catcher/Seller,CASO,36401,Brian L Mason,FCS,Floating Catcher Seller,Brian L Mason,2023,Miz Liz,19435 Upper Skyline Drive,Eagle River,AK,99577
+C12429,Catcher/Seller,CASO,66389,Travis Keller,FCS,Floating Catcher Seller,Travis  Keller,2023,Good Ethics,36275 Irons Ave,Soldotna,AK,99669
+C12430,Catcher/Seller,CASO,18407,Wayne R Ellis,FCS,Floating Catcher Seller,Wayne  R Ellis,2023,Mercedes,PO Box 2135,Wrangell,AK,99929
+C12453,Catcher/Seller,CASO,78767,Devin Johnson,FCS,Floating Catcher Seller,Devin Johnson,2023,Grin Reaper,3640 E 142nd ave,Anchorage,AK,99516
+C12465,Catcher/Seller,CASO,79101,Erik C Lewis,FCS,Floating Catcher Seller,Erik C Lewis,2023,Sanctification,PO Box 872650,Wasilla,AK,99687
+C12475,Catcher/Seller,CASO,77358,Randy W Merritt,FCS,Floating Catcher Seller,Randy W Merritt,2023,R and R,PO Box 646,Cordova,AK,99574
+C12481,Catcher/Seller,CASO,43192,Romil F Kuzmin,FCS,Floating Catcher Seller,Romil F Kuzmin,2023,Outbreak,PO Box 872305,Wasilla,AK,99687
+C12595,Catcher/Seller,CASO,27438,Pat K Parrish,FCS,Floating Catcher Seller,Pat  K Parrish,2023,Chancy,PO Box 2895,Sitka,AK,99835
+C12620,Catcher/Seller,CASO,62959,Patrick P McCormick,FCS,Floating Catcher Seller,Patrick  P McCormick,2023,Sportsman,10207 Chain Of Rock,Eagle River,AK,99577
+C12709,Catcher/Seller,CASO,69165,Gregory P Kern,FCS,Floating Catcher Seller,Gregory  P Kern,2023,Dawn Treader,11701 Wagner Street,Anchorage,AK,99516
+C12710,Catcher/Seller,CASO,79128,Bradley J Russell,FCS,Floating Catcher Seller,Bradley J Russell,2023,Bluff Watch,Box 1426,Delta Junction,AK,99737
+C12723,Catcher/Seller,CASO,18223,William A Walder,FCS,Floating Catcher Seller,William A Walder,2023,Yankee,PO Box 11,Elfin Cove,AK,99825
+C12733,Catcher/Seller,CASO,79410,Richard J Kramer,FCS,Floating Catcher Seller,Richard J Kramer,2023,Reel Nauti,3250 N Old Squaw loop,Wasilla,AK,99654
+C12736,Catcher/Seller,CASO,79335,Mark E Buchner,FCS,Floating Catcher Seller,Mark  E Buchner,2023,Sun Dog,PO BOX 7819,BEND,OR,97708
+C12739,Catcher/Seller,CASO,78818,Robert E Honeysett,FCS,Floating Catcher Seller,Robert E Honeysett,2023,Loretta Ann,5050 East Bit Circle,Wasilla,AK,99654
+C12740,Catcher/Seller,CASO,77154,David S Hamre,FCS,Floating Catcher Seller,David S Hamre,2023,Poki,P O Box 111492,Anchorage,AK,99511
+C12744,Catcher/Seller,CASO,43511,Dale C Myers,FCS,Floating Catcher Seller,Dale Dale,2023,Prowler,PO Box 433,King Salmon,AK,99613
+C12755,Catcher/Seller,CASO,75662,Gregory A Bottjen,FCS,Floating Catcher Seller,Gregory A Bottjen,2023,Alexa,1150 S Colony Way STE 3  PMB 406,Palmer,AK,99654
+C12760,Catcher/Seller,CASO,30170,Tom J Huffer Jr,FCS,Floating Catcher Seller,Tom J Huffer Jr,2023,Joyce Maria,11551 Targhee Loop,Eagle River,AK,99577
+C12775,Catcher/Seller,CASO,69114,David N Mork,FCS,Floating Catcher Seller,David  N Mork,2023,The Retriever,PO Box 1500,Wrangell,AK,99929
+C12798,Catcher/Seller,CASO,79029,Campbell's Fishing Charters,FCS,Floating Catcher Seller,Clyde  M Campbell IV,2023,4 C'S,2290 Oyster Ave,Ketchikan,AK,99901
+C12814,Catcher/Seller,CASO,17688,Greg A Haag,FCS,Floating Catcher Seller,Greg  A Haag,2023,Janis M,PO Box 6447,Sitka,AK,99835
+C12817,Catcher/Seller,CASO,60144,Dia A Kuzmin,FCS,Floating Catcher Seller,Dia A Kuzmin,2023,Automatic,PO Box 758,Delta Junction,AK,99737
+C12901,Catcher/Seller,CASO,79158,Joel P Teune,FCS,Floating Catcher Seller,Joel  P Teune,2023,Teune,6239 S Tongass Hwy,Ketchikan,AK,99901
+C12923,Catcher/Seller,CASO,31160,Brian Bitz,FCS,Floating Catcher Seller,Brian Bitz,2023,Prospect,PO Box 627,Hoonah,AK,99829
+C12981,Catcher/Seller,CASO,24316,Marie Johanson,FCS,Floating Catcher Seller,Marie Johanson,2023,Crusader,8320 5TH ave ne,Seattle,WA,98115
+C12992,Catcher/Seller,CASO,05488,Christopher L McMurren,FCS,Floating Catcher Seller,Christopher L McMurren,2023,Nina Fay,PO Box 312,Wrangell,AK,99929
+C13009,Catcher/Seller,CASO,31069,John J Black,FCS,Floating Catcher Seller,John  Black,2023,Bifrost,PO Box 585,Hoonah,AK,99829
+C13067,Catcher/Seller,CASO,77870,Star H Argo,FCS,Floating Catcher Seller,Star H Argo,2023,Resurrection,PO Box 5043,Ketchikan,AK,99901
+C13101,Catcher/Seller,CASO,72711,Lynn H Keogh,FCS,Floating Catcher Seller,Lynn  H Keogh,2023,The Hunter II,3417 N Slaton Street,Wasilla,AK,99654
+C13111,Catcher/Seller,CASO,36401,Brent J Mason,FCS,Floating Catcher Seller,Brent J Mason,2023,Miz Liz,18500 Upper Mccrary Road,Eagle River,AK,99577
+C13112,Catcher/Seller,CASO,76971,Timothy P Gervais,FCS,Floating Catcher Seller,Timothy P Gervais,2023,Wolverine,PO Box 7,Ruby,AK,99768
+C13114,Catcher/Seller,CASO,53600,Howard Daniel Hull,FCS,Floating Catcher Seller,H Daniel Hull,2023,Gretchen S,19300 Villages Scenic Parkway,Anchorage,AK,99516
+C13119,Catcher/Seller,CASO,58253,Darrin J Anderson,FCS,Floating Catcher Seller,Darrin J Anderson,2023,Serenity,3290 South Lakeshore Loop,Palmer,AK,99645
+C13124,Catcher/Seller,CASO,48487,Benjamin T Daigle,FCS,Floating Catcher Seller,Benjamin T Daigle,2023,New Wave,39671 Brenmark Road,Homer,AK,99603
+C13134,Catcher/Seller,CASO,79086,Nimer Azzam,FCS,Floating Catcher Seller,Nimer Azzam,2023,,932 E 45TH #3,Anchorage,AK,99503
+C13151,Catcher/Seller,CASO,79137,Skylar J Scheid,FCS,Floating Catcher Seller,Skylar  J Scheid,2023,Phoenix,PO Box 39605,Ninilchik,AK,99639
+C13174,Catcher/Seller,CASO,62591,Kelly J Mcgovern,FCS,Floating Catcher Seller,Kelly J Mcgovern,2023,Sockeye Red,13770 Old Rabbit Creek Road,Anchorage,AK,99516
+C13194,Catcher/Seller,CASO,44071,Alexandra C Von Wichman,FCS,Floating Catcher Seller,Alexandra  C Von Wichman,2023,Alexandra,2940 Mallard Lane,Anchorage,AK,99508
+C13253,Catcher/Seller,CASO,76077,David W Salter,FCS,Floating Catcher Seller,David  W Salter,2023,Roughnek 8,110 Somer Drive,Sitka,AK,99835
+C13304,Catcher/Seller,CASO,71585,Hannah C Miethe,FCS,Floating Catcher Seller,Hannah  C Miethe,2023,Carolina,PO Box 941,Wrangell,AK,99929
+C13330,Catcher/Seller,CASO,63361,Adem P Boeckmann,FCS,Floating Catcher Seller,Adem  P Boeckmann,2023,Anchor Point,PO Box 1007,Nome,AK,99752
+C13336,Catcher/Seller,CASO,78609,Istvan J Fuzak,FCS,Floating Catcher Seller,Istvan  J Fuzak,2023,Pacific Invader,PO Box 1137,Craig,AK,99921
+C13424,Catcher/Seller,CASO,79205,Comercial Fishing,FCS,Floating Catcher Seller,Charles M Gadd,2023,Shady Lady,PO Box 1033,Wrangell,AK,99929
+C13437,Catcher/Seller,CASO,,Jeff G Tetrick,FCS,Floating Catcher Seller,Jeff G Tetrick,2023,,PO BOX 1473,NOME,AK,99762
+C13444,Catcher/Seller,CASO,78166,Jacob Wright,FCS,Floating Catcher Seller,Jacob Wright,2023,Icebreaker,704 River Road,Orange Park,FL,32073
+C13452,Catcher/Seller,CASO,79525,AKCO Fisheries LLC,FCS,Floating Catcher Seller,Mark R Arnold,2023,Sewards Folly,29650 Country Road 361,Buena Vista,CO,81211
+C13464,Catcher/Seller,CASO,36461,Adam J Thomas,FCS,Floating Catcher Seller,Adam J Thomas,2023,SEA BEAR,2521 E Mountain Village dr,Wasilla,AK,99654
+C13476,Catcher/Seller,CASO,54929,Jim C Wardlow,FCS,Floating Catcher Seller,Jim C Wardlow,2023,Sea Bird,7362 W Parks Hwy #313,Wasilla,AK,99623
+C13495,Catcher/Seller,CASO,79324,Aaron J Mahoney,FCS,Floating Catcher Seller,Aaron   J Mahoney,2023,Liberty,PO Box 39416,Ninilchik,AK,99639
+C13500,Catcher/Seller,CASO,77604,Cora W Linebaugh,FCS,Floating Catcher Seller,Cora W Linebaugh,2023,Miller Draft,19313 Inlet View Drive,Chugiak,AK,99567
+C13504,Catcher/Seller,CASO,57873,Michael M Flora,FCS,Floating Catcher Seller,Michael M Flora,2023,Hi Tech,4646 Rochelle rd,Homer,AK,99603
+C13508,Catcher/Seller,CASO,18055,Roseann L Demmert,FCS,Floating Catcher Seller,Roseann L Demmert,2023,Jeri Lyn,PO Box 223,Klawock,AK,99925
+C13509,Catcher/Seller,CASO,18055,Archie W Demmert,FCS,Floating Catcher Seller,Archie W Demmert,2023,Jeri Lyn,PO Box 223,Klawock,AK,99925
+C13517,Catcher/Seller,CASO,79058,Cynthia R Johnson,FCS,Floating Catcher Seller,Cynthia R Johnson,2023,Anna Lyn,PO Box 276,Klawock,AK,99925
+C13518,Catcher/Seller,CASO,79058,John M Johanson,FCS,Floating Catcher Seller,John M Johanson,2023,Anna Lyn,PO Box 276,Klawock,AK,99925
+C13522,Catcher/Seller,CASO,79338,Kelly M Maixner,FCS,Floating Catcher Seller,Kelly  M Maixner,2023,Seacilia,PO Box 521792,Big Lake,AK,99652
+C13531,Catcher/Seller,CASO,17825,George S Peterson,FCS,Floating Catcher Seller,George S Peterson,2023,Josie J,5785 South Tongass,Ketchikan,AK,99901
+C13535,Catcher/Seller,CASO,77185,Tony Sanderson,FCS,Floating Catcher Seller,Tony  Sanderson,2023,Silver Dawn,PO Box 78,Hydaburg,AK,99922
+C13556,Catcher/Seller,CASO,51936,Austin Burton,FCS,Floating Catcher Seller,Austin Brown,2023,East Side,Po Box 935,Kenai,AK,99611
+C13575,Catcher/Seller,CASO,77825,Darin M Gilman,FCS,Floating Catcher Seller,Darin  M Gilman,2023,Redline,PO Box 2236,Cordova,AK,99574
+C13586,Catcher/Seller,CASO,38230,Courser Corp,FCS,Floating Catcher Seller,Matthew E Kurtz,2023,Courser,4220 Grant st,Burnaby,BC,V5C3N
+C13596,Catcher/Seller,CASO,18042,Oral A Wallace,FCS,Floating Catcher Seller,Oral A Wallace,2023,Glory,PO Box 1746,Sitka,AK,99835
+C13659,Catcher/Seller,CASO,25675,Matthew G Hockema,FCS,Floating Catcher Seller,Matthew G Hockema,2023,East Rip,54699 Rolling Meadows Road,Homer,AK,99603
+C13664,Catcher/Seller,CASO,71781,Paul J Menish,FCS,Floating Catcher Seller,Paul J Menish,2023,Hi Nikki,PO Box 33,Petersburg,AK,99833
+C13682,Catcher/Seller,CASO,75265,Justin D Evans,FCS,Floating Catcher Seller,Justin D Evans,2023,Mustang,PO Box 1013,Sitka,AK,99835
+C13684,Catcher/Seller,CASO,78839,Michael Kusnetsov,FCS,Floating Catcher Seller,Michael Kusnetsov,2023,Persistence,PO Box 1847,Homer,AK,99603
+C13697,Catcher/Seller,CASO,74049,Daniel O'Neil,FCS,Floating Catcher Seller,Daniel K O'Neil,2023,Julie Kay,609 Queen st,Petersburg,AK,99833
+C13703,Catcher/Seller,CASO,78114,Jim Edgars Fishing,FCS,Floating Catcher Seller,,2023,Edgars Skiff,PO BOX 1814,PETERSBURG,AK,99833
+C13704,Catcher/Seller,CASO,56291,Jacob Shangin,FCS,Floating Catcher Seller,Jacob Shangin,2023,Nicole Danielle,PO Box 112112,Anchorage,AK,99511
+C13709,Catcher/Seller,CASO,64177,Robby Tripp,FCS,Floating Catcher Seller,Robby Tripp,2023,Why Knot,465 Nagai ave,Sand Point,AK,99661
+C13712,Catcher/Seller,CASO,78360,Darren LaChapelle,FCS,Floating Catcher Seller,Darren  LaChapelle,2023,Kendyl B,PO Box 2058,Petersburg,AK,99833
+C13721,Catcher/Seller,CASO,79202,Samuil Reutov,FCS,Floating Catcher Seller,Samuil  Reutov,2023,Linebacker,PO Box 432,Homer,AK,99603
+C13726,Catcher/Seller,CASO,18286,Martin Gilbert,FCS,Floating Catcher Seller,Martin Gilbert,2023,Tyee,212 Katlian st,Sitka,AK,99835
+C13731,Catcher/Seller,CASO,77917,Ian Americus,FCS,Floating Catcher Seller,Ian  Americus,2023,LUCID DREAM,7712 Snow View dr,Anchorage,AK,99507
+C13732,Catcher/Seller,CASO,21900,Clifton M Ivanoff,FCS,Floating Catcher Seller,Clifton M Ivanoff,2023,New Dawn,PO BOX 8883,KODIAK,AK,99615
+C13737,Catcher/Seller,CASO,76448,Andy M Mathews,FCS,Floating Catcher Seller,Andy M Mathews,2023,Morning Bite,PO Box 8382,Ketchikan,AK,99901
+C13738,Catcher/Seller,CASO,58817,Nathaniel M Rose,FCS,Floating Catcher Seller,Nathaniel M Rose,2023,June Sea,1812 Mission Road,Kodiak,AK,99615
+C13741,Catcher/Seller,CASO,11081,Charles Jackson,FCS,Floating Catcher Seller,Charles Jackson,2023,Julie C,54 Johnson ave,Sandpoint,AK,99661
+C13742,Catcher/Seller,CASO,,Cornell Bean SR,FCS,Floating Catcher Seller,Cornell Bean sr,2023,,PO Box 150,Kake,AK,99830
+C13743,Catcher/Seller,CASO,68863,Michael L Bauer,FCS,Floating Catcher Seller,Michael  L Bauer,2023,At Ease,PO Box 1897,Wrangell,AK,99929
+C13744,Catcher/Seller,CASO,00147,Nisan Rich,FCS,Floating Catcher Seller,Nisan Rich,2023,Eowyn,PO Box 1703,Kodiak,AK,99615
+C13746,Catcher/Seller,CASO,44828,Mike Ferris,FCS,Floating Catcher Seller,Mike Ferris,2023,Cally Rose F/V,PO Box 331,Kodiak,AK,99615
+C13747,Catcher/Seller,CASO,06710,Mason Harrington,FCS,Floating Catcher Seller,Mason  Harrington,2023,Irene H,PO Box 813,Kodiak,AK,99615
+C13748,Catcher/Seller,CASO,31170,Keith Reynolds,FCS,Floating Catcher Seller,Keith  Reynolds,2023,El Caporal,3481 Eds way,Kodiak,AK,99615
+C13751,Catcher/Seller,CASO,32685,Eduardo t Perez,FCS,Floating Catcher Seller,Eduardo  t Perez,2023,VeroVictoria,PO Box 208,Kodiak,AK,99615
+C13752,Catcher/Seller,CASO,78166,John Vannatta,FCS,Floating Catcher Seller,John Vannatta,2023,Blinko,1000 Nickajack Landing,South Pittsburg,TN,37380
+C13761,Catcher/Seller,CASO,58382,Kirian Kuzmin,FCS,Floating Catcher Seller,Kirian I Kuzmin,2023,Currency,PO Box 1520,Homer,AK,99603
+C13764,Catcher/Seller,CASO,21809,Jon Botz,FCS,Floating Catcher Seller,Jon Botz,2023,Anna D,PO Box 5538,Kodiak,AK,99615
+C13769,Catcher/Seller,CASO,32415,Darren Platt,FCS,Floating Catcher Seller,Darren Platt,2023,Agnes Sabine,P O Box 1413,Kodiak,AK,99615
+C13773,Catcher/Seller,CASO,32424,Joe Hochmuth,FCS,Floating Catcher Seller,Joe Hochmuth,2023,Cape Providence,821 E Tagura st,Kodiak,AK,99615
+C13779,Catcher/Seller,CASO,21882,Mitchell Pruitt,FCS,Floating Catcher Seller,Mitchell Pruitt,2023,Mikaylay Jo,PO Box 2278,Kodiak,AK,99615
+C13782,Catcher/Seller,CASO,36546,James E Johnson,FCS,Floating Catcher Seller,James  E Johnson,2023,Kestral,PO Box 945,Kodiak,AK,99615
+C13787,Catcher/Seller,CASO,35676,Nicholas Troxell,FCS,Floating Catcher Seller,Nicholas Troxell,2023,Olivia Braelyn,1615 Larch st,Kodiak,AK,99615
+C13790,Catcher/Seller,CASO,75382,Robert Carter,FCS,Floating Catcher Seller,Robert Carter,2023,Faith,PO Box 2817,Kodiak,AK,99615
+C13792,Catcher/Seller,CASO,44828,Jeremy Abena,FCS,Floating Catcher Seller,Jeremy Abena,2023,Cally Rose,PO Box 2277,Kodiak,AK,99615
+C13805,Catcher/Seller,CASO,50529,Nicholas Hoffman,FCS,Floating Catcher Seller,Nicholas Hoffman,2023,Relentless,PO Box 1212,Kodiak,AK,99615
+C13807,Catcher/Seller,CASO,,Christopher J Kalerak,FCS,Floating Catcher Seller,Christopher Kalerak,2023,,PO Box 1257,Nome,AK,99762
+C13817,Catcher/Seller,CASO,77156,Kelly Warren,FCS,Floating Catcher Seller,Kelly Warren,2023,Redemption,PO Box 472,Sitka,AK,99835
+C13820,Catcher/Seller,CASO,78867,Randall W Easterly,FCS,Floating Catcher Seller,Randall W Easterly,2023,Predator,PO Box 1524,Wrangell,AK,99929
+C13832,Catcher/Seller,CASO,79410,Lita Lubitsh-White,FCS,Floating Catcher Seller,Lita Lubitsh-White,2023,Reel Nauti,1320 Annapolis Dr,Anchorage,AK,99508
+C13834,Catcher/Seller,CASO,79384,Go Time Charters LLC,FCS,Floating Catcher Seller,Eric C Johnson,2023,Go Time,9000 Lance CIR,Anchorage,AK,99502
+C13873,Catcher/Seller,CASO,79497,Donald Hughes,FCS,Floating Catcher Seller,Donald  Hughes,2023,Bounty Hunter,35795 King Salmon ave,Soldotna,AK,99669
+C13878,Catcher/Seller,CASO,61554,Michael Johnson,FCS,Floating Catcher Seller,Michael  Johnson,2023,Amanda J,PO Box 1344,Sitka,AK,99835
+C13885,Catcher/Seller,CASO,78983,John Tousignant,FCS,Floating Catcher Seller,John  Tousignant,2023,Two ZZ Wake,11658 E Soapstone rd,Palmer,AK,99645
+C13887,Catcher/Seller,CASO,76855,Jordan VanDuine,FCS,Floating Catcher Seller,Jordan VanDuine,2023,Karma,PO Box 741,Valdez,AK,99686
+C13892,Catcher/Seller,CASO,79320,Chance J Omary,FCS,Floating Catcher Seller,Chance J Omary,2023,Omary,PO BOX 879484,WASILLA,AK,99687
+C13898,Catcher/Seller,CASO,45955,Macdara Bryan,FCS,Floating Catcher Seller,Macdara Bryan,2023,Tatkret,9550 Arlene dr,Anchorage,AK,99502
+C13906,Catcher/Seller,CASO,79500,Dale Z Hough,FCS,Floating Catcher Seller,Dale  Z Hough,2023,Miss Teri,11320 Hill Drive,Anchorage,AK,99507
+C13911,Catcher/Seller,CASO,18733,Jonathan W Randrup,FCS,Floating Catcher Seller,Jonathan  W Randrup,2023,Whidby,PO Box 44,Petersburg,AK,99833
+C13913,Catcher/Seller,CASO,77205,Max Finch,FCS,Floating Catcher Seller,Max Finch,2023,Gary King,35292 STERLING HWY,STERLING,AK,99672
+C13918,Catcher/Seller,CASO,17825,Josephine Guthrie,FCS,Floating Catcher Seller,Josephine Guthrie,2023,Josie J,1104 Woodland ave,Ketchikan,AK,99901
+C13925,Catcher/Seller,CASO,57796,Robert Hager,FCS,Floating Catcher Seller,Robert Hager,2023,K-Lange,PO Box 1552,Cordova,AK,99574
+C13926,Catcher/Seller,CASO,79514,Mark Spencer,FCS,Floating Catcher Seller,Mark Spencer,2023,Big Willie,9440 Arlene dr,Anchorage,AK,99502
+C13933,Catcher/Seller,CASO,23451,Rudolph k Johanson,FCS,Floating Catcher Seller,Rudolph k Johanson,2023,Prospector,411 Front st,Ketchikan,AK,99901
+C13935,Catcher/Seller,CASO,23451,Lucas  Johanson,FCS,Floating Catcher Seller,Lucas Johanson,2023,Prospector,320 Bawden st apt 717,Ketchikan,AK,99901
+C13936,Catcher/Seller,CASO,00736,David L Sulser SR,FCS,Floating Catcher Seller,David L Sulser SR,2023,Shanbre,109 Sharon dr,Sitka,AK,99835
+C13939,Catcher/Seller,CASO,79318,John Johnson,FCS,Floating Catcher Seller,John Johnson,2023,Glacier Chaser,5787 Grand Teton lp,Anchorage,AK,99502
+C13942,Catcher/Seller,CASO,38208,Keith A Billi,FCS,Floating Catcher Seller,Keith A Billi,2023,Whitney Jo,PO Box 1003,Petersburg,AK,99833
+C13944,Catcher/Seller,CASO,76336,Jerome E Dahl jr,FCS,Floating Catcher Seller,Jerome E Dahl jr,2023,Rebel Isle,PO Box 1275,Petersburg,AK,99833
+C13947,Catcher/Seller,CASO,62895,Steven G Peavey,FCS,Floating Catcher Seller,Steven Peavey,2023,Gail Renee,PO Box 101,Craig,AK,99921
+C13950,Catcher/Seller,CASO,77155,John Carle,FCS,Floating Catcher Seller,John Carle,2023,Silver Down,PO Box 1,Hydaburg,AK,99922
+C13953,Catcher/Seller,CASO,62895,Melyssa Nagamine,FCS,Floating Catcher Seller,Melyssa Nagamine,2023,Gail Renee,PO Box 101,Craig,AK,99921
+C13956,Catcher/Seller,CASO,40252,Ronald C Durgan,FCS,Floating Catcher Seller,Ronald C Durgan,2023,Raven,PO Box 340,Craig,AK,99921
+C13958,Catcher/Seller,CASO,40252,June E Durgan,FCS,Floating Catcher Seller,June E Durgan,2023,Raven,PO Box 340,Craig,AK,99921
+C13959,Catcher/Seller,CASO,79513,Barry M Willard,FCS,Floating Catcher Seller,Barry M Willard,2023,Amanda Rose,HC60 Box 138C,Copper Center,AK,99573
+C13961,Catcher/Seller,CASO,77155,Jan M Carle,FCS,Floating Catcher Seller,Jan M Carle,2023,Silver Dawn,PO Box 1,Hydaburg,AK,99922
+C13962,Catcher/Seller,CASO,77185,Cayden Carle,FCS,Floating Catcher Seller,Cayden Carle,2023,Silver Dawn,PO BOX 1,Hydaburg,AK,99922
+C13964,Catcher/Seller,CASO,09190,Mackenzie Lewis,FCS,Floating Catcher Seller,Mackenzie Lewis,2023,Ralder,690 Florida st,Parhump,NV,89048
+C13965,Catcher/Seller,CASO,43664,William OS Evans,FCS,Floating Catcher Seller,William Evans,2023,Bella Donna,3411 Willow Place,Anchorage,AK,99517
+C13966,Catcher/Seller,CASO,79516,Donald K Johnson,FCS,Floating Catcher Seller,Donald K Johnson,2023,Boat One,36160 Schultz st,Soldotna,AK,99669
+C13967,Catcher/Seller,CASO,24316,Mary Evens,FCS,Floating Catcher Seller,Mary  Evens,2023,Crusader,22717 Lakeview DR Unit A5,Mountlake Terrace,WA,98043
+C13968,Catcher/Seller,CASO,77284,Tyee Fisheries,FCS,Floating Catcher Seller,Tyee  G Lohse,2023,Freeride,PO Box 1275,Cordova,AK,99574
+C13972,Catcher/Seller,CASO,79309,Graham D Gablehouse,FCS,Floating Catcher Seller,Graham D Gablehouse,2023,Julie Lou,PO Box 1344,Wrangell,AK,99929
+C13975,Catcher/Seller,CASO,75364,Maxim D Kuzmin,FCS,Floating Catcher Seller,Maxim  D Kuzmin,2023,Merchant,PO Box 2506,Homer,AK,99603
+C13978,Catcher/Seller,CASO,76562,Teal K Lhose,FCS,Floating Catcher Seller,Teal K Lhose,2023,Lakina,PO Box 2464,Cordova,AK,99574
+C13979,Catcher/Seller,CASO,54044,Jack Adams,FCS,Floating Catcher Seller,Jack Adams,2023,Fish River,PO Box 84076,White Mountain,AK,99784
+C13982,Catcher/Seller,CASO,37092,Kimberly Smith,FCS,Floating Catcher Seller,Kimberly  Smith,2023,Karilyn,PO Box503,Naknek,AK,99533
+C13983,Catcher/Seller,CASO,75743,Alexis  Cooper,FCS,Floating Catcher Seller,Alexis   Cooper,2023,Kari Jean,PO Box 1952,Cordova,AK,99574
+C13988,Catcher/Seller,CASO,04947,Wade Shaw,FCS,Floating Catcher Seller,WADE  SHAW,2023,Relentless,PO Box 34506,Juneau,AK,99803
+C13991,Catcher/Seller,CASO,49829,Joseph Miller,FCS,Floating Catcher Seller,JOSEPH  MILLER,2023,Shera,2845 SW 51ST ST,Cape Coral,FL,33914
+C13992,Catcher/Seller,CASO,74194,Lokeni Wong,FCS,Floating Catcher Seller,Lokeni Wong,2023,Skiff,63650 Sterling hwy,Clam Gultch,AK,99568
+C13993,Catcher/Seller,CASO,79170,Jared T Jillie,FCS,Floating Catcher Seller,Jared T Jillie,2023,Devotion,PO Box 5933,Ketchikan,AK,99901
+C13997,Catcher/Seller,CASO,37366,Evans W Sparks JR,FCS,Floating Catcher Seller,Evans W Sparks J,2023,Sentry,101 Peace ln,Sitka,AK,99835
+C13998,Catcher/Seller,CASO,41529,Gilbert A Olsen,FCS,Floating Catcher Seller,Gilbert A Olsen,2023,Raider,621 Bill st,Anchorage,AK,99515
+C14008,Catcher/Seller,CASO,77155,Matthew J Carle SR,FCS,Floating Catcher Seller,Matthew j Carle SR,2023,Silver Dawn,PO Box 32,Hydaburg,AK,99922
+C14013,Catcher/Seller,CASO,79493,Daniel Werth,FCS,Floating Catcher Seller,Daniel Werth,2023,Butt Stuff,12851 Patrick rd,Anchorage,AK,99516
+C2492,Catcher/Seller,CASO,62925,Ken B Eichner,FCS,Floating Catcher Seller,Ken B Eichner,2023,Emily Nicole,5166 Shoreline Drive,Ketchikan,AK,99901
+C2527,Catcher/Seller,CASO,,Charlie L Bower III,FCS,Floating Catcher Seller,Charlie L Bower,2023,,505 Monestary st,Sitka,AK,99835
+C2564,Catcher/Seller,CASO,30533,Robert B Jurries,FCS,Floating Catcher Seller,Robert  B Jurries,2023,Miss Teal,PO Box 177,Craig,AK,99921
+C2651,Catcher/Seller,CASO,77584,Patrick W Pellet,FCS,Floating Catcher Seller,Patrick  W Pellet,2023,Tuffy,3208 Halibut Point Road,Sitka,AK,99835
+C2767,Catcher/Seller,CASO,67661,David R Rentel,FCS,Floating Catcher Seller,David  R Rentel,2023,Vixen,PO Box 1424,Valdez,AK,99686
+C2903,Catcher/Seller,CASO,00025,Mark E Alwert,FCS,Floating Catcher Seller,Mark E Alwert,2023,F/V Buccaneer,Po Box 8889,Kodiak,AK,99615
+C2931,Catcher/Seller,CASO,48866,Glacier Seafoods,FCS,Floating Catcher Seller,George G Scott,2023,Early Times,PO Box 847,Girdwood,AK,99587
+C2971,Catcher/Seller,CASO,,Cook Inlet Aquaculture Association,FCS,Floating Catcher Seller,Brett Jenkins,2023,Cook Inlet Aquaculture Association,40610 Kalifornsky Beach Road,Kenai,AK,99611
+C3053,Catcher/Seller,CASO,36232,Randy C Arsenault,FCS,Floating Catcher Seller,Randy C Arsenault,2023,Old Squaw,PO Box 4104,Homer,AK,99603
+C3392,Catcher/Seller,CASO,71704,Michael T Lockabey,FCS,Floating Catcher Seller,Michael  T Lockabey,2023,Michael J,PO Box 1542,Wrangell,AK,99929
+C3664,Catcher/Seller,CASO,60889,Joshua L Miethe,FCS,Floating Catcher Seller,Joshua  Miethe,2023,Sunny Bay,P O Box 2031,Wrangell,AK,99929
+C3694,Catcher/Seller,CASO,61056,F/V Pacific Sea,FCS,Floating Catcher Seller,Frank W Warfel,2023,Pacific Sea,PO Box 1512,Wrangell,AK,99929
+C3759,Catcher/Seller,CASO,56375,F/V Dish,FCS,Floating Catcher Seller,James Rowland,2023,Dish,PO Box 970,Wrangell,AK,99929
+C3762,Catcher/Seller,CASO,35991,Denise P Klingler,FCS,Floating Catcher Seller,Denise P Klingler,2023,Puffin,603 ETOLIN ST,SITKA,AK,99835
+C3770,Catcher/Seller,CASO,40253,Spencer Severson,FCS,Floating Catcher Seller,Spencer Severson,2023,Dryas,F/V Snorkel,Sitka,AK,99835
+C3842,Catcher/Seller,CASO,74911,Dan J Pauk,FCS,Floating Catcher Seller,Dan  J Pauk,2023,Mz Liz,PO Box 82,Manokotak,AK,99628
+C4117,Catcher/Seller,CASO,38394,William A Johnson,FCS,Floating Catcher Seller,William  A Johnson,2023,Eagle II,PO Box 1178,Dillingham,AK,99576
+C4335,Catcher/Seller,CASO,67786,Robert B Bulard,FCS,Floating Catcher Seller,Robert  B Bulard,2023,Skiff,PO Box 241,Yakutat,AK,99689
+C4654,Catcher/Seller,CASO,77410,Kevin F Stelmach,FCS,Floating Catcher Seller,Kevin F Stelmach,2023,Tatiana II,Po Box 621- 4 Muklok Terrace,Petersburg,AK,99833
+C5138,Catcher/Seller,CASO,26020,Ivan Stonorov,FCS,Floating Catcher Seller,Ivan Stonorov,2023,Hadassah,41046 Crested Crave Street,Homer,AK,99603
+C5152,Catcher/Seller,CASO,69236,Patrick K Johnson,FCS,Floating Catcher Seller,Patrick K Johnson,2023,Magic Maiden,44526 Sterling hwy,Soldotna,AK,99669
+C5248,Catcher/Seller,CASO,,Page Herring,FCS,Floating Catcher Seller,Page  Herring,2023,Set net,P O Box 878837,Wasilla,AK,99687
+C5294,Catcher/Seller,CASO,22410,James L Dybdahl,FCS,Floating Catcher Seller,James L Dybdahl,2023,Carol Ann,PO Box 47,Hoonah,AK,99829
+C5371,Catcher/Seller,CASO,25861,Debra J Page,FCS,Floating Catcher Seller,Debra   J Page,2023,Madam Ching,Lot 40 PO Box 115,Elfin Cove,AK,99825
+C5419,Catcher/Seller,CASO,54996,Mark S Ducker,FCS,Floating Catcher Seller,Mark S Ducker,2023,Set Net Operation,23259 S Cohoe Loop Road,Kasilof,AK,99610
+C5420,Catcher/Seller,CASO,54996,Suzanne L Ducker,FCS,Floating Catcher Seller,Suzanne L Ducker,2023,Set Net Operation,23259 S Cohoe Loop Road,Kasilof,AK,99610
+C5450,Catcher/Seller,CASO,62608,Philip B Pryzmont,FCS,Floating Catcher Seller,Philip  B Pryzmont,2023,Erica Renee,PO BOX 712,NOME,AK,99762
+C5530,Catcher/Seller,CASO,44010,Bae Olney-Miller,FCS,Floating Catcher Seller,Bae Olney-Miller,2023,Patriot,505 Ocain Ave,Sitka,AK,99835
+C5532,Catcher/Seller,CASO,73492,James W Proctor,FCS,Floating Catcher Seller,James Proctor,2023,Misty Morn,PO Box 31,Gustavus,AK,99826
+C5776,Catcher/Seller,CASO,79173,F/V Commitment,FCS,Floating Catcher Seller,Roger K Rowland,2023,Freedom F/V,PO Box 393,Unalaska,AK,99685
+C5906,Catcher/Seller,CASO,42838,Jeff R Wolfe,FCS,Floating Catcher Seller,Jeff R Wolfe,2023,Macushla,501 Andrews st,Sitka,AK,99835
+C5960,Catcher/Seller,CASO,34828,Michael R Coleman,FCS,Floating Catcher Seller,Michael R Coleman,2023,Second Chance,2820 Sawmill Creek rd,Sitka,AK,99835
+C5992,Catcher/Seller,CASO,33345,Eric W Jordan,FCS,Floating Catcher Seller,Eric W Jordan,2023,I Gotta,103 Gibson Place,Sitka,AK,99835
+C6214,Catcher/Seller,CASO,11562,Ronald L Martin,FCS,Floating Catcher Seller,Ronald Martine,2023,Redwitch,PO Box 526,Haines,AK,99827
+C7138,Catcher/Seller,CASO,28554,Andrew M Callistini,FCS,Floating Catcher Seller,Andrew Callistini,2023,Palma Bay,106 Naomi Kanosh ln,SITKA,AK,99835
+C7242,Catcher/Seller,CASO,51127,Barber,FCS,Floating Catcher Seller,Marguerite Barber,2023,Wind Rose,PO Box 5076,Ketchikan,AK,99901
+C7243,Catcher/Seller,CASO,37408,David Vest,FCS,Floating Catcher Seller,David  Vest,2023, Silver Surfer,82 Higgins Spur,KETCHIKAN,AK,99901
+C7401,Catcher/Seller,CASO,38247,Reed E Barber,FCS,Floating Catcher Seller,Reed E Barber,2023,Rambler,HC 60 Box 6200,Haines,AK,99827
+C7684,Catcher/Seller,CASO,,Grant A Steele,FCS,Floating Catcher Seller,Grant  A Steele,2023,,3705 Arctic Blvd,Anchorage,AK,99503
+C7852,Catcher/Seller,CASO,73908,Eric M Holmlund,FCS,Floating Catcher Seller,Eric M Holmlund,2023,Typhoon,4416 Halibut Pt Rd,SITKA,AK,99835
+C7891,Catcher/Seller,CASO,61215,Guthrie H Zastrow,FCS,Floating Catcher Seller,Guthrie  H Zastrow,2023,Morgan Grace,PO Box 506,Ward Cove,AK,99928
+C8007,Catcher/Seller,CASO,61969,Bonnie C Vaughn,FCS,Floating Catcher Seller,Bonnie C Vaughn,2023,Athena,117 W Lake View ave,Wasilla,AK,99654
+C8030,Catcher/Seller,CASO,55937,Charles S Mason,FCS,Floating Catcher Seller,Charles  S Mason,2023,Oceanaire,16526 Glacier Highway,Juneau,AK,99801
+C8146,Catcher/Seller,CASO,54888,Dustin J Peters,FCS,Floating Catcher Seller,Dustin J Peters,2023,Pioneer,6482 Roosevelt,Ketchikan,AK,99901
+C8169,Catcher/Seller,CASO,57986,Brian S Blondin,FCS,Floating Catcher Seller,Brian  S Blondin,2023,Emily Rose,11476 Kalsin Drive,Kodiak,AK,99615
+C8303,Catcher/Seller,CASO,76911,Richard J Person,FCS,Floating Catcher Seller,Richard  J Person,2023,Traveler,24120 Rambler Road,Chugiak,AK,99567
+C8309,Catcher/Seller,CASO,00037,Michael H Woodley,FCS,Floating Catcher Seller,Michael H Woodley,2023,Atlantico,PO Box 1546,Kodiak,AK,99615
+C8322,Catcher/Seller,CASO,36216,Don E McKee,FCS,Floating Catcher Seller,Don E McKee,2023,McKee,PO BOX 3362,palmer,AK,99645
+C8346,Catcher/Seller,CASO,77214,Sea Kat Fisheries,FCS,Floating Catcher Seller,Robert  Nelson,2023,Sea Prince,Box 205,Kasilof,AK,99610
+C8369,Catcher/Seller,CASO,78511,Arseny A Polushkin,FCS,Floating Catcher Seller,Arseny  A Polushkin,2023,Sentinel,PO Box 62,Homer,AK,99603
+C8409,Catcher/Seller,CASO,78781,Larry D Gilman,FCS,Floating Catcher Seller,Larry D Gilman,2023,Jimel,PO Box 672,Whittier,AK,99693
+C8507,Catcher/Seller,CASO,,Thomas S Sagoonick,FCS,Floating Catcher Seller,Thomas S Sagoonick,2023,snow machine,P.O. Box 31,Shaktoolik,AK,99771
+C8574,Catcher/Seller,CASO,27462,Stuart Weathers,FCS,Floating Catcher Seller,Stuart Weathers,2023,El Tiburon,P O Box 1734,SITKA,AK,99835
+C8642,Catcher/Seller,CASO,53570,Austin Sollars,FCS,Floating Catcher Seller,Austin  Sollars,2023,Jani K,PO Box 1087,Petersburg,AK,99833
+C8690,Catcher/Seller,CASO,46553,DAVID D LETHIN,FCS,Floating Catcher Seller,David D Lethin,2023, Aleutian Ballad,Po Box 350,Chinook,WA,98614
+C8715,Catcher/Seller,CASO,63407,Dave A Barker,FCS,Floating Catcher Seller,Dave  A Barker,2023,Splash,126 E Fairview ave,Homer,AK,99603
+C8722,Catcher/Seller,CASO,76125,Brett J Willbanks,FCS,Floating Catcher Seller,Brett J Willbanks,2023,Norskip,4701 Manytell ave,Anchorage,AK,99516
+C8758,Catcher/Seller,CASO,72523,Daniel W Swanson,FCS,Floating Catcher Seller,Daniel  W Swanson,2023,DFR,PO Box 652,Soldotna,AK,99669
+C8768,Catcher/Seller,CASO,45965,Vladimir F Kuzmin,FCS,Floating Catcher Seller,Vladimir F Kuzmin,2023,Revolution,P O Box 896,Delta Junction,AK,99737
+C8787,Catcher/Seller,CASO,54996,Brandon M Ducker,FCS,Floating Catcher Seller,Brandon M Ducker,2023,Set Net Operation,23259 S Cohoe Loop Road,Kasilof,AK,99610
+C8989,Catcher/Seller,CASO,30587,Todd Lenihan,FCS,Floating Catcher Seller,Todd Lenihan,2023,Daystar,P O Box 6376,Sitka,AK,99835
+C9076,Catcher/Seller,CASO,97229,Mariano R Floresta,FCS,Floating Catcher Seller,Mariano R Floresta,2023,Silver Surfer,Saguyak ave lot 2 block 12,Clarks Point,AK,99569
+C9174,Catcher/Seller,CASO,76760,Tim K Pine,FCS,Floating Catcher Seller,Tim K Pine,2023,Raven,3705 Arctic Blvd #209,Anchorage,AK,99503
+C9306,Catcher/Seller,CASO,29377,Mark A Powers,FCS,Floating Catcher Seller,Mark  A Powers,2023,Koowasik,P O Box 308,Angoon,AK,99820
+C9430,Catcher/Seller,CASO,78349,Clayton R Nelson,FCS,Floating Catcher Seller,Clayton R Nelson,2023,Bad Dog,546 Soundview ave,Homer,AK,99603
+C9445,Catcher/Seller,CASO,61989,John L Murray,FCS,Floating Catcher Seller,John  L Murray,2023,Sea Bear,224 Observatory Street,Sitka,AK,99835
+C9481,Catcher/Seller,CASO,77566,Tracy L Brown,FCS,Floating Catcher Seller,Tracy L Brown,2023,La Marquise,HC 60 Box 294E,Copper Center,AK,99573
+C9950,Catcher/Seller,CASO,00951,Anthony M Knuteson,FCS,Floating Catcher Seller,Anthony  M Knuteson,2023,Denali,P O Box 9062,Ketchikan,AK,99901
+C9995,Catcher/Seller,CASO,74598,Douglas M Hergert,FCS,Floating Catcher Seller,Douglas  Hergert,2023,Whitecap,PO Box 433,Wrangell,AK,99929
+F0115,Shorebased Processor,SBPR,,Taku Fisheries/Smokeries,JNU,Juneau,Tim James,2023,Juneau Plant,550 S Franklin Street,Juneau,AK,99801
+F0134,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,PBG,Petersburg,Vicki Curtiss,2023,Petersburg Cannery,PO Box 70739,Seattle,WA,98127
+F0135,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,SEW,Seward,David Ramirez,2023,Seward Cannery,PO Box 70739,Seattle,WA,98127
+F0172,Shorebased Processor,SBPR,,Seafood Producers Cooperative,SIT,Sitka,Julie Smith,2023,SITKA PLANT,2417 Meridian st,Bellingham,WA,98225
+F0398,Shorebased Processor,SBPR,,Favco Inc,ANC,Anchorage,Bill Buck,2023,Anchorage Plant,PO Box 190968,Anchorage,AK,99519
+F0528,Shorebased Processor,SBPR,,Alaska Sea Pack Inc,ANC,Anchorage,Robert Winfree,2023,Anchorage Plant,1020 M ST,Anchorage,AK,99501
+F0753,Shorebased Processor,SBPR,,Alyeska Seafoods Inc,DUT,Dutch Harbor,Bryan Finley,2023,Unalaska Plant,3015 112th ave ne,Bellevue,WA,98004
+F0803,Shorebased Processor,SBPR,,Sagaya Corporation,ANC,Anchorage,John  Jackson,2023,Anchorage Plant,2525 Blueberry Road,Anchorage,AK,99503
+F0939,Shorebased Processor,SBPR,,Trident Seafood Corporation,AKU,Akutan,Stephen Francis,2023,Akutan Plant,5303 Shilshole ave nw,Seattle,WA,98107
+F0940,Shorebased Processor,SBPR,,Trident Seafood Corporation,SPT,Sand Point,Armand Audette,2023,Sand Point Plant,5303 Shilshole ave nw,Seattle,WA,98107
+F10006,Direct Marketer Vessel,DMCP,12547,Kristina,FCP,Floating Catcher Processor,John F Bahrt,2023,Kristina,PO Box 1654,Sitka,AK,99835
+F10019,Direct Marketer Vessel,DMCP,10385,F/V Nikka,FCP,Floating Catcher Processor,Mike  J Daly,2023,Nikka f/v,501 Charteris st,Sitka,AK,99835
+F10049,Direct Marketer Vessel,DMCP,59745,Surfsalmon CO,FCP,Floating Catcher Processor,P J Keegan Marrs,2023,Chanty f/v,PO Box 6552,Sitka,AK,99835
+F10055,Catcher/Processor,CAPR,77394,Km Fisheries AK LLC Kongmorgan Fisheries,FCP,Floating Catcher Processor,David Saiget,2023,Liberty,PO Box 1093,Cordova,AK,99574
+F10104,Direct Marketer Vessel,DMCP,53318,Brena Fisheries LLC,FCP,Floating Catcher Processor,Braden W Jay,2023,Brena f/v,5575 Knight Road,Bellingham,WA,98226
+F10112,Direct Marketer Vessel,DMCP,76621,Kohne Family Seafoods LLC,FCP,Floating Catcher Processor,Adam  C Kohne,2023,Cassidy Ann f/v,137 lake wood dr,Edenton,NC,27932
+F10132,Direct Marketer Vessel,DMCP,,Mark A Doner,FCP,Floating Catcher Processor,Mark  Doner,2023,Mark Doner,1925 N Battery Circle,Palmer,AK,99645
+F10224,Shorebased Processor,SBPR,,Hollis Bay Seafoods,CRG,Craig,Gary A Adkison jr,2023,Hollis Plant,PO Box 873,Craig,AK,99921
+F10228,Direct Marketer Vessel,DMCP,56537,Mofish,FCP,Floating Catcher Processor,John Moller,2023,Mikiah Bay f/v,PO Box 32425,Juneau,AK,99803
+F10239,Catcher/Exporter,EXCA,21684,F/V Mary V,FCE,Floating Catcher Exporter,Christian Vaughan,2023,Mary V F/V,PO Box 7621,Ketchikan,AK,99901
+F10247,Direct Marketer Vessel,DMCP,17838,Silvertip Seafoods,FCP,Floating Catcher Processor,Alan Fisher,2023,Silver Tip,PO Box 642,Hoonah,AK,99829
+F10254,Buyer/Exporter,EXBY,,Coastal Villages Crab LLC,DUT,Dutch Harbor,Lorena Rosenberger,2023,Coastal Villages Crab LLC,711 H Street STE 200,Anchorage,AK,99501
+F10265,Shorebased Processor,SBPR,,Silver Bay Seafoods,SIT,Sitka,Mike Duckworth JR,2023,Sitka Cannery,208 Lake st,Sitka,AK,99835
+F10272,Shorebased Processor,SBPR,,Trident Seafood Corporation,KOD,Kodiak,Paul Lumsden,2023, Kodiak Pillar Mountain Plant,5303 Shilshole ave nw,Seattle,WA,98107
+F10294,Shorebased Processor,SBPR,,Yakobi Fisheries LLC,PEL,Pelican,Seth Steward,2023,Yakobi Fisheries Processing Facility,PO Box 13,Pelican,AK,99832
+F10315,Shorebased Processor,SBPR,,Alaskas Best Seafood LLC,EKU,Ekuk,Gerald C Ball,2023,Ekuk Plant,PO Box 542,Dillingham,AK,99576
+F10333,Direct Marketer Vessel,DMCP,76047,Northern Magic LLC,FCP,Floating Catcher Processor,Daniel  Eames,2023,Faithful f/v,PO Box 2146,Valdez,AK,99686
+F10342,Shorebased Processor,SBPR,,Copper River Seafoods Inc,NAK,Naknek,Copper River Seafoods Inc,2023,Naknek Plant,6721 Arctic Spur rd,Anchorage,AK,99518
+F10345,Direct Marketer Vessel,DMCP,24315,Jeffrey W Robinson,FCP,Floating Catcher Processor,Jeffrey  W Robinson,2023,Elinor Jane F/V,PO Box 633,Petersburg,AK,99833
+F10454,Direct Marketer Vessel,DMCP,37833,Patrick J Crenna,FCP,Floating Catcher Processor,Patrick  J Crenna,2023,Ilona B,1950 Dodge Cir,Sitka,AK,99835
+F10503,Direct Marketer Vessel,DMCP,31588,Schoolhouse Fish Company LLC,FCP,Floating Catcher Processor,Eric A Grundberg,2023,Aero,PO Box 2193,Petersburg,AK,99833
+F10505,Catcher/Processor,CAPR,77764,Netted Dreams LLC,FCP,Floating Catcher Processor,Amy Smith,2023,Netted Dreams F/V,PO Box 1379,Wrangell,AK,99929
+F10513,Shorebased Processor,SBPR,,David G Klein,KOD,Kodiak,David G Klein,2023,David Klein Seafoods,3609 Tongass ave,Ketchikan,AK,99901
+F10516,Direct Marketer Vessel,DMCP,14031,Tyler Eells,FCP,Floating Catcher Processor,Tyler  Eells,2023,Pegaso f/v,114 Darrin dr,Sitka,AK,99835
+F10568,Buyer/Exporter,EXBY,,Alaskan Standard,SOL,Soldotna,Paula Keohane,2023,Alaskan Standard Seafoods LLC,3555 Kenai Spur Hwy,Soldotna,AK,99664
+F1093,Shorebased Processor,SBPR,,Royal Aleutian Seafoods Inc,DUT,Dutch Harbor,Peter Hail,2023,Dutch Harbor Plant,PO Box 97018,Redmond,WA,98073
+F11500,Shorebased Processor,SBPR,,Wildfish Cannery LLC,KLA,Klawock,Mathew Scaletta,2023,Wildfish Cannery LLC,PO Box 93,Klawock,AK,99925
+F11507,Shorebased Processor,SBPR,,Copper River Seafoods Inc,TOG,Togiak,Copper River Seafoods Inc,2023,Copper River Seafoods Inc - Togiak,6721 Arctic Spur rd,Anchorage,AK,99518
+F11514,Direct Marketer Vessel,DMCP,27803,Kenai Jane,FCP,Floating Catcher Processor,James R Holien,2023,Kenai Jane,PO Box 443,Klawock,AK,99925
+F11521,Direct Marketer Vessel,DMCP,78158,F/V Coho,FCP,Floating Catcher Processor,Jeffrey  P Ambrosier,2023,F/V Coho,PO Box 39558,Ninilchik,AK,99639
+F11523,Shorebased Processor,SBPR,,Ekuk Wild Salmon and Halibut Co,EKU,Ekuk,Lloyd Thomas O'Connor,2023,Ekuk Micro Plant,PO Box 546,Dillingham,AK,99576
+F11529,Direct Marketer Vessel,DMCP,77870,Charles A Bremer,FCP,Floating Catcher Processor,Charles A Bremer,2023,Resurrection,56 Earl Hines Lane,Ketchikan,AK,99901
+F11542,Direct Marketer Vessel,DMCP,39210,Timberline To Sea Outfitters,FCP,Floating Catcher Processor,Bill  Bondietti,2023,Sea Gal,PO Box 2445,Homer,AK,99603
+F11543,Direct Marketer Vessel,DMCP,77870,Thomas Trumper,FCP,Floating Catcher Processor,Thomas Trumper,2023,Resurrection,1405 Tongass Ave,Ketchikan,AK,99901
+F11602,Direct Marketer Vessel,DMCP,03980,Bruce E Crookshanks,FCP,Floating Catcher Processor,Bruce  E Crookshanks,2023,K-7,18542 Elderberry Street Sw,Rochester,WA,98579
+F11604,Direct Marketer Vessel,DMCP,37620,Cowlitz Smelt,FCP,Floating Catcher Processor,Darren Crookshanks,2023,Julie Dawn,6130 Willow Grove Road,Longview,WA,98632
+F11605,Direct Marketer Vessel,DMCP,,Dylan S Braund,FCP,Floating Catcher Processor,Dylan S Braund,2023,,PO Box 50,Homer,AK,99603
+F11608,Catcher/Processor,CAPR,78120,United States Saeafoods LLC,FCP,Floating Catcher Processor,Gregg Morrow,2023,Seafreeze America F/T,1801 Fairview Ave East Suite 100,Seattle,WA,98102
+F11621,Catcher/Processor,CAPR,68231, Premium Products Seafoods LLC,FCP,Floating Catcher Processor,Deanna DEANNA REEVES,2023,Chopaka,PO Box 741,Wrangell,AK,99929
+F11651,Direct Marketer Vessel,DMCP,26928,Fish Tale Fisheries,FCP,Floating Catcher Processor,Leonard  Carpenter,2023,Fish Tale,PO Box 1970,Kodiak,AK,99615
+F11655,Direct Marketer Vessel,DMCP,47083,F/V Summer Place,FCP,Floating Catcher Processor,Donald H Snow,2023,Summer Place,7593 SW Surfland Street,South Beach,OR,97366
+F11666,Shorebased Processor,SBPR,,Jolly Wally's Fish Processing,SOL,Soldotna,Tanner Berube,2023,Jolly Wally's Poachers Cove,434 W Riverview ave,Soldotna,AK,99669
+F11711,Direct Marketer Vessel,DMCP,,Broken Point Setnet Site,FCP,Floating Catcher Processor,Tollef H Monson,2023,Broken Point Setnet Site,PO Box 2971,Kodiak,AK,99615
+F11729,Direct Marketer Vessel,DMCP,58824,Trap Six Setnet Site,FCP,Floating Catcher Processor,Adelia  Myrick,2023,Setnet Skiff,PO Box 2971,Kodiak,AK,99615
+F11752,Shorebased Processor,SBPR,,Northport Fisheries Inc,KCO,King Cove,Tyler Goodnight,2023,Northport Fisheries Inc,6105 61ST Ave se,Snohomish,WA,98290
+F11755,Shorebased Processor,SBPR,,Copper River Seafoods Inc,ANC,Anchorage,Copper River Seafoods INC,2023,CRS Anchorage - West,6721 Arctic Spur rd,Anchorage,AK,99518
+F1180,Shorebased Processor,SBPR,,Unisea Inc,DUT,Dutch Harbor,Peter Hail,2023,Dutch Harbor Plant,PO Box 97019,Redmond,WA,98073
+F11809,Direct Marketer Vessel,DMCP,,Su Salmon Co,FCP,Floating Catcher Processor,Michael Wood,2023,Set Net,PO Box 773,Talkeetna,AK,99676
+F11831,Buyer/Exporter,EXBY,,Schoolhouse Fish Company LLC,PBG,Petersburg,Eric  A Grundberg,2023,Schoolhouse Fish Company LLC,PO Box 2193,Petersburg,AK,99833
+F11843,Buyer/Exporter,EXBY,,Norton Sound Seafood Products,DUT,Dutch Harbor,Wesley W Jones,2023,,2701 Gambell st,Anchorage,AK,99503
+F11852,Direct Marketer Vessel,DMCP,78308,Jeffrey D Eells,FCP,Floating Catcher Processor,D Jeffrey Eells,2023,Hydra,PO BOX 853,SITKA,AK,99835
+F11865,Shorebased Processor,SBPR,,Pacific Star Seafoods,YAK,Yakutat,Greg Indreland,2023,Ocean Cape Facility,900 Powell ave SW,Renton,WA,98057
+F11868,Shorebased Processor,SBPR,,Pacific Star Seafoods,KEN,Kenai,Sarah Owens,2023,Pacific Star Seafoods - K1,900 Powell ave SW,Renton,WA,98057
+F11869,Shorebased Processor,SBPR,,Pacific Star Seafoods,KEN,Kenai,Sarah Owens,2023,Pacific Star Seafoods - K2,900 Powell ave SW,Renton,WA,98057
+F11872,Shorebased Processor,SBPR,,Alaskan Fish Factory LTD,HOM,Homer,Alaskan Fish Factory Ltd,2023,Alaskan Fish Factory Ltd,12411 Vulcan way,Richmond,BC,V6V1J
+F11897,Direct Marketer Vessel,DMCP,,Just Wild Salmon,FCP,Floating Catcher Processor,Joel D Reynolds,2023,Just Wild Salmon,1170 SE Vista Place,College Place,WA,99324
+F11917,Direct Marketer Vessel,DMCP,77827,Lost Coast Fisheries,FCP,Floating Catcher Processor,Kenneth T Renner,2023,Elora Rae,PO Box 6,Cordova,AK,99574
+F11918,Direct Marketer Vessel,DMCP,77624,Prime Time Fisheries,FCP,Floating Catcher Processor,Benjamin  P Van Dyck,2023,Eleanor,1005 Chase Ave,Cordova,AK,99574
+F11943,Direct Marketer Vessel,DMCP,44030,Nancy Marie f/v,FCP,Floating Catcher Processor,Tom A Jones,2023,Nancy Marie,P O Box 23712,Ketchikan,AK,99901
+F11945,Direct Marketer Vessel,DMCP,59491,Anthony Lynn Byford,FCP,Floating Catcher Processor,Anthony Lynn Byford,2023,Ariel,4222 Ptarmigan Street,Juneau,AK,99801
+F11946,Direct Marketer Vessel,DMCP,39606,Sean M Pulliam,FCP,Floating Catcher Processor,Sean M Pulliam,2023,Seadance,PO Box 2422,Yucca Valley,CA,92286
+F11947,Direct Marketer Vessel,DMCP,48372,Tulchina Fisheries,FCP,Floating Catcher Processor,Richard J Wilson,2023,Kishla,PO Box 237,Naknek,AK,99633
+F11951,Direct Marketer Vessel,DMCP,68095,Webber Wild Seafood,FCP,Floating Catcher Processor,Michael Webber,2023,Amulet,PO Box 1711,Cordova,AK,99574
+F11954,Shorebased Processor,SBPR,,Pacific Star Seafoods,EGE,Egegik,Eric Handstad,2023,Coffee Point Seafoods,900 Powell ave SW,Renton,WA,98057
+F11960,Direct Marketer Vessel,DMCP,,Rollman Family Salmon LLC,FCP,Floating Catcher Processor,Trevor Rollman,2023,Set net,PO Box 7073,Nikiski,AK,99635
+F11966,Direct Marketer Vessel,DMCP,75743,Gilman Inc,FCP,Floating Catcher Processor,Shawn M Gilman,2023,Kari Jean,PO Box 223,Cordova,AK,99574
+F11968,Shorebased Processor,SBPR,,Whittier Seafood LLC,WHT,Whittier,Tami Foster,2023,Whittier Seafood LLC,3 Lake Bellevue Drive,Bellevue,WA,98005
+F11995,Direct Marketer Vessel,DMCP,58082,Jeffrey Glosser,FCP,Floating Catcher Processor,Jeffrey Glosser,2023,Aquari Ann,P O Box 39315,Ninilchik,AK,99639
+F12032,Direct Marketer Vessel,DMCP,26006,Peter C Keutmann,FCP,Floating Catcher Processor,Peter C Keutmann,2023,Eric,PO Box 263,Petersburg,AK,99833
+F12081,Direct Marketer Vessel,DMCP,45213,Dennis J O'Neil,FCP,Floating Catcher Processor,Dennis J O'Neil,2023,Banter bay,PO Box 1083,Petersburg,AK,99833
+F12132,Direct Marketer Vessel,DMCP,35666,Aaron L Miller,FCP,Floating Catcher Processor,Aaron L Miller,2023,Outlook,PO Box 2144,Petersburg,AK,99833
+F12167,Direct Marketer Vessel,DMCP,34274,Taiga Bell,FCP,Floating Catcher Processor,Taiga  Bell,2023,Triad,1012 Wee Burn Drive,Juneau,AK,99801
+F12172,Direct Marketer Vessel,DMCP,,Kevin Cossairt,FCP,Floating Catcher Processor,Kevin Cossairt,2023,set net,6685 Nex Perce Street,Bonners Ferry,ID,83805
+F12182,Catcher/Processor,CAPR,19369,Norsk Enterprises LLC,FCP,Floating Catcher Processor,Norsk Enterprises LLC,2023,Saga,PO Box 1407,Petersburg,AK,99833
+F12201,Buyer/Exporter,EXBY,,Louies Wild Alaskan Seafood LLC,SIT,Sitka,Louies Wild Alaskan Seafood LLC,2023,,1400 Edgecumbe dr,Sitka,AK,99835
+F12202,Shorebased Processor,SBPR,,Naknek Kvichak Wild Salmon,NAK,Naknek,Sandra  J Alvarez,2023,Naknek Kvichak Wild Salmon,PO Box 4012,Igiugig,AK,99613
+F12209,Direct Marketer Vessel,DMCP,43287,Trinity AK,FCP,Floating Catcher Processor,Joshua  L Newton,2023,Trinity,34791 Libra Court,Soldotna,AK,99689
+F12219,Direct Marketer Vessel,DMCP,75156,Legend Seafood Sales,FCP,Floating Catcher Processor,Jack G Stevenson,2023,Legend,PO Box 1099,Cordova,AK,99574
+F12234,Buyer/Exporter,EXBY,,Shoreline Wild Salmon LLC,PEL,Pelican,Marie Rose,2023,Shoreline Wild Salmon LLC,PO Box 446,Haines,AK,99827
+F12244,Direct Marketer Vessel,DMCP,32375,Duna Fisheries,FCP,Floating Catcher Processor,Greg  H Friedrichs,2023,Arminta,1450 30TH ST,Port Townsend,WA,98368
+F12248,Catcher/Processor,CAPR,23193,Cheri D LLC,FCP,Floating Catcher Processor,Kelsey Sullivan,2023,Cheri D f/v,2515 Scott dr,Juneau,AK,99801
+F12263,Shorebased Processor,SBPR,,Copper River Seafoods Inc,KEN,Kenai,Copper River Seafoods Inc,2023,Copper River Seafoods Inc,6721 Arctic Spur rd,Anchorage,AK,99518
+F12264,Shorebased Processor,SBPR,,60 North Seafoods LLC,COR,Cordova,Dave Deluca,2023,60 North Seafoods LLC,PO Box 239,Cordova,AK,99574
+F12283,Direct Marketer Vessel,DMCP,54402,Lady Alice Fisheries,FCP,Floating Catcher Processor,Daniel   Collier,2023,Cinnabar,1716 148th avenue kp s,Lakebay,WA,98349
+F12285,Buyer/Exporter,EXBY,,GKC Holdings,DUT,Dutch Harbor,Edward Poulsen,2023,,17249 15th Ave NW,Shoreline,WA,98177
+F12293,Direct Marketer Vessel,DMCP,59681,Frank A Kyle,FCP,Floating Catcher Processor,Frank A Kyle,2023,Nona S,PO Box 6586,Sitka,AK,99835
+F12306,Floating Processor,FLPR,05444,Smackdown Salmon,FLD,Floating Domestic Mothership,Lisa Hoffmann,2023,Sydney Jane,1929 Sheridan Street,Port Townsend,WA,98368
+F12319,Direct Marketer Vessel,DMCP,66275,F/V Tammy Lin,FCP,Floating Catcher Processor,Dylan Swanberg,2023,Tammy Lin,PO Box 3053,Sitka,AK,99835
+F12346,Direct Marketer Vessel,DMCP,13207,Icy Fresh Seafoods,FCP,Floating Catcher Processor,William W Armstrong,2023,Martina,8215 53RD dr NE,Marysville,WA,98270
+F12351,Catcher/Processor,CAPR,76988,Reeves Fisheries,FCP,Floating Catcher Processor,Ryan Reeves,2023,Satsuma F/V,PO Box 758,Wrangell,AK,99929
+F12375,Direct Marketer Vessel,DMCP,48912,Virga inc,FCP,Floating Catcher Processor,Ryan Jones,2023,Virga,PO Box 1166,Sitka,AK,99835
+F12379,Catcher/Processor,CAPR,59170,Trident Seafood Corporation,FCP,Floating Catcher Processor,Mike Luchino,2023,Kodiak Enterprise,5303 Shilshole ave nw,Seattle,WA,98107
+F12385,Direct Marketer Vessel,DMCP,18322,Katfish Salmon Co Inc,FCP,Floating Catcher Processor,Kathleen  M Murphy,2023,grace f/v,PO Box 1165,Port Townsend,WA,98368
+F12386,Catcher/Processor,CAPR,59503,Trident Seafood Corporation,FCP,Floating Catcher Processor,Mike Luchino,2023,Island Enterprise,5303 Shilshole ave nw,Seattle,WA,98107
+F12395,Catcher/Processor,CAPR,56789,Trident Seafood Corporation,FCP,Floating Catcher Processor,Michael Luchino,2023,Seattle Enterprise,5303 Shilshole ave nw,Seattle,WA,98107
+F12407,Direct Marketer Vessel,DMCP,55883,Aqualife,FCP,Floating Catcher Processor,Mark C Blakeslee,2023,Panacea,P O Box 2356,Kodiak,AK,99615
+F12409,Floating Processor,FLPR,78724,F/V Americas Finest,FLD,Floating Domestic Mothership,Annika Saltman,2023,America's Finest F/V,570 Kirkland way,Kirkland,WA,98033
+F12412,Direct Marketer Vessel,DMCP,76848,Slack Tide Seafoods,FCP,Floating Catcher Processor,Matthew R maxwell,2023,October Skye,PO Box 344,Cordova,AK,99574
+F12413,Shorebased Processor,SBPR,,Tanner INC,NIN,Ninilchik,Rory Tanner,2023,Tanner's Fresh Fish Processing,PO Box 39752,Ninilchik,AK,99639
+F12445,Shorebased Processor,SBPR,, Seaborn Seafood LLC,CRG,Craig,Seaborn Seafood LLC,2023,Seaborn Seafood LLC,PO Box 913,Craig,AK,99921
+F12448,Direct Marketer Vessel,DMCP,,Victor Popa,FCP,Floating Catcher Processor,Victor Popa,2023,Set Net Operation,PO Box 1416,Fallbrook,CA,92088
+F12469,Shorebased Processor,SBPR,,Camtus Alaska Wild Seafoods,COR,Cordova,Thai THAI VU,2023,Alaska Wild Seafood Partners LLC,PO Box 1502,Cordova,AK,99574
+F12470,Direct Marketer Vessel,DMCP,35967,Ryan D Kelly,FCP,Floating Catcher Processor,Ryan D Kelly,2023,Mojo,PO Box 613,Wrangell,AK,99929
+F12478,Direct Marketer Vessel,DMCP,58150,Eat AK Salmon,FCP,Floating Catcher Processor,Paul Laca,2023,Far Side,PO Box 523,Girdwood,AK,99587
+F12489,Direct Marketer Vessel,DMCP,37908,Mindalina Fisheries,FCP,Floating Catcher Processor,Benjamin Lawrie,2023,Mindalina,339 Wortman Loop,Sitka,AK,99835
+F12500,Buyer/Exporter,EXBY,,Alibi Seafoods LLC,KOD,Kodiak,Gabriel Prout,2023,Alibi Seafoods LLC,Po Box 8321,Kodiak,AK,99615
+F12502,Shorebased Processor,SBPR,,Smokeys Fish Company,HNH,Hoonah,Yvette Darrington,2023,Smokeys Fish Company,PO Box 210048,Auke Bay,AK,99821
+F12509,Direct Marketer Vessel,DMCP,79099,Jenkins Setnet,FCP,Floating Catcher Processor,Forest R Jenkins,2023,AK-8126-AN,5201 Gjosund dr,Homer,AK,99603
+F12515,Buyer/Exporter,EXBY,,Keyport LLC,ADA,Adak,Frank Furlan,2023,,654 5TH ave S,Edmonds,WA,98020
+F12520,Shorebased Processor,SBPR,,Resurrection Bay Seafoods,SEW,Seward,Edwin Kietzman,2023,Pacific Seafood - Seward LLC,PO Box 1710,Seward,AK,99664
+F12527,Direct Marketer Vessel,DMCP,34219,F/V Searcher,FCP,Floating Catcher Processor,Kenneth  Richard Baxter,2023,Searcher,4500 Abby Way,Juneau,AK,99801
+F12531,Direct Marketer Vessel,DMCP,77355,Esther Sea Food,FCP,Floating Catcher Processor,Kimberly S  S Menster,2023,Esther Sea,PO Box 2142,Cordova,AK,99574
+F12578,Shorebased Processor,SBPR,,Sunrise Salmon,NAK,Naknek,Kevin  Schmidt,2023,Sunrise Salmon,24455 Hickory Road,Fergus Falls,MN,56537
+F12609,Direct Marketer Vessel,DMCP,60889,Joshua L Miethe,FCP,Floating Catcher Processor,Joshua L Miethe,2023,Sunny Bay,P O Box 2031,Wrangell,AK,99929
+F12611,Direct Marketer Vessel,DMCP,15059,FV Silver Wave,FCP,Floating Catcher Processor,Eric Macias,2023,Silver Wave,1900 W Nickerson Street,Seattle,WA,98119
+F12671,Direct Marketer Vessel,DMCP,59650,Kenneth T Parker,FCP,Floating Catcher Processor,Kenneth T Parker,2023,Temptation,9577 W 5 Mile rd,Branch,MI,49402
+F12699,Direct Marketer Vessel,DMCP,78580,Copper River Flats Finest,FCP,Floating Catcher Processor,Raymond  Michael Renner,2023,LZ,PO Box 1181,Cordova,AK,99574
+F12700,Direct Marketer Vessel,DMCP,,Salmon Hookup LLC,FCP,Floating Catcher Processor,Alex J Pfoff,2023,Plugged,PO Box 82087,Tyonek,AK,99682
+F12704,Buyer/Exporter,EXBY,,Blue Seafoods,KTN,Ketchikan,Robert  Bateman,2023,,3133 Jackson Heights St,Ketchikan,AK,99901
+F12712,Shorebased Processor,SBPR,,The Chop Shop,KLA,Klawock,Kaleigh Ryno,2023,The Chop Shop,PO Box 367,Klawock,AK,99925
+F12713,Catcher/Exporter,EXCA,31231,Kory H Versteeg,FCE,Floating Catcher Exporter,Kory  H Versteeg,2023,Confidence,PO Box 1752,Petersburg,AK,99833
+F12726,Catcher/Exporter,EXCA,45052,F/V Erika Ann Inc,FCE,Floating Catcher Exporter,Charles L Christensen,2023,Erika Ann,PO Box 824,Petersburg,AK,99833
+F12737,Direct Marketer Vessel,DMCP,77917,Ezekiel Brown,FCP,Floating Catcher Processor,Ezekiel Brown,2023,Lucid Dream,PO Box 782,Cordova,AK,99574
+F12752,Direct Marketer Vessel,DMCP,79450,Fairweather Fish Co LLC,FCP,Floating Catcher Processor,Caleb Robbins,2023,Fairweather,PO Box 6256,Sitka,AK,99835
+F12756,Direct Marketer Vessel,DMCP,,Sarah Salvucci,FCP,Floating Catcher Processor,Sarah Salvucci,2023,,PO Box 112382,Anchorage,AK,99511
+F12769,Floating Processor,FLPR,76526,Kodiak Combos,FLD,Floating Domestic Mothership,Jeffery Peterson,2023,Fishy Fishy,PO BOX 141,OLD HARBOR,AK,99643
+F12773,Direct Marketer Vessel,DMCP,78607,Roy A Rudy,FCP,Floating Catcher Processor,Roy  A Rudy,2023,Chummy Lady,35401 Parsonage Street,SOLDOTNA,AK,99669
+F12803,Shorebased Processor,SBPR,,Quality Processing,SIT,Sitka,Ben Floyd,2023,Quality Processing,106 Granite Creek Road,Sitka,AK,99835
+F12809,Catcher/Exporter,EXCA,70552,Jabusch LLC,FCE,Floating Catcher Exporter,Jake Jabusch,2023,Miracle,PO Box 1228,Petersburg,AK,99833
+F12825,Direct Marketer Vessel,DMCP,75524,Alaskan Family Fisheries,FCP,Floating Catcher Processor,Cleveland E Eells,2023,Pirate,Po Box  853,Sitka,AK,99835
+F12826,Buyer/Exporter,EXBY,,Webber Wild Seafood,COR,Cordova,Michael J Webber,2023,,PO Box 1711,Cordova,AK,99574
+F12833,Catcher/Exporter,EXCA,78867,Jeannie Easterly,FCE,Floating Catcher Exporter,Randall Easterly,2023,Predator F/V,PO Box 1524,Wrangell,AK,99929
+F12841,Direct Marketer Vessel,DMCP,53175,Wild Delta Seafoods,FCP,Floating Catcher Processor,Seth R Balint,2023,Night Shift,PO Box 346,Cordova,AK,99574
+F12857,Direct Marketer Vessel,DMCP,31031,Silva's Seafoods,FCP,Floating Catcher Processor,Antonio Silva,2023,Chesapeake,PO Box 602,Wrangell,AK,99929
+F12862,Shorebased Processor,SBPR,,Sea to Shore Seafood Co LLC,PBG,Petersburg,Chelsea Keutmann,2023,,PO Box 263,Petersburg,AK,99833
+F12883,Direct Marketer Vessel,DMCP,78819,Todd R Kroth,FCP,Floating Catcher Processor,Todd R Kroth,2023,Dream Catcher,PO Box 2364,El Granada,CA,94018
+F12890,Direct Marketer Vessel,DMCP,59912,Wilson's Wild Salmon,FCP,Floating Catcher Processor,Keith C Wilson,2023,Skiff,PO Box 2984,Hailey,ID,83333
+F12925,Direct Marketer Vessel,DMCP,54076,F/V Dream Chaser,FCP,Floating Catcher Processor,Jerry Welch,2023,Dream Chaser f/v,PO Box 1686,Petersburg,AK,99833
+F12931,Direct Marketer Vessel,DMCP,,Sarah A Hudkins,FCP,Floating Catcher Processor,Sarah A Hudkins,2023,Set Net,11620 NE 150th PL,Kirkland,WA,98034
+F12987,Direct Marketer Vessel,DMCP,51047,Torin Pfundt,FCP,Floating Catcher Processor,Torin Pfundt,2023,Haley Marie,PO Box 1342,Petersburg,AK,99833
+F12993,Floating Processor,FLPR,34053,Trident Seafood Corporation,FLD,Floating Domestic Mothership,Rick Laitinen,2023,Bountiful,5303 Shilshole ave nw,Seattle,WA,98107
+F13027,Direct Marketer Vessel,DMCP,55167,Jason A Manney,FCP,Floating Catcher Processor,Jason  A Manney,2023,Deanna Jo,PO Box 1395,Ward Cove,AK,99928
+F13031,Catcher/Processor,CAPR,61509,Libertys Alaskan Seafoods LLC,FCP,Floating Catcher Processor,Charles H Deaton,2023,Liberty,PO Box 874,Cordova,AK,99574
+F13040,Direct Marketer Vessel,DMCP,63740,TOM J CARRUTH,FCP,Floating Catcher Processor,Tom J Carruth,2023,Sable,PO Box 8641,Ketchikan,AK,99901
+F13043,Floating Processor,FLPR,58750,Owens Commerical Fisheries LLC,FLD,Floating Domestic Mothership,Luke Owens,2023,Bucko F/V,4070 Summit CT NE,Rockford,MI,49341
+F13045,Direct Marketer Vessel,DMCP,78686,Merrick Shellfish,FCP,Floating Catcher Processor,Evan O'Brien,2023,Scavenger,305 Tlingit way,Sitka,AK,99835
+F13047,Shorebased Processor,SBPR,, Peter Pan Seafoods LLC,KCO,King Cove,Colby Boulton,2023,Peter Pan Seafoods LLC - King Cove,3015 112th ave NE,Bellevue,WA,98004
+F13053,Buyer/Exporter,EXBY,,Crab Alaska LLC,WRN,Wrangell,Crab Alaska LLC,2023,,PO Box 468,Wrangell,AK,99929
+F13055,Shorebased Processor,SBPR,,Silver Bay Seafoods,KOD,Kodiak,Rowena Arboleda,2023,Silver Bay Seafoods Kodiak,208 Lake st,Sitka,AK,99835
+F13063,Shorebased Processor,SBPR,, Peter Pan Seafoods LLC,MOL,Port Moller,Steven Samuelson,2023,Peter Pan Seafoods LLC - Port Moller,3015 112th ave NE,Bellevue,WA,98004
+F13065,Shorebased Processor,SBPR,, Peter Pan Seafoods LLC,DIL,Dillingham,Travis Roenfanz,2023,Peter Pan Seafood Company LLC - Dillingham,3015 112th ave NE,Bellevue,WA,98004
+F13066,Shorebased Processor,SBPR,, Peter Pan Seafoods LLC,VAL,Valdez,Trevor Milich,2023,Peter Pan Seafood Company LLC - Valdez,3015 112th ave NE,Bellevue,WA,98004
+F13083,Catcher/Processor,CAPR,23081,Vincentz Fisheries INC,FCP,Floating Catcher Processor,Garret Vincentz,2023,Lady Jane,PO BOX 1572,WARD COVE,AK,99928
+F13090,Catcher/Exporter,EXCA,38230,Courser Corp,FCE,Floating Catcher Exporter,Matthew E Kurtz,2023,Courser,4220 Grant st,Burnaby,BC,V5C3N
+F13120,Direct Marketer Vessel,DMCP,31128,Lynn W Steyaart,FCP,Floating Catcher Processor,Lynn  W Steyaart,2023,Miss Alice,PO Box 545,Petersburg,AK,99833
+F13137,Buyer/Exporter,EXBY,,Sean M Pulliam,UNK,Unknown/Missing Value,Sean M Pulliam,2023,Yakobi Fisheries,PO Box 2422,Yucca Valley,CA,92286
+F13145,Direct Marketer Vessel,DMCP,34596,Sea Venture Seafoods,FCP,Floating Catcher Processor,Scott Steger,2023,Sea Venture,39039 Shirley Street,Sterling,AK,99672
+F13162,Direct Marketer Vessel,DMCP,31438,Graceful Fisheries,FCP,Floating Catcher Processor,Grace  Allan,2023,Orion,PO Box 1907,Kodiak,AK,99615
+F13164,Direct Marketer Vessel,DMCP,33907,Some Fin Fisheries,FCP,Floating Catcher Processor,Glenn Crocetti,2023,Maranatha,118 Bancroft Dr,Kodiak,AK,99615
+F13182,Buyer/Exporter,EXBY,,SBC Legacy LLC,KTN,Ketchikan,Ryan,2023,SBC Legacy LLC,PO Box 731062,Puyallup,WA,98373
+F13183,Direct Marketer Vessel,DMCP,77610,Jetstream Fisheries,FCP,Floating Catcher Processor,Trae Lohse,2023,Jetstream,PO Box 2378,Cordova,AK,99574
+F13184,Buyer/Exporter,EXBY,,Fathom Seafood Inc,PBG,Petersburg,Solomon Fowler,2023,,1690 Marine View Drive Suite C,Tacoma,WA,98422
+F13192,Direct Marketer Vessel,DMCP,43848,Jacob Bell,FCP,Floating Catcher Processor,Jacob Bell,2023,Inseine,PO Box 1682,Haines,AK,99827
+F13206,Catcher/Processor,CAPR,55278,Dyakanoff Family Fish,FCP,Floating Catcher Processor,DYAKANOFF FAMILY FISH,2023,C - Brothers,PO Box 6163,Ketchikan,AK,99901
+F1330,Shorebased Processor,SBPR,,Kachemak Bay Seafoods,HOM,Homer,William C Sullivan,2023,Homer Plant,PO Box 4004,Homer,AK,99603
+F13309,Buyer/Exporter,EXBY,,Castle Cape Fisheries LTD,DUT,Dutch Harbor,Daniel Veerhusen,2023,Castle Cape Fisheries LTD,PO Box 971,Homer,AK,99603
+F13368,Catcher/Processor,CAPR,00057,Five Daughters LLC,FCP,Floating Catcher Processor,Five Daughters LLC,2023,Matilda Bay,PO Box 1312,Petersburg,AK,99833
+F13388,Catcher/Exporter,EXCA,78920,Alaskan Choice Seafoods LLC,FCE,Floating Catcher Exporter,Alaskan Choice Seafoods LLC,2023,Sharlane,PO Box 1392,Wrangell,AK,99929
+F13394,Direct Marketer Vessel,DMCP,78868,Seahawk Fisheries,FCP,Floating Catcher Processor,Andy Savland,2023,Seahawk,PO Box 552,Hoonah,AK,99829
+F13430,Direct Marketer Vessel,DMCP,75356,Heritage Fisheries,FCP,Floating Catcher Processor,Brenda L Schwartz-Yeager,2023,Timberwolf,PO Box 1996,Wrangell,AK,99929
+F13434,Shorebased Processor,SBPR,,Northern Victor Division Of Westward Seafoods,UNK,Unknown/Missing Value,Dan Le,2023,Northern Victor processing facility,3015 112th ave NE,Bellevue,WA,98004
+F13471,Direct Marketer Vessel,DMCP,26928,Matthew A Carpenter,FCP,Floating Catcher Processor,Matthew  A Carpenter,2023,Fish Tale,PO Box 1970,Kodiak,AK,99615
+F13498,Buyer/Exporter,EXBY,,TOM J CARRUTH,KTN,Ketchikan,Tom  J Carruth,2023,Alaska Quality Seafoods,PO Box 8641,Ketchikan,AK,99901
+F13524,Shorebased Processor,SBPR,,Trident Seafood Corporation,FSP,False Pass,Dean Fasnacht,2023,False Pass Plant,5303 Shilshole ave nw,Seattle,WA,98107
+F13528,Direct Marketer Vessel,DMCP,18649,Amanda Dunaway,FCP,Floating Catcher Processor,Amanda Dunaway,2023,Pegge,General Delivery,Gustavus,AK,99826
+F13536,Direct Marketer Vessel,DMCP,,Percival Urban,FCP,Floating Catcher Processor,Percival Urban,2023,,9241 SW 146TH CT,Miami,FL,33186
+F13537,Catcher/Processor,CAPR,25752,Alaska Kaia Fisheries LLC,FCP,Floating Catcher Processor,Rory Ann Tanner,2023,Nighthawk,PO Box 912,Kasilof,AK,99610
+F13541,Direct Marketer Vessel,DMCP,73758,Sewak Fisheries,FCP,Floating Catcher Processor,Matthew F Adams,2023,Sewak,PO Box 1815,Cordova,AK,99574
+F1355,Shorebased Processor,SBPR,,Valdez Fisheries Development Assn Inc,VAL,Valdez,Laura Therriault,2023,Valdez Fisheries,PO BOX 125,VALDEZ,AK,99686
+F13559,Direct Marketer Vessel,DMCP,,Mathew Riendeau,FCP,Floating Catcher Processor,Mathew Riendeau,2023,,1327 S Plymouth Ct,Chicago,IL,60605
+F13573,Catcher/Processor,CAPR,77765,Serenity Seafoods LLC,FCP,Floating Catcher Processor,Shannon Jones,2023,Serenity,PO Box 615,Cordova,AK,99574
+F13578,Direct Marketer Vessel,DMCP,,Mark S Beardsley,FCP,Floating Catcher Processor,Mark S Beardsley,2023,,PO Box 8776,Kodiak,AK,99615
+F13602,Catcher/Processor,CAPR,21900,Ivanoff Seafood LLC,FCP,Floating Catcher Processor,Hailey Thompson,2023,New Dawn F/V,PO Box 8883,Kodiak,AK,99615
+F1366,Shorebased Processor,SBPR,,Northern Victor Division Of Westward Seafoods,DUT,Dutch Harbor,Dan Le,2023,Dutch Harbor Plant,3015 112th ave NE,Bellevue,WA,98004
+F13687,Buyer/Exporter,EXBY,,RS Seafood Trading LLC,KTN,Ketchikan,Robert Lo,2023,,14328 Lomitas ave,City of Industry,CA,91746
+F13690,Catcher/Exporter,EXCA,79205,Comercial Fishing,FCE,Floating Catcher Exporter,Charles M Gadd,2023,Shady Lady,PO Box 1033,Wrangell,AK,99929
+F13693,Direct Marketer Vessel,DMCP,73936,Jared L Grams,FCP,Floating Catcher Processor,Jared Grams,2023,Kingfisher,PO Box 437,Hoonah,AK,99829
+F13694,Direct Marketer Vessel,DMCP,79323,The Alaska Squid Company,FCP,Floating Catcher Processor,Richard  Yamada,2023,Adanac IV,PO Box 210064,Auke Bay,AK,99821
+F13699,Direct Marketer Vessel,DMCP,34036,Tyler M Janssen,FCP,Floating Catcher Processor,Tyler Janssen,2023,Alaskan Eagle,P.O. Box 1982,Wrangell,AK,99929
+F13708,Direct Marketer Vessel,DMCP,56291,Jacob Shangin,FCP,Floating Catcher Processor,Jacob Shangin,2023,Nicole Danielle,PO Box 112112,Anchorage,AK,99511
+F13713,Catcher/Processor,CAPR,56291,Leader Island Fisheries LLC,FCP,Floating Catcher Processor,Jacob Shangin,2023,Nicole Danielle,PO Box 112112,Anchorage,AK,99511
+F13714,Direct Marketer Vessel,DMCP,75794,Andrew McFadden,FCP,Floating Catcher Processor,Andrew McFadden,2023,Ilo F/V,PO Box 1163,Cordova,AK,99574
+F13716,Catcher/Exporter,EXCA,08219,Seagonia Seafood LLC,FCE,Floating Catcher Exporter,Sean Gould,2023,Seagonia,PO Box 376,Wrangell,AK,99929
+F13729,Direct Marketer Vessel,DMCP,76235,f/v Maneewan,FCP,Floating Catcher Processor,Wesley E Slattery,2023,Maneewan,206 W Mattle rd,Ketchikan,AK,99901
+F13753,Buyer/Exporter,EXBY,,Peninsula Seafoods,PBG,Petersburg,Dustin Phillips,2023,,PO Box 2109,Port Angeles,WA,98362
+F13758,Direct Marketer Vessel,DMCP,56375,F/V Dish,FCP,Floating Catcher Processor,James Rowland,2023,Dish,PO Box 970,Wrangell,AK,99929
+F13770,Catcher/Processor,CAPR,50529,Two Fox Fisheries,FCP,Floating Catcher Processor,Nicholas Hoffman,2023,Relentless F/V,PO Box 1212,Kodiak,AK,99615
+F13813,Catcher/Exporter,EXCA,60386,Jeremy W Leighton,FCE,Floating Catcher Exporter,Jeremy W Leighton,2023,Reliance,PO Box1151,Ward Cove,AK,99928
+F13838,Direct Marketer Vessel,DMCP,78521,Rose Marie,FCP,Floating Catcher Processor,Douglas Frasher,2023,Rose Marie,PO Box 4034,Soldotna,AK,99669
+F13856,Floating Processor,FLPR,60168,Drifters Fish,FLD,Floating Domestic Mothership,Michael Hand,2023,Seaview,PO Box 2181,Cordova,AK,99574
+F13863,Catcher/Processor,CAPR,77885,Drifters Fish,FCP,Floating Catcher Processor,Michael Hand,2023,Heron,PO Box 2181,Cordova,AK,99574
+F13889,Catcher/Exporter,EXCA,79280,Paul Cahill,FCE,Floating Catcher Exporter,Paul Cahill,2023,Northern Exposure,63765 Deshutes Market Rd,Bend,OR,97701
+F13893,Catcher/Exporter,EXCA,77870,Alpha Fisheries,FCE,Floating Catcher Exporter,Rodney Burba jr,2023,Ressurection,63 Mattle rd,Ketchikan,AK,99901
+F13907,Direct Marketer Vessel,DMCP,76316,Alask Seafoods LLC,FCP,Floating Catcher Processor,Russel G Allen,2023,Fish Bay,PO Box 1062,Cordova,AK,99574
+F13915,Direct Marketer Vessel,DMCP,79418,Cannery Cove Fisheries LLC,FCP,Floating Catcher Processor,Connor Murphy,2023,Harbor Point,408 Lilly dr,Kodiak,AK,99615
+F13938,Buyer/Exporter,EXBY,,Marty and Mi,ANC,Anchorage,Melissa R Ingersoll,2023,,460 Dailey ave,Anchorage,AK,99515
+F13969,Direct Marketer Vessel,DMCP,79384,Go Time Charters LLC,FCP,Floating Catcher Processor,Eric C Johnson,2023,Go Time,9000 Lance CIR,Anchorage,AK,99502
+F13970,Direct Marketer Vessel,DMCP,78366,Richmond Star Seafoods,FCP,Floating Catcher Processor,Michael F Middleton,2023,Richmond Star Seafoods,PO Box 859,Seldovia,AK,99663
+F13973,Direct Marketer Vessel,DMCP,,David L Sulser SR,FCP,Floating Catcher Processor,David  L Sulser SR,2023,,109 Sharon dr,Sitka,AK,99835
+F13984,Direct Marketer Vessel,DMCP,69537,Wild Alaskan Halibut,FCP,Floating Catcher Processor,David  R Craig,2023,Nefarious,PO Box 1944,Cordova,AK,99574
+F14002,Floating Processor,FLPR,31031,Silva's Seafoods,FLD,Floating Domestic Mothership,Antonio Silva,2023,Chesapeake,PO Box 602,Wrangell,AK,99929
+F14003,Direct Marketer Vessel,DMCP,17726,Harborside Seafoods,FCP,Floating Catcher Processor,Anthony H Gogert,2023,Marlee Jean,PO Box 343,Metlakatla,AK,99926
+F1456,Floating Processor,FLPR,31363,Trident Seafood Corporation,FLD,Floating Domestic Mothership,Kaitlyn Knight,2023,Independence M/V,5303 Shilshole ave nw,Seattle,WA,98107
+F1540,Shorebased Processor,SBPR,,Fishhawk Fisheries Of Alaska Inc,KEN,Kenai,Morgan Johnson,2023,Kenai Plant,PO Box 715,Astoria,OR,97103
+F1546,Shorebased Processor,SBPR,,Trident Seafood Corporation,KTN,Ketchikan,John Scoblic,2023,Ketchikan Cannery,5303 Shilshole ave nw,Seattle,WA,98107
+F1547,Shorebased Processor,SBPR,,Trident Seafood Corporation,NAK,Naknek,Luke Forrestor,2023,Naknek Cannery,5303 Shilshole ave nw,Seattle,WA,98107
+F1927,Shorebased Processor,SBPR,,Trident Seafood Corporation,STP,St Paul Island,Dean Fasnacht,2023,St Paul plant,5303 Shilshole ave nw,Seattle,WA,98107
+F2192,Catcher/Processor,CAPR,37661,Nekton Inc,FCP,Floating Catcher Processor,Ryan Nichols,2023,F/V Nekton,305 Islander Drive,Sitka,AK,99835
+F2258,Catcher/Processor,CAPR,56126,Shelfords Boat LTD,FCP,Floating Catcher Processor,Aaron D Hoffman,2023, F/V Aleutian Lady,Po Box 12946,Mill Creek,WA,98082
+F2756,Shorebased Processor,SBPR,,Coastal Cold Storage Inc,PBG,Petersburg,Thomas Westhoff,2023,Petersburg plant,PO BOX 307,Petersburg,AK,99833
+F2873,Catcher/Processor,CAPR,54851,Gulf Mist Inc,FCP,Floating Catcher Processor,James Petersen,2023,F/V Alaska Mist,3900 Railway ave,Everett,WA,98201
+F3897,Shorebased Processor,SBPR,,Gateway Seafood & Smokehouse,KTN,Ketchikan,Rod Thomas,2023,Ketchikan Plant,1600 Tongass Ave,Ketchikan,AK,99901
+F3909,Shorebased Processor,SBPR,,Alaska General Seafoods,NAK,Naknek,Cheryl Tilton,2023,Naknek Cannery,6425 NE 175TH ST,Kenmore,WA,98028
+F4129,Floating Processor,FLPR,,AK Victory Inc,FLD,Floating Domestic Mothership,Phil Dang,2023,Alaska Warrior,4201 21ST ave W,Seattle,WA,98199
+F4131,Floating Processor,FLPR,61083,AK Victory Inc,FLD,Floating Domestic Mothership,Corine Rosado,2023,Alaska Victory,4201 21ST ave W,Seattle,WA,98199
+F4269,Shorebased Processor,SBPR,,Alaska Glacier Seafoods Inc,JNU,Juneau,Jim Erickson,2023,Juneau Plant,PO Box 34363,Juneau,AK,99803
+F4317,Shorebased Processor,SBPR,,Icy Straight Seafoods INC,JNU,Juneau,Hank  Baumgart,2023,Icy Strait Seafoods Inc,PO Box 21203,Juneau,AK,99802
+F4665,Shorebased Processor,SBPR,,Alaska Salmon Purchasers INC,KEN,Kenai,Mark Powell,2023,Kenai Plant,46655A Kenai Spur Hwy,KENAI,AK,99611
+F5076,Shorebased Processor,SBPR,,Trident Seafood Corporation,KOD,Kodiak,Paul Lumsden,2023,Star of Kodiak,5303 Shilshole ave nw,Seattle,WA,98107
+F5121,Shorebased Processor,SBPR,,Noyes Island Smoke House LLC,CRG,Craig,Alison Quigley,2023,Craig Plant,PO Box 314,Craig,AK,99921
+F5256,Shorebased Processor,SBPR,,Trident Seafood Corporation,CHG,Chignik,Clyde Pedersen,2023, Chigknik Cannery,5303 Shilshole ave nw,Seattle,WA,98107
+F5563,Shorebased Processor,SBPR,,Sea Level Seafoods,WRN,Wrangell,Jennifer Jackson,2023,Wrangell Plant,PO Box 2085,Wrangell,AK,99929
+F5677,Shorebased Processor,SBPR,,Craig Fisheries,KTN,Ketchikan,Paul Cyr,2023,Ketchikan Plant,PO Box 7095,Ketchikan,AK,99901
+F5678,Shorebased Processor,SBPR,,Craig Fisheries,CRG,Craig,Paul Cyr,2023,Craig Plant,PO Box 7095,Ketchikan,AK,99901
+F5690,Shorebased Processor,SBPR,,Fees Custom Seafoods,WHT,Whittier,Edward W Fee,2023,Whittier Plant,PO Box 790,Whittier,AK,99693
+F5930,Shorebased Processor,SBPR,, Island Fish co,KOD,Kodiak,Kara Baker,2023,Kodiak Plant,317 Shelikof st,Kodiak,AK,99615
+F5979,Shorebased Processor,SBPR,,Alaska General Seafoods,KTN,Ketchikan,Cheryl Tilton,2023,Ketchikan Cannery,6425 NE 175TH ST,Kenmore,WA,98028
+F5983,Shorebased Processor,SBPR,,Copper River Seafoods Inc,COR,Cordova,Nicole Holliday,2023,Cordova Cannery,6721 Arctic Spur rd,Anchorage,AK,99518
+F6327,Catcher/Processor,CAPR,34855,Romanzof Fishing Co LLC,FCP,Floating Catcher Processor,Charles  Hosmer,2023,F/V Baranof,4502 14th ave NW,Seattle,WA,98107
+F6332,Floating Processor,FLPR,54392,Us Fishing LLC,FLD,Floating Domestic Mothership,Annika ANNIKA SALTMAN,2023,US Intrepid F/V,570 Kirkland Way Suite 200,Kirkland,WA,98033
+F6334,Floating Processor,FLPR,36202,North Pacific Fishing LLC,FLD,Floating Domestic Mothership,Annika Saltman,2023,American no 1 F/V,570 Kirkland way,Kirkland,WA,98033
+F6335,Direct Marketer Vessel,DMCP,59999,Paul H Mcintyre,FCP,Floating Catcher Processor,Paul H McIntyre,2023,Sea Hunt f/v,PO Box 1994,Wrangell,AK,99929
+F6348,Direct Marketer Vessel,DMCP,71757,Danegeld,FCP,Floating Catcher Processor,Brennon Eagle,2023,Danegeld,PO Box 576,Wrangell,AK,99929
+F6354,Direct Marketer Vessel,DMCP,75672,Chad R Trani,FCP,Floating Catcher Processor,Chad R Trani,2023,Outercoast F/V,11520 Juanita Dr NE,Kirkaland,WA,98034
+F6355,Direct Marketer Vessel,DMCP,75672,Sitka Geoduck Marketing,FCP,Floating Catcher Processor,Larry Trani,2023,Outercoast,2008  Halibut Point RD.,Sitka,AK,99835
+F6426,Shorebased Processor,SBPR,,Copper River Seafoods Inc,ANC,Anchorage,Copper River Seafoods Inc,2023,Anchorage Plant,6721 Arctic Spur rd,Anchorage,AK,99518
+F6506,Shorebased Processor,SBPR,,Haines Packing Company,HNS,Haines,Anna Hubbard,2023,Haines Plant,PO Box 930,Haines,AK,99827
+F6519,Shorebased Processor,SBPR,,North Pacific Seafoods Inc & Sub,NAK,Naknek,Steve Lee,2023,Pederson Point,4 Nickerson st,Seattle,WA,98109
+F6520,Shorebased Processor,SBPR,,North Pacific Seafoods Inc & Sub,KOD,Kodiak,Matt Moir,2023,Alaska Pacific Seafoods,4 Nickerson st,Seattle,WA,98109
+F6521,Shorebased Processor,SBPR,,North Pacific Seafoods Inc & Sub,SIT,Sitka,Emma Edson,2023,Sitka Sound Seafoods,4 Nickerson st,Seattle,WA,98109
+F6522,Shorebased Processor,SBPR,,North Pacific Seafoods Inc & Sub,TOG,Togiak,Cathy Allbright,2023,Togiak Fisheries,4 Nickerson st,Seattle,WA,98109
+F6529,Direct Marketer Vessel,DMCP,32378,Nephi,FCP,Floating Catcher Processor,Otto  Florschutz III,2023,Nephi f/v,PO Box 547,Wrangell,AK,99929
+F6559,Direct Marketer Vessel,DMCP,20971,Ocean Harvest LLC,FCP,Floating Catcher Processor,Mike  R Breckon,2023,Northern Husky f/v,PO Box 2351,Ferndale,WA,98248
+F6586,Direct Marketer Vessel,DMCP,33175,Jersey Girl Seafoods LLC,FCP,Floating Catcher Processor,Norman J Alsup,2023,Jersey Girl f/v,15008 N Tongass Hwy,Ketchikan,AK,99901
+F6618,Shorebased Processor,SBPR,,Penninsula Processing & Smokehouse LLC,SOL,Soldotna,Tim Berg,2023,Soldotna Plant,720 Kalifornsky Beach Road,Soldotna,AK,99669
+F6651,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,EGE,Egegik,Sean McKagan,2023,Egegik Cannery,PO Box 70739,Seattle,WA,98127
+F6652,Shorebased Processor,SBPR,,Norton Sound Seafood Products,SAV,Savoonga,Orville Toolie,2023,Savoonga Plant,2701 Gambell st,Anchorage,AK,99503
+F6653,Shorebased Processor,SBPR,,Norton Sound Seafood Products,UNA,Unalakleet,Frank Lynn Doty,2023,Unalakleet Plant,2701 Gambell st,Anchorage,AK,99503
+F6654,Shorebased Processor,SBPR,,Norton Sound Seafood Products,NOM,Nome,Josh Osborne,2023,Nome Plant,2701 Gambell st,Anchorage,AK,99503
+F6672,Direct Marketer Vessel,DMCP,36107,Richard G Blanc,FCP,Floating Catcher Processor,Richard  G Blanc,2023,Akhiok Skiff,13589 Trumpeter Lane,Mt Vernon,WA,98273
+F6673,Shorebased Processor,SBPR,,Ekuk Fisheries LLC,EKU,Ekuk,Joe Kelso,2023,Ekuk Fisheries LLC,2442 NW Market Street #625,Seattle,WA,98107
+F6898,Direct Marketer Vessel,DMCP,19502,Danny J Haynes,FCP,Floating Catcher Processor,Danny J Haynes,2023,Sara B,PO Box 7036,Ketchikan,AK,99901
+F6902,Direct Marketer Vessel,DMCP,57183,ERIC CALVIN,FCP,Floating Catcher Processor,Eric Calvin,2023,Quick Silver f/v,210 Brady Street,Sitka,AK,99835
+F6928,Direct Marketer Vessel,DMCP,37422,Dennis J Capua,FCP,Floating Catcher Processor,Dennis J Capua,2023,Potluck,PO Box 21333,Juneau,AK,99802
+F7018,Shorebased Processor,SBPR,,Alsek Fish LLC,YAK,Yakutat,Pat Robbins,2023,Yakutat Plant,PO Box 202,Yakutat,AK,99689
+F7095,Direct Marketer Vessel,DMCP,32380,Hook N Line Fisheries Inc,FCP,Floating Catcher Processor,Jeffrey  Thomas,2023,Kathleen Jo f/v,55784 Highway 112,Port Angeles,WA,98363
+F7120,Shorebased Processor,SBPR,,Northern Lights Smokeries LLC,PBG,Petersburg,Northern Lights Smokeries LLC,2023,Petersburg Plant,PO Box 848,Petersburg,AK,99833
+F7220,Direct Marketer Vessel,DMCP,71619,David A Klepser,FCP,Floating Catcher Processor,David A Klepser,2023,Hannah Point f/v,PO Box 8946,Ketchikan,AK,99901
+F7225,Direct Marketer Vessel,DMCP,52131,Sylver Fishing,FCP,Floating Catcher Processor,John  J Verhey,2023,Fidelia,PO Box 2281,Wrangell,AK,99929
+F7230,Direct Marketer Vessel,DMCP,47192,Daniel E Smith,FCP,Floating Catcher Processor,Daniel E Smith,2023,Elizabeth S,PO Box 911,Wrangell,AK,99929
+F7258,Catcher/Processor,CAPR,60100,Beauty Bay of Washington LLC,FCP,Floating Catcher Processor,Scott  Hansen,2023,Beauty Bay F/V,23929 22nd DR SE,Bothell,WA,98021
+F7261,Shorebased Processor,SBPR,,Trident Seafood Corporation,COR,Cordova,Chris Golatto,2023,Cordova South Plant,5303 Shilshole ave nw,Seattle,WA,98107
+F7264,Shorebased Processor,SBPR,,Trident Seafood Corporation,PBG,Petersburg,Dave Ohmer,2023,Petersburg Plant,5303 Shilshole ave nw,Seattle,WA,98107
+F7265,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,LRB,Larsen Bay,Josh Maricich,2023,Larsen Bay Plant,PO Box 70739,Seattle,WA,98127
+F7277,Shorebased Processor,SBPR,,Alaska Premier Seafood LLC,HDR,Hyder,Diana Simpson,2023,Hyder Plant,PO Box 45,Hyder,AK,99923
+F7279,Shorebased Processor,SBPR,,Friedman Family Fisheries INC,EKU,Ekuk,Avi J Friedman,2023,Dillingham Plant,6109 Pimlico Road,Baltimore,MD,21209
+F7298,Direct Marketer Vessel,DMCP,60990,Lynn W Potter,FCP,Floating Catcher Processor,Lynn W Potter,2023,Pig Pen f/v,PO Box 1472,Cordova,AK,99574
+F7317,Direct Marketer Vessel,DMCP,29116,Jason L Holst,FCP,Floating Catcher Processor,Jason Holst,2023,F/V New Venture,1400 Edgecumbe dr,Sitka,AK,99835
+F7368,Direct Marketer Vessel,DMCP,30693,Jonathan P Moore,FCP,Floating Catcher Processor,Jonathan P Moore,2023,Ocean Belle,3464 Sherman Street,Port Townsend,WA,98368
+F7424,Shorebased Processor,SBPR,,Beachm Fishery,KEN,Kenai,Elizabeth Chase,2023,Beachm Fishery,PO Box 39,Kasilof,AK,99610
+F7452,Direct Marketer Vessel,DMCP,57544,Blue Ox Fisheries,FCP,Floating Catcher Processor,Matthew Oxford,2023,Blue Ox,PO Box15201,Fritz Creek,AK,99603
+F7459,Direct Marketer Vessel,DMCP,67095,Lars R Stangeland,FCP,Floating Catcher Processor,Lars  R Stangeland,2023,Valhalla f/v,222 Front Street #600,Juneau,AK,99801
+F7536,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,KOD,Kodiak,James Turner,2023,Kodiak Cannery,PO Box 70739,Seattle,WA,98127
+F7538,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,NAK,Naknek,Ron Nebert,2023,Naknek Cannery,PO Box 70739,Seattle,WA,98127
+F7542,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,COR,Cordova,Rene Vargas,2023,Cordova Cannery,PO Box 70739,Seattle,WA,98127
+F7583,Shorebased Processor,SBPR,,Trident Seafood Corporation,COR,Cordova,Leo Vargas,2023,Cordova North Cannery,5303 Shilshole ave nw,Seattle,WA,98107
+F7688,Shorebased Processor,SBPR,,Wild Alaska Salmon & Seafood,NAK,Naknek,Anthony Wood,2023,Naknek Plant,PO Box 602,King Salmon,AK,99613
+F7882,Shorebased Processor,SBPR,,Apicda Joint Ventures INC & Subsidiary,DUT,Dutch Harbor,Shannon Kent,2023,Apicda Joint Venture Inc,302 Gold st,Juneau,AK,99801
+F7883,Direct Marketer Vessel,DMCP,71429,Pa Fisheries,FCP,Floating Catcher Processor,Gary P Mulligan,2023,Phyllis Ann,224 Marine Street,Sitka,AK,99835
+F7896,Shorebased Processor,SBPR,,57 Degrees North LLC,STP,St Paul Island,Marisa Mack,2023,57 Degrees North LLC,PO Box 288,St Paul Island,AK,99660
+F7899,Catcher/Processor,CAPR,74091,Maxcy Fishing Company,FCP,Floating Catcher Processor,Christopher Maxcy,2023,Carol Rose,7945 Fowler Lane,Bozeman,MT,59718
+F8011,Shorebased Processor,SBPR,,Trident Seafood Corporation,WRN,Wrangell,Nick Ohmer,2023,Wrangell Plant,5303 Shilshole ave nw,Seattle,WA,98107
+F8018,Direct Marketer Vessel,DMCP,75810,John K Renner,FCP,Floating Catcher Processor,John  K Renner,2023,Never Enough F/V,PO Box 756,Cordova,AK,99574
+F8158,Floating Processor,FLPR,55767,Ocean Peace INC,FLD,Floating Domestic Mothership,Corine Rosado,2023,Ocean Peace,4201 21ST ave W,Seattle,WA,98199
+F8172,Direct Marketer Vessel,DMCP,69054,James T Hubbard,FCP,Floating Catcher Processor,James T Hubbard,2023,Kruzof f/v,PO Box 3302,Seward,AK,99664
+F8252,Floating Processor,FLPR,70833,Potters Own LLC,FLD,Floating Domestic Mothership,Carol  Potter,2023,Goodnews f/v,PO Box 1472,Cordova,AK,99574
+F8257,Shorebased Processor,SBPR,,Pure Pacific Seafood Inc- Washington,SEW,Seward,Justin Bird,2023,Pure Pacific Seafood Inc,7900 SE 28th Street Suite 403,Mercer Island,WA,98040
+F8313,Direct Marketer Vessel,DMCP,74701,BBs Kings,FCP,Floating Catcher Processor,Bruce Bowman,2023,Lady Mahem,HC 60 Box 227 I,Copper Center,AK,99573
+F8403,Shorebased Processor,SBPR,,Kodiak Wildsource,KOD,Kodiak,Chris Sannito,2023,Kodiak Plant,312 W Marine way,Kodiak,AK,99615
+F8520,Floating Processor,FLPR,69054,Kruzof Fisheries LLC,FLD,Floating Domestic Mothership,Rhonda Hubbard,2023,Kruzof,PO Box 3302,Seward,AK,99664
+F8586,Catcher/Exporter,EXCA,22796,Goldenhouse,FCE,Floating Catcher Exporter,James  Vaughan,2023,Patty Lynn,PO Box 770,Craig,AK,99921
+F8611,Catcher/Processor,CAPR,56602,Clipper Endeavor LLC,FCP,Floating Catcher Processor,Clipper Endeavor LLC,2023,Clipper Endeavor F/V,641 West Ewing st,Seattle,WA,98119
+F8612,Catcher/Processor,CAPR,54743,Clipper Surprise LLC,FCP,Floating Catcher Processor,Clipper Surprise LLC,2023,Clipper Surprise F/V,641 West Ewing st,Seattle,WA,98119
+F8620,Catcher/Processor,CAPR,59380,Frontier Mariner LLC,FCP,Floating Catcher Processor,Fronteir Mariner,2023,F/V Fronteir Mariner,641 WEST Ewing st,SEATTLE,WA,98119
+F8621,Catcher/Processor,CAPR,62169,Frontier Explorer LLC,FCP,Floating Catcher Processor,Frontier Explorer LLC,2023,F/V FRronteir Explorer,641 West Ewing st,Seattle,WA,98119
+F8622,Floating Processor,FLPR,59381,Frontier Spirit LLC,FLD,Floating Domestic Mothership,Frontier Spirit LLC,2023,F/V Frontier Spirit,641 West Ewing st,Seattle,WA,98119
+F8623,Floating Processor,FLPR,38539,Ewing Street Fisheries LLC,FLD,Floating Domestic Mothership,Chris Shaffer,2023,F/V Clipper Epic,641 W Ewing st,Seattle,WA,98119
+F8654,Floating Processor,FLPR,56964,M/V Savage Inc,FLD,Floating Domestic Mothership,Corine Rosado,2023,Seafisher,4201 21ST ave W,Seattle,WA,98199
+F8698,Shorebased Processor,SBPR,,Village Cove Seafoods LLC,STP,St Paul Island,Marisa Mack,2023,Village Cove Seafoods LLC,PO Box 288,St Paul Island,AK,99660
+F8718,Direct Marketer Vessel,DMCP,20430,George P Meintel,FCP,Floating Catcher Processor,George P Meintel,2023,Lofoten,1704 S Colorado Ave,Boise,ID,83706
+F8777,Direct Marketer Vessel,DMCP,40070,Andrew J Friske,FCP,Floating Catcher Processor,Andrew J Friske,2023,Allure,420 Kramer Ave,Sitka,AK,99835
+F8788,Shorebased Processor,SBPR,,Copper River Fish Market,COR,Cordova,Sarah Sarah M Ecolano,2023,Cordova Plant,PO Box 2222,Cordova,AK,99574
+F8799,Floating Processor,FLPR,72318,Arctic Sablefish LLC,FLD,Floating Domestic Mothership,Gabe Lipchik,2023,Aleutian Sable F/V,916 Delaney St,Anchorage,AK,99501
+F8865,Direct Marketer Vessel,DMCP,06444,Sundance Seafoods,FCP,Floating Catcher Processor,Aaron E Woodrow,2023,Sundance F/V,17875 Pt Stephens Road,Juneau,AK,99801
+F8953,Direct Marketer Vessel,DMCP,53570,Austin Sollars,FCP,Floating Catcher Processor,Austin Sollars,2023,F/V Jani K,PO Box 1087,Petersburg,AK,99833
+F8960,Direct Marketer Vessel,DMCP,56332,Easterly Enterprises LLC,FCP,Floating Catcher Processor,Wayne  Easterly,2023,Limit f/v,PO Box 335,Wrangell,AK,99929
+F9014,Floating Processor,FLPR,55301,Katie Ann LLC,FLD,Floating Domestic Mothership,Frank Vargas,2023,F/V Katie Ann,2025 First ave Suite 900,Seattle,WA,98121
+F9079,Shorebased Processor,SBPR,,North Pacific Seafoods Inc & Sub,NAK,Naknek,Kerry McClellan,2023,Red Salmon Cannery,4 Nickerson st,Seattle,WA,98109
+F9088,Catcher/Processor,CAPR,61538,Shelfords Boat LTD,FCP,Floating Catcher Processor,Aaron Hoffman,2023, F/V Alaskan Lady,Po Box 12946,Mill Creek,WA,98082
+F9169,Direct Marketer Vessel,DMCP,,James S Wilson,FCP,Floating Catcher Processor,James  S Wilson,2023,Yakutat Fisherman INC,PO Box 48,Yakutat,AK,99689
+F9171,Buyer/Exporter,EXBY,,170 Degrees West LLC,STP,St Paul Island,Marisa Mack,2023,,PO Box 288,St Paul Island,AK,99660
+F9173,Shorebased Processor,SBPR,,Hoonah Cold Storage,HNH,Hoonah,Tim James,2023,Hoonah Plant,2825 Roeder Ave,Bellingham,WA,98225
+F9217,Direct Marketer Vessel,DMCP,00000,Midnight Sun Salmon,FCP,Floating Catcher Processor,Carrie J Hollier,2023,Kenai Skiff,95-538 Wailoa Loop,Mililani,HI,96789
+F9244,Shorebased Processor,SBPR,,Jerrys Meats and Seafoods INC,JNU,Juneau,Jerry's Meats & Seafoods Inc,2023,Juneau Plant,5165 Glacier hwy,Juneau,AK,99801
+F9403,Direct Marketer Vessel,DMCP,76951,Kory L Blake,FCP,Floating Catcher Processor,Kory  L Blake,2023,Crystal Falls,PO Box 1122,Cordova,AK,99574
+F9417,Catcher/Processor,CAPR,39870,F/V Constance LLC,FCP,Floating Catcher Processor,Karl Martinsen,2023,Constance LLC,306 Wortman Loop Apt B,Sitka,AK,99835
+F9439,Direct Marketer Vessel,DMCP,75886,F/V Born Again,FCP,Floating Catcher Processor,Matthew D Lawrie,2023,Born Again F/V,PO Box 6006,Sitka,AK,99835
+F9473,Shorebased Processor,SBPR,,Obi Seafoods-Cordova,DIL,Dillingham,Jessie Baker,2023,Dillingham Plant,PO Box 70739,Seattle,WA,98127
+F9806,Direct Marketer Vessel,DMCP,43442,Todd R Kroth,FCP,Floating Catcher Processor,Todd R Kroth,2023,New Day,PO Box 2364,El Granada,CA,94018
+F9820,Direct Marketer Vessel,DMCP,11111,Aldrin & Sons Alaska Salmon,FCP,Floating Catcher Processor,Lance C Alldrin,2023,Set Net Skiff,3864 Dusty Lane,Chico,CA,95973
+F9829,Direct Marketer Vessel,DMCP,67161,Ocean Cape,FCP,Floating Catcher Processor,Jason E Gjertsen,2023,Ocean Cape f/v,714 Etolin Street,Sitka,AK,99835
+F9833,Direct Marketer Vessel,DMCP,60180,CL Fisheries,FCP,Floating Catcher Processor,Cory  S Loos,2023,Redoubt,PO Box 1421,Homer,AK,99603
+F9846,Direct Marketer Vessel,DMCP,71429,Cedar Mulligan,FCP,Floating Catcher Processor,Cedar Mulligan,2023,Phyllis Ann f/v,7635 W Wagoner Road,Glendale,AZ,85308
+F9906,Direct Marketer Vessel,DMCP,77414,Stoney Point Seafoods,FCP,Floating Catcher Processor,Tom Traibush,2023,Stoney F/V,PO BOX 62,Gustavus,AK,99826
+F9907,Direct Marketer Vessel,DMCP,,Greta Horn,FCP,Floating Catcher Processor,Greta Horn,2023,Set Net,2725 Wild River Drive,Roseburg,OR,97470
+F9929,Direct Marketer Vessel,DMCP,30976,F/V Good News,FCP,Floating Catcher Processor,TRACY  RIVERA,2023,Good News,PO BOX 541,Tenakee Springs,AK,99841
+F9937,Direct Marketer Vessel,DMCP,38613,Carolyn Ann,FCP,Floating Catcher Processor,Richard S Phillips,2023,Carolyn Ann F/V,PO Box 522,Wrangell,AK,99929
+F9982,Shorebased Processor,SBPR,,Tonka Seafoods Inc,PBG,Petersburg,Seth Scrimsher,2023,Tonka Seafoods,PO Box 1420,Petersburg,AK,99833
+F9984,Shorebased Processor,SBPR,,Aquatech Seafood LLC,ANC,Anchorage,Lamar Ballard,2023,Anchorage Plant,6221 Petersburg street,Anchorage,AK,99507
+F9985,Catcher/Processor,CAPR,27326,Faith Fisheries INC,FCP,Floating Catcher Processor,Raymond Douville,2023,Faith f/v,PO Box 66,Craig,AK,99921
+F9998,Catcher/Processor,CAPR,39798,United States Saeafoods LLC,FCP,Floating Catcher Processor,Gregg Morrow,2023,Seafreeze Alaska F/T,1801 Fairview Ave East Suite 100,Seattle,WA,98102
+T11581,Fish Transporter,TRAN,,Mark S Ducker,FFT,Floating Fish Transporter,Mark  S Ducker,2023,Set Net Operation,23259 S Cohoe Loop Road,Kasilof,AK,99610
+T11611,Fish Transporter,TRAN,71585,Joshua L Miethe,FFT,Floating Fish Transporter,Joshua  L Miethe,2023,Carolina,P O Box 2031,Wrangell,AK,99929
+T11615,Fish Transporter,TRAN,55167,Jason A Manney,FFT,Floating Fish Transporter,Jason A Manney,2023,Deanna Jo,PO Box 1395,Ward Cove,AK,99928
+T11718,Fish Transporter,TRAN,79303,Henry A Broderick,FFT,Floating Fish Transporter,Henry  A Broderick,2023,Setnet,PO Box 1032,Cannon Beach,OR,97110
+T12278,Fish Transporter,TRAN,77647,Michael J Towle,FFT,Floating Fish Transporter,Michael J Towle,2023,May Run,PO Box 2234,Cordova,AK,99574
+T12377,Fish Transporter,TRAN,68095,Webber Wild Seafood,FFT,Floating Fish Transporter,Michael J Webber,2023,Amulet,PO Box 1711,Cordova,AK,99574
+T12561,Fish Transporter,TRAN,78166,John Vannatta,FFT,Floating Fish Transporter,John  Vannatta,2023,Blinko,1000 Nickajack Landing,South Pittsburg,TN,37380
+T12568,Fish Transporter,TRAN,,Lynn A Jones,FFT,Floating Fish Transporter,Lynn A Jones,2023,Ethelyn E,PO Box 650,Craig,AK,99921
+T12801,Fish Transporter,TRAN,45863,Brian A Merritt,FFT,Floating Fish Transporter,Brian A Merritt,2023,Sharlene C,P O Box 401,Wrangell,AK,99929
+T12802,Fish Transporter,TRAN,,Nicholas J Dowie,FFT,Floating Fish Transporter,Nicholas J Dowie,2023,set net,PO Box 2684,Kodiak,AK,99615
+T13447,Fish Transporter,TRAN,78166,Jacob Wright,FFT,Floating Fish Transporter,Jacob Wright,2023,Icebreaker,704 River Road,Orange Park,FL,32073
+T13655,Fish Transporter,TRAN,78435,Richard T Adams,FFT,Floating Fish Transporter,Richard T Adams,2023,Overbite,PO Box 497,Craig,AK,99921
+T13904,Fish Transporter,TRAN,25175,Michael A Kurtz,FFT,Floating Fish Transporter,Michael  A Kurtz,2023,Nicholas Michael,PO Box 32265,Bellingham,AK,98228
+T13921,Fish Transporter,TRAN,60094,Willie Eluska,FFT,Floating Fish Transporter,Willie Eluska,2023,Night Hawk,PO Box 1521,Kodiak,AK,99615
+T13930,Fish Transporter,TRAN,46970,Garrett Wood,FFT,Floating Fish Transporter,Garrett Wood,2023,Harmony 1,2645 Millbay rd,Kodiak,AK,99615
+T13981,Fish Transporter,TRAN,79444,Lucas Wagner,FFT,Floating Fish Transporter,Lucas  Wagner,2023,Wagner,PO Box 1375,Craig,AK,99921
+T6604,Fish Transporter,TRAN,61127,Arnold G Nelson,FFT,Floating Fish Transporter,Arnold  G Nelson,2023,Monica Jene,PO Box 87,Port Lions,AK,99550
+T7340,Fish Transporter,TRAN,61706,Mitch T Keplinger,FFT,Floating Fish Transporter,Mitch T Keplinger,2023,Alinchak,PO Box 1006,Kodiak,AK,99615
+T7624,Fish Transporter,TRAN,76436,Raymond M May,FFT,Floating Fish Transporter,RAYMOND M MAY,2023,Resilient,PO Box 8985,Kodiak,AK,99615
+T8056,Fish Transporter,TRAN,57777,Fred Bigsby,FFT,Floating Fish Transporter,Fredrick Bigsby,2023,Rustler,PO Box 157,Haines,AK,99827
+T8887,Fish Transporter,TRAN,,Doreen Irwin,FFT,Floating Fish Transporter,Doreen Irwin,2023,Set Net Operation,3208 Halibut Point Road,SITKA,AK,99835
+T9153,Fish Transporter,TRAN,57986,Brian S Blondin,FFT,Floating Fish Transporter,Brian  Blondin,2023,Emily Rose,11476 Kalsin Drive,Kodiak,AK,99615
+T9863,Fish Transporter,TRAN,78165,Dylan S Braund,FFT,Floating Fish Transporter,Dylan  S Braund,2023,Skiff,PO Box 50,Homer,AK,99603
+Z10309,EEZ Only,EEZO,00000,Ohara Corporation,FCP,Floating Catcher Processor,Stanley Morgan -Per Ostergard,2023,Araho,120 Tillson ave,Rockland,ME,04841
+Z10521,EEZ Only,EEZO,25535,Joshua A Moore,FCP,Floating Catcher Processor,Joshua A Moore,2023,Castaway,PO Box 2015,Petersburg,AK,99833
+Z11877,EEZ Only,EEZO,60795,Catcher Processor Nothern Hawk LLC,FCP,Floating Catcher Processor,Lorena Rosenberger,2023, Northern Hawk,711 Suite 200 H,Anchorage,AK,99501
+Z11898,EEZ Only,EEZO,59870,Ohara Corporation,FCP,Floating Catcher Processor,Thomas Durnan,2023,Alaska Spirit,120 Tillson ave,Rockland,ME,04841
+Z12126,EEZ Only,EEZO,78412,Coastal Villages Longline LLC,FCP,Floating Catcher Processor,Lorena Rosenberger,2023,Flicka,711 H ST,Anchorage,AK,99501
+Z12562,EEZ Only,EEZO,77788,Really New Blue North LLC,FCP,Floating Catcher Processor,Really New Blue North LLC,2023,Blue North,641 W Ewing st,Seattle,WA,98119
+Z12892,EEZ Only,EEZO,08522,Aleutian Longline LLC,FCP,Floating Catcher Processor,Aleutian Longline LLC,2023,US Liberator,2157 N Northlake way,Seattle,WA,98103
+Z12895,EEZ Only,EEZO,62424,Aleutian Longline LLC,FCP,Floating Catcher Processor,Aleutian Longline LLC,2023,Siberian Sea,2157 N Northlake way,Seattle,WA,98103
+Z12896,EEZ Only,EEZO,77470,Aleutian Longline LLC,FCP,Floating Catcher Processor,Aleutian Longline LLC,2023,Arctic Prowler,2157 N Northlake way,Seattle,WA,98103
+Z13426,EEZ Only,EEZO,57621,Trident Seafood Corporation,FCP,Floating Catcher Processor,Mike Luchino,2023, Starbound C/P,5303 Shilshole ave nw,Seattle,WA,98107
+Z3295,EEZ Only,EEZO,56991,Phoenix Processor Limited Partnership,FCP,Floating Catcher Processor,Steve Pellegrin,2023,Phoenix,200 W Mercer st,Seattle,WA,98119
+Z3432,EEZ Only,EEZO,70435,F/V Bristol Leader,FCP,Floating Catcher Processor,Richard  Thummel,2023,Bristol Leader,8874 Bender RD,Lynden,WA,98264
+Z4466,EEZ Only,EEZO,52929, Gasllc Limited Liability Company,FCP,Floating Catcher Processor,James Mize,2023,Golden Alaska M/V,2200 Alaskan Way,Seattle,WA,98121
+Z5160,EEZ Only,EEZO,48075,Glacier Fish Company LLC,FCP,Floating Catcher Processor,Natalie Frank,2023,Northern Glacier,2001 W Garfield st,Seattle,WA,98119
+Z6964,EEZ Only,EEZO,74669,F/V Bering Leader,FCP,Floating Catcher Processor,Robert Thummel,2023,Bering Leader,8874 Bender Road,Lynden,WA,98264
+Z7551,EEZ Only,EEZO,57450,Arctic Fjord Inc,FCP,Floating Catcher Processor,Arctic Fjord INC,2023,Arctic Fjord CP,2727 Alaskan Way Pier 69,Seattle,WA,98121
+Z7554,EEZ Only,EEZO,54886,Arctic Storm Inc,FCP,Floating Catcher Processor,Arctic Storm INC and Subsidiary,2023,Arctic Storm CP,2727 Alaskan Way Pier 69,Seattle,WA,98121
+Z7855,EEZ Only,EEZO,60407,Glacier Fish Company LLC,FCP,Floating Catcher Processor,Natalie  Frank,2023,Alaska Ocean,2001 W Garfield st,Seattle,WA,98119
+Z7866,EEZ Only,EEZO,62437,F/V Alaskan Leader,FCP,Floating Catcher Processor,Robert Wurm,2023,Alaskan Leader,8874 Bender Road,Lynden,WA,98264
+Z8600,EEZ Only,EEZO,62545,Ohara Corporation,FCP,Floating Catcher Processor,Dean Slater,2023,Defender,120 Tillson ave,Rockland,ME,04841
+Z8601,EEZ Only,EEZO,60958,Phoenix Processor Limited Partnership,FCP,Floating Catcher Processor,Steve Pellegrin,2023,Excellence M/V,200 W Mercer st,Seattle,WA,98119
+Z9009,EEZ Only,EEZO,59378,American Seafoods Company LLC,FCP,Floating Catcher Processor,Frank Vargas,2023,American Dynasty,2025 1ST AVE STE 900,Seattle,WA,98121
+Z9010,EEZ Only,EEZO,60660,American Seafoods Company LLC,FCP,Floating Catcher Processor,Frank Vargas,2023,American Triumph,2025 1ST AVE STE 900,Seattle,WA,98121
+Z9012,EEZ Only,EEZO,56618,American Seafoods Company LLC,FCP,Floating Catcher Processor,Frank Vargas,2023,Northern Eagle,2025 1ST AVE STE 900,Seattle,WA,98121
+Z9032,EEZ Only,EEZO,61081,Ohara Corporation,FCP,Floating Catcher Processor,Frank Fogg,2023,Constellation,120 Tillson ave,Rockland,ME,04841
+Z9033,EEZ Only,EEZO,69038,Ohara Corporation,FCP,Floating Catcher Processor,Mark Zable,2023,Enterprise,120 Tillson ave,Rockland,ME,04841
+Z9035,EEZ Only,EEZO,57228,Arica Vessel LLC,FCP,Floating Catcher Processor,Natalie Frank,2023,Arica,2001 W Garfield st,Seattle,WA,98119
+Z9037,EEZ Only,EEZO,78507,Northstar Fishing Company LLC,FCP,Floating Catcher Processor,Northstar Fishing Company LLC,2023,FT North Star,2001 W Garfield st,Seattle,WA,98119
+Z9038,EEZ Only,EEZO,57211,Unimak Vessel LLC,FCP,Floating Catcher Processor,Natalie Frank,2023,Unimak,2001 W Garfield st,Seattle,WA,98119
+Z9801,EEZ Only,EEZO,77393,F/V Northern Leader,FCP,Floating Catcher Processor,Richard  Thummel,2023,F/V Northern Leader,8874 Bender Road,Lynden,WA,98264
+Z9959,EEZ Only,EEZO,56987,American Seafoods Company LLC,FCP,Floating Catcher Processor,Frank FRANK VARGAS,2023,OCEAN ROVER,2025 1ST AVE STE 900,Seattle,WA,98121
+Z9960,EEZ Only,EEZO,60202,American Seafoods Company LLC,FCP,Floating Catcher Processor, FRANK VARGAS,2023,NORTHERN JAEGER,2025 1ST AVE STE 900,Seattle,WA,98121
+Z9973,EEZ Only,EEZO,63484,F/V Lilli Ann,FCP,Floating Catcher Processor,Lorena Rosenberger,2023,Lilli Ann,711 H St,Anchorage,AK,99501
