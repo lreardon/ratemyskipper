@@ -1,0 +1,1 @@
+class InvalidEnvironmentError < StandardError; end

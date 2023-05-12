@@ -1,7 +1,7 @@
 class Friendship < ApplicationRecord
     attribute :user_id
     attribute :friend_id
-    enum status: Friendships::Statuses.constants.map { |c| Friendships::Statuses.const_get c}.index_with(&:to_s)
+    enum status: Friendships::Statuses.constants.map { |c| Friendships::Statuses.const_get c}.index_with(&:to_s), _default: Friendships::Statuses::PENDING
     
     belongs_to :user
     belongs_to :friend, class_name: 'User', foreign_key: :friend_id

@@ -32,8 +32,10 @@ class SkippersController < ApplicationController
 
 	# POST /skippers or /skippers.json
 	def create
-		@skipper = Skipper.new(skipper_params)
-		@skipper.creator = current_user
+		@skipper = Skipper.new(
+			creator_id: current_user.id,
+			**skipper_params
+		)
 
 		respond_to do |format|
 			if @skipper.save

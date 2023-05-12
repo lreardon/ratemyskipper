@@ -1,11 +1,11 @@
 class Review < ApplicationRecord
   attribute :author_id, :uuid
   attribute :skipper_id, :uuid
+	attribute :comment, :string
   attribute :would_return, :boolean
   attribute :reckless, :boolean
   attribute :did_not_pay, :boolean
   attribute :aggressive, :boolean
-  attribute :comment, :string
   attribute :paid_retros, :boolean
   attribute :paid_fuel, :boolean
   attribute :paid_food, :boolean
@@ -16,7 +16,6 @@ class Review < ApplicationRecord
   # Virtual Attributes, for validating POST/PUT
   attribute :fished_for_skipper, :boolean
   attribute :review_is_truthful, :boolean
-
 
   belongs_to :author, class_name: 'User', foreign_key: :author_id
   belongs_to :skipper, class_name: 'Skipper'

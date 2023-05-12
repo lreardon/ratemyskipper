@@ -27,6 +27,18 @@ class User < ApplicationRecord
 		user
 	end
 
+	# Methods wherein the user creates a record
+
+	def create_skipper!(skipper_params)
+		Skipper.create!(creator_id: id, **skipper_params)
+	end
+
+	def request_friendship_with!(user)
+		Friendship.create!(user_id: id, friend_id: user.id)
+	end
+
+	# -------------------------------------------
+
 	def can_edit_or_delete_skipper?(skipper)
 		skipper.creator_id == id
 	end
@@ -66,6 +78,14 @@ class User < ApplicationRecord
 
 	def pending_friends_with?(user)
 		friendships.pending.map(&:friend).include?(user)
+	end
+
+	def reject_friend_request!(friendship)
+		friendship.update!(status: Friendships::Statuses::REJECTED)
+	end
+
+	def accept_friend_request!(friendship)
+		friendship.update!(status: Friendships::Statuses::ACCEPTED)
 	end
 
 	def rejected_friends_with?(user)
