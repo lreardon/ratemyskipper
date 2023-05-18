@@ -22,5 +22,12 @@ module Ratemyskipper
 		# config.time_zone = "Central Time (US & Canada)"
 		# config.eager_load_paths << Rails.root.join("extras")
 		config.active_job.queue_adapter = :sidekiq
+
+		config.action_controller.perform_caching = true
+		config.cache_store = :redis_cache_store, {
+			host: 'localhost',
+			port: 6379,
+			password: Rails.application.credentials.redis.password
+		}
 	end
 end

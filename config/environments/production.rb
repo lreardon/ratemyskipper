@@ -15,14 +15,8 @@ Rails.application.configure do
 	# Rake tasks automatically ignore this option for performance.
 	config.eager_load = true
 
-	# Full error reports are disabled and caching is turned on.
-	config.consider_all_requests_local       = false
-	config.action_controller.perform_caching = true
-	config.cache_store = :redis_cache_store, {
-		host: 'localhost',
-		port: 6379,
-		password: Rails.application.credentials.redis.password
-	}
+	# Full error reports are disabled.
+	config.consider_all_requests_local = false
 
 	# Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
 	# or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
