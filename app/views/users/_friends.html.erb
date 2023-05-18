@@ -5,7 +5,7 @@
     </div>
     <div id='friends' class='flex flex-col gap-3 xl:gap-5'>
         <div class='flex flex-col gap-3 items-start'>
-            <% if (friendships = @user.accepted_friendships).present? %>
+            <% if (friendships = @user.friendships).present? %>
                 <%= render partial: 'friendships/friendship', collection: friendships, as: :friendship %>
             <% else %>
                 <p class='text-light'>You don't have any friends yet. <%= link_to 'Find', users_path %> some now!</p>

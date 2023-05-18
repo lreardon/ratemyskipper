@@ -1,8 +1,8 @@
 <div id='searchbar'>
-  <%= form_with url: path, method: :get, data: {controller: 'form-submission', turbo_frame: :search_results, turbo_action: 'advance'} do |f| %>
-    <div class='flex flex-row flex-nowrap gap-3 items-center'>
-      <%= f.text_field :q, id: 'searchbar-input', autocomplete: :off, data: { action: 'input->form-submission#search'}, placeholder: title, class: 'w-full' %>
-      <%= f.submit 'Search', class: 'bg-gray-100 rounded-lg py-3 px-5 bg-gray-100 text-lg'%>
-    </div>
-  <% end %>
+	<%= form_with url: path, method: :get, data: {controller: 'form-submission', turbo_frame: :search_results, turbo_action: 'advance'} do |f| %>
+		<div class='flex flex-row flex-nowrap gap-3 items-center'>
+			<%= f.text_field :q, id: 'searchbar-input', autocomplete: :off, data: { action: "input->form-submission\##{stimulus_action}"}, placeholder: title, class: 'w-full' %>
+			<%= f.submit 'Search', class: 'bg-gray-100 rounded-lg py-3 px-5 bg-gray-100 text-lg'%>
+		</div>
+	<% end %>
 </div>

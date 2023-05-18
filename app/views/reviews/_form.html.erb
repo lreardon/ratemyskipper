@@ -1,48 +1,43 @@
 <%= form_with(model: review, class: "contents") do |form| %>
   <%= render 'shared/errors', resource: review %>
   <div class='flex flex-col justify-start gap-10'>
+
     <%= form.hidden_field :skipper_id, value: @skipper.id %>
     <%= form.hidden_field :author_id, value: current_user.id %>
-    <%= render 'shared/radio_field', form: form, field: :would_return, title: "Would you fish for #{@skipper.firstname} again?" do %>
-      <%= render 'shared/radio_option', form: form, label: 'Yes', field: :would_return, value: true %>
-      <%= render 'shared/radio_option', form: form, label: 'No', field: :would_return, value: false %>
-    <% end %>
-    <div class='flex flex-col gap-3'>
-      <p>Any notable perks?</p>
-      <div class="flex flex-col gap-1">
-        <%= render 'shared/checkbox_field', form: form, field: :good_teacher, label: Flags::Good::GOOD_TEACHER %>
-        <%= render 'shared/checkbox_field', form: form, field: :paid_fuel, label: Flags::Good::PAID_FUEL %>
-        <%= render 'shared/checkbox_field', form: form, field: :paid_retros, label: Flags::Good::PAID_RETROS %>
-        <%= render 'shared/checkbox_field', form: form, field: :paid_food, label: Flags::Good::PAID_FOOD %>
-      </div>
-    </div>
-    <div class='flex flex-col gap-3'>
-      <p>Any concerning behaviors?</p>
-      <div class="flex flex-col gap-1">
-        <%= render 'shared/checkbox_field', form: form, field: :reckless, label: Flags::Bad::RECKLESS %>
-        <%= render 'shared/checkbox_field', form: form, field: :aggressive, label: Flags::Bad::AGGRESSIVE %>
-        <%= render 'shared/checkbox_field', form: form, field: :did_not_pay, label: Flags::Bad::DID_NOT_PAY %>
-      </div>
-    </div>
-    <div class='flex flex-col gap-3'>
-      <%= form.label :comment, 'Anything else?' %>
-      <%= form.text_area :comment, rows: 4 %>
-    </div>
 
-    <%= render 'shared/radio_field', form: form, field: :fished_for_skipper, title: "Have you fished for #{@skipper.firstname} personally?" do %>
-      <%= render 'shared/radio_option', form: form, label: 'Yes', field: :fished_for_skipper, value: true %>
-      <%= render 'shared/radio_option', form: form, label: 'No', field: :fished_for_skipper, value: false %>
+    <%= render 'shared/form/radio_field', form: form, field: :would_return, title: "Would you fish for #{@skipper.firstname} again?" do %>
+      <%= render 'shared/form/radio_option', form: form, label: 'Yes', field: :would_return, value: true %>
+      <%= render 'shared/form/radio_option', form: form, label: 'No', field: :would_return, value: false %>
     <% end %>
 
-    <%= render 'shared/radio_field', form: form, field: :review_is_truthful, title: "Do you certify that the content of this review is truthful?" do %>
-      <%= render 'shared/radio_option', form: form, label: 'Yes', field: :review_is_truthful, value: true %>
-      <%= render 'shared/radio_option', form: form, label: 'No', field: :review_is_truthful, value: false %>
+		<%= render 'shared/form/input_group', title: 'Any notable perks?' do %>
+			<% Flags::Good.constants.each do |flag| %>
+				<%= render 'shared/form/checkbox_field', form: form, field: flag.downcase, label: Flags::Good.const_get(flag) %>
+			<% end %>
+		<% end %>
+
+		<%= render 'shared/form/input_group', title: 'Any concerning behaviors?' do %>
+			<% Flags::Bad.constants.each do |flag| %>
+				<%= render 'shared/form/checkbox_field', form: form, field: flag.downcase, label: Flags::Bad.const_get(flag) %>
+			<% end %>
+		<% end %>
+
+		<%= render 'shared/form/text_area', form: form, label: 'Anything else?', rows: 4 %>
+
+    <%= render 'shared/form/radio_field', form: form, field: :fished_for_skipper, title: "Have you fished for #{@skipper.firstname} personally?" do %>
+      <%= render 'shared/form/radio_option', form: form, label: 'Yes', field: :fished_for_skipper, value: true %>
+      <%= render 'shared/form/radio_option', form: form, label: 'No', field: :fished_for_skipper, value: false %>
     <% end %>
 
-    <%= render 'shared/radio_field', form: form, field: :anonymity, title: "What level of anonymity do you want?" do %>
-      <%= render 'shared/radio_option', form: form, label: 'Anonymous', field: :anonymity, value: :anonymous %>
-      <%= render 'shared/radio_option', form: form, label: 'Signed for Friends', field: :anonymity, value: :signed_for_friends %>
-      <%= render 'shared/radio_option', form: form, label: 'Signed for All (your name will be visible to all users)', field: :anonymity, value: :signed_for_all %>
+    <%= render 'shared/form/radio_field', form: form, field: :review_is_truthful, title: "Do you certify that the content of this review is truthful?" do %>
+      <%= render 'shared/form/radio_option', form: form, label: 'Yes', field: :review_is_truthful, value: true %>
+      <%= render 'shared/form/radio_option', form: form, label: 'No', field: :review_is_truthful, value: false %>
+    <% end %>
+
+    <%= render 'shared/form/radio_field', form: form, field: :anonymity, title: "What level of anonymity do you want?" do %>
+      <%= render 'shared/form/radio_option', form: form, label: 'Anonymous', field: :anonymity, value: :anonymous %>
+      <%= render 'shared/form/radio_option', form: form, label: 'Signed for Friends', field: :anonymity, value: :signed_for_friends %>
+      <%= render 'shared/form/radio_option', form: form, label: 'Signed for All (your name will be visible to all users)', field: :anonymity, value: :signed_for_all %>
     <% end %>
 
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-100 text-lg cursor-pointer" %>

@@ -29,4 +29,6 @@ Rails.application.routes.draw do
 	post 'invite' => 'pages#send_invite'
 
 	get 'users/friends' => 'users#index_friends'
+	post 'users/save_skipper/:skipper_id' => 'users#save_skipper', as: 'save_skipper'
+	post 'users/unsave_skipper/:skipper_id' => 'users#unsave_skipper', as: 'unsave_skipper'
 end

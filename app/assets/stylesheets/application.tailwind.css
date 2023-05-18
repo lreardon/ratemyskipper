@@ -3,81 +3,89 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply font-bold text-3xl xl:text-4xl;
-  }
-  h2 {
-    @apply text-2xl xl:text-3xl;
-  }
-  h3 {
-    @apply text-xl xl:text-2xl;
-  }
-  h4 {
-    @apply text-lg xl:text-xl;
-  }
+	h1 {
+		@apply font-bold text-3xl xl: text-4xl;
+	}
 
-  hr {
-    @apply border-2;
-  }
+	h2 {
+		@apply text-2xl xl: text-3xl;
+	}
 
-  p,a,button,input {
-    @apply text-xs sm:text-sm md:text-base lg:text-lg;
-  }
+	h3 {
+		@apply text-xl xl: text-2xl;
+	}
 
-  input[type=submit] {
-    @apply text-xs sm:text-sm md:text-base lg:text-lg rounded-md md:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5;
-  }
+	h4 {
+		@apply text-lg xl: text-xl;
+	}
 
-  .text-light {
-    @apply text-gray-400;
-  }
+	hr {
+		@apply border-2;
+	}
 
-  .text-link {
-    @apply text-purple-600;
-  }
+	p,
+	a,
+	button,
+	input {
+		@apply text-xs sm: text-sm md:text-base lg:text-lg;
+	}
 
-  p a {
-    @apply text-link;
-  }
+	input[type=submit] {
+		@apply text-xs sm: text-sm md:text-base lg:text-lg rounded-md md:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5;
+	}
+
+	.text-light {
+		@apply text-gray-400;
+	}
+
+	.text-link {
+		@apply text-purple-600;
+	}
+
+	p a {
+		@apply text-link;
+	}
 }
 
 @layer components {
-  #navbar a,button {
-    @apply text-xs sm:text-sm md:text-base lg:text-lg;
-  }
 
-  #navbar-image {
-    @apply rounded-full;
-    height: auto;
-    min-width: 40px;
-    width: 40px;
+	#navbar a,
+	button {
+		@apply text-xs sm: text-sm md:text-base lg:text-lg;
+	}
 
-    @media screen and (min-width: 400px) {
-      min-width: 50px;
-      width: 50px;
-    }
+	#navbar-image {
+		@apply rounded-full;
+		height: auto;
+		min-width: 40px;
+		width: 40px;
 
-    @media screen and (min-width: 500px) {
-        min-width: 70px;
-        width: 70px;
-    }
-  }
+		@media screen and (min-width: 400px) {
+			min-width: 50px;
+			width: 50px;
+		}
 
-  #searchbar input {
-    @apply text-xs sm:text-sm md:text-base lg:text-lg;
-  }
+		@media screen and (min-width: 500px) {
+			min-width: 70px;
+			width: 70px;
+		}
+	}
 
-  .buttonlike {
-    @apply rounded-md sm:rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5 bg-gray-100;
-  }
+	#searchbar input {
+		@apply text-xs sm: text-sm md:text-base lg:text-lg;
+	}
 
-  #footer a {
-    font-size: 0.5rem;
-    line-height: 0.7rem;
-  }
+	.buttonlike {
+		@apply rounded-md sm: rounded-lg py-2 md:py-3 px-3 sm:px-4 md:px-5 bg-gray-100;
+	}
 
-  #footer p {
-    font-size: 0.5rem;
-    line-height: 0.7rem;
-  }
+	#footer a {
+		font-size: 0.5rem;
+		line-height: 0.7rem;
+	}
+
+	#footer p {
+		font-size: 0.5rem;
+		line-height: 0.7rem;
+	}
 }

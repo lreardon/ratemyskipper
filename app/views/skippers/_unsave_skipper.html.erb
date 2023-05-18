@@ -1,0 +1,9 @@
+<%= turbo_frame_tag :save_skipper, class: 'flex flex-col' do %>
+	<%= render 'shared/button/form',
+			title: "Unsave #{@skipper.firstname}",
+			method: :post,
+			path: unsave_skipper_path(@skipper),
+			data: { turbo_frame: :save_skipper },
+			twcss_color: 'bg-red-100'
+	%>
+<% end %>

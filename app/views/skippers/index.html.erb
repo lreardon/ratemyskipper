@@ -1,6 +1,6 @@
 <div class="flex flex-col gap-10">
   <h1>Skippers</h1>
-  <%= render 'shared/searchbar', path: skippers_path, title: 'Find or review a skipper' %>
+  <%= render 'shared/searchbar', stimulus_action: 'search_skippers', path: skippers_path, title: 'Find or review a skipper' %>
   <%= turbo_frame_tag :search_results do %>
     <div id="skippers" class='flex flex-col gap-5'>
       <% if @skippers.present? %>
@@ -11,6 +11,12 @@
           <div class='flex flex-col gap-10 items-center'>
             <p>Oops, we couldn't find any skippers matching your search!</p>
             <%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100', data: {turbo: false} %>
+          </div>
+        </div>
+			<% else %>
+        <div class='flex flex-row'>
+          <div class='flex flex-col gap-10'>
+            <p>Your saved skippers will appear here.</p>
           </div>
         </div>
       <% end %>

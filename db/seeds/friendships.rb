@@ -1,6 +1,6 @@
 User.all.each do |user|
 	other_users = User.all.filter { |u| u.id != user.id }
-	other_users_without_frieindship = other_users.filter { |u| !user.friendship_exists_with?(u) }
+	other_users_without_frieindship = other_users.filter { |u| !user.friendship_with?(u) }
 
 	number_of_friend_requests_to_send = Faker::Number.number % (other_users_without_frieindship.count + 1)
 

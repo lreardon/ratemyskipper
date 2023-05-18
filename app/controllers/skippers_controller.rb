@@ -12,6 +12,9 @@ class SkippersController < ApplicationController
 					Skipper.where('LOWER(boatname) SIMILAR TO ?', pattern)
 				)
 			)
+		else
+			saved_skippers = current_user.saved_skippers
+			@skippers = saved_skippers unless saved_skippers.empty?
 		end
 	end
 
