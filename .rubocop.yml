@@ -8,3 +8,6 @@ Layout/IndentationWidth:
   Width: 1
 Metrics/BlockLength:
   Enabled: false
+
+Style/Documentation:
+  Enabled: false
