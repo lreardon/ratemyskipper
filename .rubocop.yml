@@ -6,3 +6,5 @@ Layout/IndentationStyle:
 
 Layout/IndentationWidth:
   Width: 1
+Metrics/BlockLength:
+  Enabled: false
