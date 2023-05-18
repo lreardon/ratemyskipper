@@ -64,6 +64,7 @@ class User < ApplicationRecord
 	end
 
 	def save_skipper!(skipper)
+		ensure_saved_skippers_key_exists_in_cache
 		old_skipper_ids = saved_skipper_ids || []
 		raise DuplicateRecordError if old_skipper_ids.include?(skipper.id)
 
@@ -186,6 +187,7 @@ class User < ApplicationRecord
 	end
 
 	def saved_skippers
+		ensure_saved_skippers_key_exists_in_cache
 		saved_skipper_ids.map { |id| Skipper.find(id) }
 	end
 
@@ -199,5 +201,11 @@ class User < ApplicationRecord
 
 	def saved_skippers_key
 		"user-#{id}-saved-skippers"
+	end
+
+	private
+
+	def ensure_saved_skippers_key_exists_in_cache
+		Rails.cache.write(saved_skippers_key, []) unless Rails.cache.exist?(saved_skippers_key)
 	end
 end
