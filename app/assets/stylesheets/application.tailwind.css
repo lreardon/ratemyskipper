@@ -26,7 +26,8 @@
 	p,
 	a,
 	button,
-	input {
+	input,
+	.text-div {
 		@apply text-xs sm: text-sm md:text-base lg:text-lg;
 	}
 

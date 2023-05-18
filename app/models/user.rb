@@ -107,12 +107,12 @@ class User < ApplicationRecord
 	end
 
 	def friendship_with?(user)
-		users_in_friendship_sent_by_self = Friendship.where(user_id: id)
-		users_in_friendship_sent_to_self = Friendship.where(friend_id: id)
+		users_in_friendship_sent_by_self = Friendship.where(user_id: id).map(&:friend)
+		users_in_friendship_sent_to_self = Friendship.where(friend_id: id).map(&:user)
 
 		users_in_friendship = users_in_friendship_sent_by_self | users_in_friendship_sent_to_self
 
-		users_in_friendship.include?(user.id)
+		users_in_friendship.include?(user)
 	end
 
 	def friends_with?(user)

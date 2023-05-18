@@ -19,13 +19,9 @@
           <%= render 'shared/button/form', title: 'Delete', path: @user, method: :delete, twcss_color: 'bg-red-100', data: {turbo_confirm: 'Are you sure? This action is permanent!'} %>
         </div>
       </div>
-    <% elsif !current_user.friendship_with?(@user) %>
-      <%= render 'shared/button/form', title: 'Add Friend', path: friendships_path, method: :post, twcss_color: 'bg-blue-100', params: { friendship: {user_id: current_user.id, friend_id: @user.id}} %>
-    <% elsif current_user.friends_with?(@user)%>
-      <p class="rounded-lg py-3 px-5 bg-blue-100 text-lg">Friends!</p>
     <% else %>
-      <p class="rounded-lg py-3 px-5 bg-blue-100 text-lg">Friendship Pending</p>    
-    <% end %>
+			<%= render 'users/friendship_control' %>
+		<% end %>
   </div>
   <% if current_user == @user %>
     <%= render 'friends' %>

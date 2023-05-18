@@ -1,6 +1,8 @@
 <% friend = [friendship.user, friendship.friend].filter{|u| u.id != current_user.id }[0] %>
 
-<div class='flex flex-row gap-3 items-center p-5 bg-gray-100 rounded-lg'>
-    <p class='text-lg'><%= friend.name %></p>
+<div class='flex flex-row gap-3 items-center w-full text-xs sm:text-sm md:text-base lg:text-lg;'>
+		<div style='min-width: 24ch;'>
+	    <%= render 'shared/button/link', title: friend.name, path: user_path(friend), twcss_color: 'transparent' %>
+		</div>
     <%= render 'shared/button/form', title: 'Remove Friend', path: friendship_path(friendship), method: :delete, twcss_color: 'bg-red-100' %>
 </div>
