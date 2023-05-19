@@ -27,8 +27,13 @@
 	a,
 	button,
 	input,
+	pre,
 	.text-div {
 		@apply text-xs sm:text-sm md:text-base lg:text-lg;
+	}
+
+	pre {
+		@apply font-sans whitespace-pre-line;
 	}
 
 	input[type=submit] {
