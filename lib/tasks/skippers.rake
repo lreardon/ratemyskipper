@@ -12,10 +12,10 @@ namespace :skippers do
 				row['Vessel Name'] &&
 				(row['First name'] || row['Last name'])
 			end
-		)
+		).sort_by { |row| row['First name'] }
 
 		fishing_vessels_table.each do |row|
-			p "#{row['Vessel Name']} | #{row['First name']} #{row['Last name']}"
+			p "#{row['First name']} #{row['Last name']} | #{row['Vessel Name']}"
 
 			skipper_params = {
 				firstname: row['First name']&.titleize,

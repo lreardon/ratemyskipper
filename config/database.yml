@@ -16,7 +16,7 @@
 
 default: &default
   adapter: postgresql
-  encoding: unicode
+  encoding: unicodera
   timeout: 5000
   host: <%= Rails.application.credentials.pg.host %>
   database: <%= Rails.application.credentials.pg.database %>

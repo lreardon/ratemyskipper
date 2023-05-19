@@ -5,13 +5,20 @@ class SkippersController < ApplicationController
 	# GET /skippers or /skippers.json
 	def index
 		if (q = params[:q]).present?
-			tokens = q.downcase.split(' ')
+			q_downcase = q.downcase
+
+			best_match_skippers = Skipper.where("(LOWER(firstname) || ' ' || LOWER(lastname)) LIKE ?||'%'", q_downcase)
+
+			tokens = q_downcase.split(' ')
 			pattern = "%(#{tokens.join('|')})%"
-			@skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
+
+			loose_match_skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
 				Skipper.where('LOWER(lastname) SIMILAR TO ?', pattern).or(
 					Skipper.where('LOWER(boatname) SIMILAR TO ?', pattern)
 				)
 			)
+
+			@skippers = best_match_skippers | loose_match_skippers
 		else
 			saved_skippers = current_user.saved_skippers
 			@skippers = saved_skippers unless saved_skippers.empty?
