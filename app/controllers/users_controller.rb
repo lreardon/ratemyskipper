@@ -6,8 +6,9 @@ class UsersController < ApplicationController
 	def index
 		return unless (q = params[:q]).present?
 
-		tokens = q.downcase.split(' ')
-		pattern = "%(#{tokens.join('|')})%"
+		q_downcase = q.downcase
+		pattern = helpers.sql_similar_to_from_query(q_downcase)
+
 		@users = User.confirmed.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
 			User.confirmed.where('LOWER(lastname) SIMILAR TO ?', pattern)
 		)

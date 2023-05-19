@@ -9,10 +9,7 @@ class SkippersController < ApplicationController
 
 			best_match_skippers = Skipper.where("(LOWER(firstname) || ' ' || LOWER(lastname)) LIKE ?||'%'", q_downcase)
 
-			# Convert the query string into a search pattern for SQL SIMILAR TO comparator.
-			tokens = q_downcase.split(' ')
-			tokens = tokens.filter { |s| s.length >= 3 } # To avoid time-coonsuming, unspecific searches.
-			pattern = "%(#{tokens.join('|')})%"
+			pattern = helpers.sql_similar_to_from_query(q_downcase)
 
 			loose_match_skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
 				Skipper.where('LOWER(lastname) SIMILAR TO ?', pattern).or(
