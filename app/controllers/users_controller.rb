@@ -4,10 +4,10 @@ class UsersController < ApplicationController
 
 	# GET /users or /users.json
 	def index
-		return unless (q = params[:q]).present?
+		return unless (query = params[:q]).present?
 
-		q_downcase = q.downcase
-		pattern = helpers.sql_similar_to_from_query(q_downcase)
+		query_downcase = query.downcase
+		pattern = helpers.sql_similar_to_from_query(query_downcase)
 
 		@users = User.confirmed.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
 			User.confirmed.where('LOWER(lastname) SIMILAR TO ?', pattern)

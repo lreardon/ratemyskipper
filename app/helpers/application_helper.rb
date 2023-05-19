@@ -20,8 +20,8 @@ module ApplicationHelper
 		end
 	end
 
-	def sql_similar_to_from_query(q)
-		tokens = q.split(' ')
+	def sql_similar_to_from_query(query)
+		tokens = query.split(' ')
 		tokens = tokens.filter { |s| s.length >= 3 } # To avoid time-consuming, unspecific searches.
 
 		"%(#{tokens.join('|')})%"

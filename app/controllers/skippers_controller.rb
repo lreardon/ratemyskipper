@@ -4,12 +4,12 @@ class SkippersController < ApplicationController
 
 	# GET /skippers or /skippers.json
 	def index
-		if (q = params[:q]).present?
-			q_downcase = q.downcase
+		if (query = params[:q]).present?
+			query_downcase = query.downcase
 
-			best_match_skippers = Skipper.where("(LOWER(firstname) || ' ' || LOWER(lastname)) LIKE ?||'%'", q_downcase)
+			best_match_skippers = Skipper.where("(LOWER(firstname) || ' ' || LOWER(lastname)) LIKE ?||'%'", query_downcase)
 
-			pattern = helpers.sql_similar_to_from_query(q_downcase)
+			pattern = helpers.sql_similar_to_from_query(query_downcase)
 
 			loose_match_skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
 				Skipper.where('LOWER(lastname) SIMILAR TO ?', pattern).or(
