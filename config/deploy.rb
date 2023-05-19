@@ -3,7 +3,7 @@
 
 server '143.198.247.64',  port: 22, user: 'deploy', roles: %w[db web app], primary: true
 set :repo_url,        'git@github.com:lreardon/ratemyskipper.git'
-set :branch,        :main
+set :branch,          :main
 set :application,     'ratemyskipper'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
