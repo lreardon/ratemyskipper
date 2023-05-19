@@ -1,4 +1,4 @@
 desc 'Say hello!'
-task :hello do
+task hello: [:environment] do
 	p 'Hello!'
 end
