@@ -1,11 +1,11 @@
-<div class='flex flex-row items-center gap-3 bg-gray-100 rounded-lg'>
+<div class='flex flex-row items-center gap-3'>
 	<% if !current_user.friendship_with?(@user) %>
 		<%= render 'shared/button/form', title: 'Add Friend', path: friendships_path, method: :post, twcss_color: 'bg-blue-100', params: { friendship: {user_id: current_user.id, friend_id: @user.id}} %>
 	<% elsif current_user.friends_with?(@user)%>
-		<p>Friends!</p>
+		<p class='py-3 px-5'>Friends!</p>
 		<%= render 'shared/button/form', title: 'Remove Friend', path: friendships_path, method: :delete, twcss_color: 'bg-red-100', params: { friendship: {user_id: current_user.id, friend_id: @user.id}} %>	
 	<% else %>
-		<p>Friendship Pending</p>    
+		<p class='py-3 px-5'>Friendship Pending</p>
 		<%= render 'shared/button/form', title: 'Delete Request', path: friendships_path, method: :delete, twcss_color: 'bg-red-100', params: { friendship: {user_id: current_user.id, friend_id: @user.id}} %>
 	<% end %>
 </div>
