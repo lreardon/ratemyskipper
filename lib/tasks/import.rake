@@ -3,7 +3,7 @@ desc 'Import records from a CSV file'
 task :import, %i[model] => %i[environment] do |_t, args|
 	require 'csv'
 
-	table = CSV.parse(File.read("#{Rails.root}/data/backup/#{args[:model]}.csv"), headers: true, liberal_parsing: true)
+	table = CSV.parse(File.read("#{Rails.root}/data/import/#{args[:model]}.csv"), headers: true, liberal_parsing: true)
 
 	table.each do |row|
 		row.each do |k, v|
@@ -21,10 +21,14 @@ task :import, %i[model] => %i[environment] do |_t, args|
 
 		record = model.new(row)
 
-		next if record.save(validate: false)
+		begin
+			next if record.save(validate: false)
 
-		record.errors.each do |e|
-			p e.full_message
+			record.errors.each do |e|
+				p e.full_message
+			end
+		rescue => e # rubocop:disable Style/RescueStandardError
+			p e.message
 		end
 	end
 end
