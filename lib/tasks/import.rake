@@ -1,6 +1,6 @@
 desc 'Import records from a CSV file'
 
-task :import, [:model] => %i[environment] do |_t, args|
+task :import, %i[model] => %i[environment] do |_t, args|
 	require 'csv'
 
 	table = CSV.parse(File.read("#{Rails.root}/data/backup/#{args[:model]}.csv"), headers: true, liberal_parsing: true)
