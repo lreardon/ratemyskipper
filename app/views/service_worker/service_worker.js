@@ -77,73 +77,73 @@
 
 
 
-// const OFFLINE_VERSION = 1;
-// const CACHE_NAME = `offline V${OFFLINE_VERSION}`;
-// const OFFLINE_URL = 'offline';
-// const OFFLINE_IMG = 'apple-icon.png';
+const OFFLINE_VERSION = 1;
+const CACHE_NAME = `offline V${OFFLINE_VERSION}`;
+const OFFLINE_URL = 'offline';
+const OFFLINE_IMG = 'apple-icon.png';
 
-// function urlB64ToUint8Array(base64String) {
-//   const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
-//   const base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
+function urlB64ToUint8Array(base64String) {
+	const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
+	const base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
 
-//   const rawData = atob(base64);
-//   const outputArray = new Uint8Array(rawData.length);
+	const rawData = atob(base64);
+	const outputArray = new Uint8Array(rawData.length);
 
-//   for (var i = 0; i < rawData.length; ++i) {
-//     outputArray[i] = rawData.charCodeAt(i);
-//   }
-//   return outputArray;
-// }
+	for (var i = 0; i < rawData.length; ++i) {
+		outputArray[i] = rawData.charCodeAt(i);
+	}
+	return outputArray;
+}
 
-// self.addEventListener('install', function(event) {
-//   console.log('Service Worker installing.');
-//   self.skipWaiting();
-//   event.waitUntil((async () => {
-//     const cache = await caches.open(CACHE_NAME);
-//     // Setting {cache: 'reload'} in the new request will ensure that the response
-//     // isn't fulfilled from the HTTP cache; i.e., it will be from the network.
-//     // here the offline url and image are stored in the cache
-//    await Promise.all([OFFLINE_URL, OFFLINE_IMG].map((path) => {
-//       cache.add(new Request(path, {cache: 'reload'}));
-//     }));
-//   })());
-// });
+self.addEventListener('install', function (event) {
+	console.log('Service Worker installing.');
+	self.skipWaiting();
+	event.waitUntil((async () => {
+		const cache = await caches.open(CACHE_NAME);
+		// Setting {cache: 'reload'} in the new request will ensure that the response
+		// isn't fulfilled from the HTTP cache; i.e., it will be from the network.
+		// here the offline url and image are stored in the cache
+		await Promise.all([OFFLINE_URL, OFFLINE_IMG].map((path) => {
+			cache.add(new Request(path, { cache: 'reload' }));
+		}));
+	})());
+});
 
-// self.addEventListener('activate', async function(event) {
-//   console.log('Service Worker activated.');
+self.addEventListener('activate', async function (event) {
+	console.log('Service Worker activated.');
 
-//   // // Tell the active service worker to take control of the page immediately.
-//   self.clients.claim();
+	// // Tell the active service worker to take control of the page immediately.
+	self.clients.claim();
 
-//   let cacheWhitelist = [CACHE_NAME];
-//   event.waitUntil((async () => {
-//     // Enable navigation preload if it's supported.
-//     // See https://developers.google.com/web/updates/2017/02/navigation-preload
-//     if ('navigationPreload' in self.registration) {
-//       await self.registration.navigationPreload.enable();
-//     }
+	let cacheWhitelist = [CACHE_NAME];
+	event.waitUntil((async () => {
+		// Enable navigation preload if it's supported.
+		// See https://developers.google.com/web/updates/2017/02/navigation-preload
+		if ('navigationPreload' in self.registration) {
+			await self.registration.navigationPreload.enable();
+		}
 
-//     // Delete old versions of CACHE_NAME
-//     caches.keys().then(function(cacheNames) {
-//       return Promise.all(
-//         cacheNames.map(function(cacheName) {
-//           if (cacheWhitelist.indexOf(cacheName) === -1) {
-//             return caches.delete(cacheName);
-//           }
-//         })
-//       );
-//     })
-//   })());
+		// Delete old versions of CACHE_NAME
+		caches.keys().then(function (cacheNames) {
+			return Promise.all(
+				cacheNames.map(function (cacheName) {
+					if (cacheWhitelist.indexOf(cacheName) === -1) {
+						return caches.delete(cacheName);
+					}
+				})
+			);
+		})
+	})());
 
-//   try {
-//     const applicationServerKey = urlB64ToUint8Array('<YOUR_PUBLIC_KEY_FOR_NOTIFICATION_PUSH>')
-//     const options = { applicationServerKey, userVisibleOnly: true }
-//     const subscription = await self.registration.pushManager.subscribe(options)
-//     console.log(JSON.stringify(subscription))
-//   } catch (err) {
-//     console.log('Error', err)
-//   }
-// });
+	try {
+		const applicationServerKey = urlB64ToUint8Array('<YOUR_PUBLIC_KEY_FOR_NOTIFICATION_PUSH>')
+		const options = { applicationServerKey, userVisibleOnly: true }
+		const subscription = await self.registration.pushManager.subscribe(options)
+		console.log(JSON.stringify(subscription))
+	} catch (err) {
+		console.log('Error', err)
+	}
+});
 
 self.addEventListener('fetch', function (event) {
 	console.log('Service Worker fetching.');

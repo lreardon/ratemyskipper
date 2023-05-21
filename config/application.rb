@@ -30,7 +30,8 @@ module Ratemyskipper
 			password: Rails.application.credentials.redis.password
 		}
 
-		# Serve assets compressed for faster page loadtimes
-		config.middleware.insert_after ActionDispatch::Static, Rack::Deflater
+		# Serve assets compressed for faster page loadtimes.
+		# Make sure Rack::Deflater it runs after ActionDispatch::Static, if it's present.
+		config.middleware.insert_before ActionDispatch::Executor, Rack::Deflater
 	end
 end
