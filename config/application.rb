@@ -29,5 +29,8 @@ module Ratemyskipper
 			port: 6379,
 			password: Rails.application.credentials.redis.password
 		}
+
+		# Serve assets compressed for faster page loadtimes
+		config.middleware.insert_after ActionDispatch::Static, Rack::Deflater
 	end
 end

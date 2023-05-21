@@ -1,18 +1,18 @@
 {
-  "name": "ratemyskipper",
-  "private": "true",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.0",
-    "@hotwired/stimulus": "^3.2.1",
-    "@hotwired/turbo-rails": "^7.1.1",
-    "@popperjs/core": "^2.11.4",
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.1",
-    "esbuild": "^0.14.27",
-    "sass": "^1.49.9"
-  },
-  "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
-    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
-  }
+	"name": "ratemyskipper",
+	"private": "true",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.4.0",
+		"@hotwired/stimulus": "^3.2.1",
+		"@hotwired/turbo-rails": "^7.1.1",
+		"@popperjs/core": "^2.11.4",
+		"bootstrap": "^5.1.3",
+		"bootstrap-icons": "^1.8.1",
+		"esbuild": "^0.14.27",
+		"sass": "^1.49.9"
+	},
+	"scripts": {
+		"build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
+		"build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
+	}
 }

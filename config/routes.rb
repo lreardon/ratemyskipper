@@ -2,9 +2,9 @@ require 'sidekiq/web'
 require 'sidekiq-scheduler/web'
 
 Rails.application.routes.draw do
-	# authenticate :user, -> (u) { u.admin? } do
-	mount Sidekiq::Web => '/sidekiq'
-	# end
+	authenticate :user, -> (u) { u.admin? } do
+		mount Sidekiq::Web => '/sidekiq'
+	end
 
 	resources :friendships
 	resources :reviews
@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 		passwords: 'users/passwords'
 	}, path_prefix: 'devise'
 
+	get 'service-worker.js' => 'service_worker#service_worker'
+	get 'manifest.json' => 'service_worker#manifest'
+
 	root to: 'pages#index'
 	get 'about' => 'pages#about'
 	get 'contact' => 'pages#contact'
@@ -27,6 +30,7 @@ Rails.application.routes.draw do
 	get 'terms_of_service' => 'pages#terms_of_service'
 	get 'invite' => 'pages#invite'
 	post 'invite' => 'pages#send_invite'
+	get 'offline' => 'pages#offline'
 
 	get 'users/friends' => 'users#index_friends'
 	post 'users/save_skipper/:skipper_id' => 'users#save_skipper', as: 'save_skipper'

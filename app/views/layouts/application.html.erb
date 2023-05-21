@@ -2,8 +2,14 @@
 <html class='bg-blue-100'>
   <head>
     <title>Skipper Buoy</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="facebook-domain-verification" content="8elt8n9u1cjm9fx87q3yxuxu4umblu" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" crossorigin="use-credentials" href="<%= asset_path 'manifest.json' %>">
+    <%= render 'shared/pwa_icons' %>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

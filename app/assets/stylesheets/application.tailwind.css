@@ -51,6 +51,11 @@
 	p a {
 		@apply text-link;
 	}
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
 }
 
 @layer components {
