@@ -35,6 +35,6 @@ if (navigator.serviceWorker) {
 
 // force to relaod the page when internet connexion is offline to render the offline page in cache
 window.addEventListener('offline', () => {
-	console.log('HEY HEY HEY')
+	// console.log('HEY HEY HEY')
 	window.location.reload();
 });
