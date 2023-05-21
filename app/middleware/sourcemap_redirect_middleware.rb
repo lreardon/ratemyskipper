@@ -5,7 +5,7 @@ class SourcemapRedirectMiddleware
 
 	def call(env)
 		if env['PATH_INFO'].match?(/.*\.(js|css)-.*\.map/)
-			asset_name = env['PATH_INFO'].split('-').first
+			asset_name = env['PATH_INFO'].split('-')[0..-2].join('-')
 			new_path = ActionController::Base.helpers.asset_path("#{asset_name}.map")
 
 			# Preventing redirection loop
