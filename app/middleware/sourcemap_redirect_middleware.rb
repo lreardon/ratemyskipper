@@ -9,9 +9,7 @@ class SourcemapRedirectMiddleware
 			new_path = ActionController::Base.helpers.asset_path("#{asset_name}.map")
 
 			# Preventing redirection loop
-			if env['PATH_INFO'] != new_path
-				return [301, { 'Location' => new_path }, []]
-			end
+			return [301, { 'Location' => new_path }, []] unless env['PATH_INFO'] == new_path
 		end
 
 		@app.call(env)
