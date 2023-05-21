@@ -2,12 +2,13 @@
 <html class='bg-blue-100'>
   <head>
     <title>Skipper Buoy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="facebook-domain-verification" content="8elt8n9u1cjm9fx87q3yxuxu4umblu" />
 
+		<!-- PWA-related meta tags, manifest, and icons -->
     <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="manifest" crossorigin="use-credentials" href="<%= asset_path 'manifest.json' %>">
+    <link rel="manifest" crossorigin="use-credentials" href="<%= asset_path('manifest.json') %>">
     <%= render 'shared/pwa_icons' %>
 
     <%= csrf_meta_tags %>
@@ -19,7 +20,7 @@
   </head>
   <body class='flex flex-col justify-between min-h-screen mx-auto bg-white' style="max-width: 1024px;">
     <div class='hidden' id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=1068800324527105&autoLogAppEvents=1" nonce="2rt3wZJJ"></script>
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=1068800324527105&autoLogAppEvents=1" nonce="2rt3wZJJ"></script> -->
     <div class='flex flex-col'>
       <%= render 'layouts/navbar' %>
       <main class="flex flex-col pt-2 px-2 pb-16 md:pt-3 md:px-3 md:pb-22 lg:pt-5 lg:pb-28 lg:px-5">
