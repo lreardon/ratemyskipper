@@ -3,6 +3,4 @@ class ServiceWorkerController < ApplicationController
 	# skip_before_action :authenticate_user!
 
 	def service_worker; end
-
-	def manifest; end
 end

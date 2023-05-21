@@ -1,6 +1,6 @@
 <%= link_to skipper, data: { turbo: "false" } do %>
   <div id="<%= dom_id skipper %>" class='flex flex-row'>
-    <div class='flex flex-col xl:flex-row rounded-lg p-5 xl:px-8 xl:gap-16 xl:items-center items-start' style="background-color: <%= color_for_skipper(skipper) %>;">
+    <div id="<%= dom_id skipper %>" class='flex flex-col max-sm:w-full xl:flex-row rounded-lg p-5 xl:px-8 xl:gap-16 xl:items-center items-start' style="background-color: <%= color_for_skipper(skipper) %>;">
       <h4 class='font-bold pb-3 lg:pb-5 xl:pb-0'><%= skipper.name %></h3>
       <h4><%= fv_boatname(skipper.boatname) %></h3>
       <% if skipper.city %>

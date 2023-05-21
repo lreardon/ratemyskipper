@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Users::PasswordsController < Devise::PasswordsController
+	skip_after_action :discard_flash_notices, only: %i[create]
 	# GET /resource/password/new
 	# def new
 	#   super
