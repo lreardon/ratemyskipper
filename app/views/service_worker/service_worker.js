@@ -49,7 +49,6 @@ warmStrategyCache({ urls, strategy });
 
 // Trigger a 'catch' handler when any of the other routes fail to generate a response
 setCatchHandler(async ({ event }) => {
-	console.log("HEY HEY HEY")
 	switch (event.request.destination) {
 		case 'document':
 			return strategy.handle({ event, request: urls[0] });
