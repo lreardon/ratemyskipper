@@ -34,14 +34,12 @@ class User < ApplicationRecord
 		user
 	end
 
-	### Write Methods
-
-	# Interactions with other users
+	# Actions
 
 	def request_friendship_with!(user)
 		if friendship_with?(user)
-			# If duplicate request is to a user who previously sent a request that was rejected, don't complain.
-			unless Friendship.where(user_id: user.id, friend_id: id, status: Friendships::Statuses.REJECTED).exist?
+			# If request is duplicate, complain unless sender previously rejected recipient.
+			unless Friendship.find_by(user_id: user.id, friend_id: id)&.status == Friendships::Statuses::REJECTED
 				raise AlreadyExistsError
 			end
 		end
@@ -49,9 +47,13 @@ class User < ApplicationRecord
 		Friendship.create!(user_id: id, friend_id: user.id)
 	end
 
-	# ----
+	def accept_friend_request!(friendship)
+		friendship.update!(status: Friendships::Statuses::ACCEPTED)
+	end
 
-	# Interactions with skippers
+	def reject_friend_request!(friendship)
+		friendship.update!(status: Friendships::Statuses::REJECTED)
+	end
 
 	def create_skipper!(skipper_params)
 		Skipper.create!(creator_id: id, **skipper_params)
@@ -79,20 +81,19 @@ class User < ApplicationRecord
 		new_skipper_ids = old_skipper_ids.filter { |id| id != skipper.id }
 		Rails.cache.write(saved_skippers_key, new_skipper_ids)
 	end
-	# ----
 
-	# -------------------------------------------
-
-	def can_edit_or_delete_skipper?(skipper)
-		can_delete_skipper?(skipper) || can_edit_skipper?(skipper)
+	# Checks
+	
+	def can_edit_skipper?(skipper)
+		skipper.creator_id == id || admin?
 	end
 
 	def can_delete_skipper?(skipper)
 		skipper.creator_id == id || admin?
 	end
 
-	def can_edit_skipper?(skipper)
-		skipper.creator_id == id || admin?
+	def can_edit_or_delete_skipper?(skipper)
+		can_delete_skipper?(skipper) || can_edit_skipper?(skipper)
 	end
 
 	def reviewed_skipper?(skipper)
@@ -101,10 +102,6 @@ class User < ApplicationRecord
 
 	def wrote_review?(review)
 		authored_reviews.map(&:id).include?(review.id)
-	end
-
-	def name
-		"#{firstname} #{lastname}".titleize
 	end
 
 	def friendship_with?(user)
@@ -124,19 +121,23 @@ class User < ApplicationRecord
 		friendships.pending.map(&:friend).include?(user)
 	end
 
-	def reject_friend_request!(friendship)
-		friendship.update!(status: Friendships::Statuses::REJECTED)
-	end
-
-	def accept_friend_request!(friendship)
-		friendship.update!(status: Friendships::Statuses::ACCEPTED)
-	end
-
 	def rejected_friends_with?(user)
 		friendships.rejected.map(&:friend).include?(user)
 	end
 
-	# Friendships
+	def saved_skipper?(skipper)
+		saved_skippers.map(&:id).include?(skipper.id)
+	end
+
+	def verified?
+		friends.count >= 2
+	end
+
+	# Reads
+
+	def name
+		"#{firstname} #{lastname}".titleize
+	end
 
 	def friendships
 		friendships_sent_by_user = Friendship.accepted.where(user_id: id)
@@ -157,8 +158,6 @@ class User < ApplicationRecord
 		Friendship.rejected.where(friend_id: id)
 	end
 
-	# Friends
-
 	def friends
 		friends_sent_by_user = Friendship.accepted.where(user_id: id).map(&:friend)
 		friends_sent_to_user = Friendship.accepted.where(friend_id: id).map(&:user)
@@ -178,12 +177,12 @@ class User < ApplicationRecord
 		rejected_friendships.map(&:friend)
 	end
 
-	def send_devise_notification(notification, *args)
-		devise_mailer.send(notification, self, *args).deliver_later
+	def saved_skipper_ids
+		Rails.cache.read(saved_skippers_key)
 	end
 
-	def verified?
-		friends.count >= 2
+	def saved_skippers_key
+		"user-#{id}-saved-skippers"
 	end
 
 	def saved_skippers
@@ -191,16 +190,14 @@ class User < ApplicationRecord
 		saved_skipper_ids.map { |id| Skipper.find(id) }
 	end
 
-	def saved_skipper?(skipper)
-		saved_skippers.map(&:id).include?(skipper.id)
-	end
+	# Method Overrides
 
-	def saved_skipper_ids
-		Rails.cache.read(saved_skippers_key)
-	end
-
-	def saved_skippers_key
-		"user-#{id}-saved-skippers"
+	def send_devise_notification(notification, *args)
+		if ENV['RAILS_ENV'] == 'test'
+			devise_mailer.send(notification, self, *args)
+		else
+			devise_mailer.send(notification, self, *args).deliver_later
+		end
 	end
 
 	private
