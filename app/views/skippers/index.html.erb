@@ -4,18 +4,17 @@
   <%= turbo_frame_tag :search_results do %>
     <div id="skippers" class='flex flex-col gap-16'>
 			<% unless @perfect_match_skippers.nil? %>
-				<% if @perfect_match_skippers.empty? %>
-					<div class='flex flex-row justify-center'>
-						<div class='flex flex-col gap-5 items-center'>
-							<p>We couldn't find any skippers with that name!</p>
-							<%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100', data: {turbo: false} %>
-						</div>
-					</div>
-				<% else %>
+				<% unless @perfect_match_skippers.empty? %>
 					<div id='perfect-match-skippers' class='flex flex-col gap-5'>
 						<%= render @perfect_match_skippers %>
 					</div>
 				<% end %>
+				<div class='flex flex-row justify-start'>
+					<div class='flex flex-col gap-2 items-start'>
+						<p>Don't see your skipper? Add them!</p>
+						<%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100', data: {turbo: false} %>
+					</div>
+				</div>
 			<% end %>
       <% if @skippers.present? %>
 				<div id='similar-skippers' class='flex flex-col gap-5'>
