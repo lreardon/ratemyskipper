@@ -17,12 +17,12 @@
 				</div>
 			<% end %>
       <% if @skippers.present? %>
-				<div id='similar-skippers' class='flex flex-col gap-5'>
+				<div id='similar-match-skippers' class='flex flex-col gap-5'>
 					<h3>Similar serach results</h3>
           <%= render @skippers %>
 				</div>
 			<% end %>
-      <% if !@skippers.nil? && @perfect_match_skippers.nil? %>
+      <% unless @saved_skippers.nil? %>
         <div class='flex flex-row'>
           <div class='flex flex-col gap-10'>
             <p>Your saved skippers will appear here.</p>
