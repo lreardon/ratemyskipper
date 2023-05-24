@@ -7,8 +7,9 @@ class SkippersController < ApplicationController
 		if (query = params[:q]).present?
 			query_downcase = query.downcase
 
-			best_match_skippers = Skipper.where("(LOWER(firstname) || ' ' || LOWER(lastname)) LIKE ?||'%'", query_downcase)
-
+			@perfect_match_skippers = Skipper.where("(LOWER(firstname) || ' ' || LOWER(lastname)) LIKE ?||'%'", query_downcase)
+			p "HEY LOOK HERE"
+			p @perfect_match_skippers
 			pattern = helpers.sql_similar_to_from_query(query_downcase)
 			loose_match_skippers = Skipper.where('LOWER(firstname) SIMILAR TO ?', pattern).or(
 				Skipper.where('LOWER(lastname) SIMILAR TO ?', pattern).or(
@@ -16,7 +17,7 @@ class SkippersController < ApplicationController
 				)
 			)
 
-			@skippers = best_match_skippers | loose_match_skippers
+			@skippers = loose_match_skippers - @perfect_match_skippers
 		else
 			saved_skippers = current_user.saved_skippers
 			@skippers = saved_skippers unless saved_skippers.empty?

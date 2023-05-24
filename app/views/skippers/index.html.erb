@@ -2,18 +2,28 @@
   <h1>Skippers</h1>
   <%= render 'shared/searchbar', stimulus_action: 'search_skippers', path: skippers_path, title: 'Find or review a skipper' %>
   <%= turbo_frame_tag :search_results do %>
-    <div id="skippers" class='flex flex-col gap-5'>
+    <div id="skippers" class='flex flex-col gap-16'>
+			<% unless @perfect_match_skippers.nil? %>
+				<% if @perfect_match_skippers.empty? %>
+					<div class='flex flex-row justify-center'>
+						<div class='flex flex-col gap-5 items-center'>
+							<p>We couldn't find any skippers with that name!</p>
+							<%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100', data: {turbo: false} %>
+						</div>
+					</div>
+				<% else %>
+					<div id='perfect-match-skippers' class='flex flex-col gap-5'>
+						<%= render @perfect_match_skippers %>
+					</div>
+				<% end %>
+			<% end %>
       <% if @skippers.present? %>
+				<div id='similar-skippers' class='flex flex-col gap-5'>
+					<h3>Similar serach results</h3>
           <%= render @skippers %>
-        </div>
-      <% elsif !@skippers.nil? %>
-        <div class='flex flex-row justify-center'>
-          <div class='flex flex-col gap-10 items-center'>
-            <p>Oops, we couldn't find any skippers matching your search!</p>
-            <%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100', data: {turbo: false} %>
-          </div>
-        </div>
-			<% else %>
+				</div>
+			<% end %>
+      <% if !@skippers.nil? && @perfect_match_skippers.nil? %>
         <div class='flex flex-row'>
           <div class='flex flex-col gap-10'>
             <p>Your saved skippers will appear here.</p>
@@ -23,10 +33,3 @@
     </div>
   <% end %>
 </div>
-
-<!--
-  <div class='flex flex-col items-start lg:flex-row justify-center gap-3'>
-    <%= render 'shared/button/link', title: 'Review a skipper', path: new_review_path, twcss_color: 'bg-orange-100' %>
-    <%= render 'shared/button/link', title: 'Add your skipper', path: new_skipper_path, twcss_color: 'bg-blue-100' %>
-  </div>
--->
