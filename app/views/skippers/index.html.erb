@@ -22,13 +22,15 @@
           <%= render @skippers %>
 				</div>
 			<% end %>
-      <% unless @saved_skippers.nil? %>
+      <% if @saved_skippers.nil? %>
         <div class='flex flex-row'>
           <div class='flex flex-col gap-10'>
             <p>Your saved skippers will appear here.</p>
           </div>
         </div>
-      <% end %>
+      <% else %>
+				<%= render @saved_skippers %>
+			<% end %>
     </div>
   <% end %>
 </div>
