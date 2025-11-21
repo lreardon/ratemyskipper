@@ -115,6 +115,8 @@ group :development do
 
 	gem 'net-ssh', '~> 7.1'
 
+	gem 'letter_opener', group: :development
+
 	gem 'seedbank'
 end
 

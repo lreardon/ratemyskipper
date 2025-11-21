@@ -49,7 +49,11 @@ production:
   <<: *default
 
 development:
-  <<: *default
+  # <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: ratemyskipper_development
   # These could be set explicitly to avoid needing encrypted files for development, but this feels the cleanest
   # host: <%= Rails.application.credentials.pg_host %>
   # database: <%= Rails.application.credentials.pg_database %>
