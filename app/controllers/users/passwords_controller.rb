@@ -10,11 +10,8 @@ class Users::PasswordsController < Devise::PasswordsController
 	# POST /resource/password
 	def create
 		if (user = User.find_by(email: params[:user][:email])) && !user.provider.nil?
-			p 'HEY HEY'
 			redirect_to :back, alert: "The user associated with this email address logs in with #{helpers.display_omniauth_provider(user.provider)}."
 		end
-
-		p 'HEY WHAT THE FUCK'
 		super
 	end
 

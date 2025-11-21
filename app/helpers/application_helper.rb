@@ -10,10 +10,10 @@ module ApplicationHelper
 	end
 
 	def display_omniauth_provider(provider)
-		case provider
-		when :facebook
+		case provider.to_s
+		when 'facebook'
 			'Facebook'
-		when :google_oauth2
+		when 'google_oauth2'
 			'Google'
 		else
 			raise UnsupportedValueError
