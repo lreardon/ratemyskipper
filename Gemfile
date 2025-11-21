@@ -110,8 +110,8 @@ group :development do
 	gem 'capistrano-rvm', require: false
 	# gem 'capistrano-sidekiq-systemd', require: false
 
-	gem 'solargraph'
-	gem 'solargraph-rails'
+	# gem 'solargraph'
+	# gem 'solargraph-rails'
 
 	gem 'seedbank'
 end
