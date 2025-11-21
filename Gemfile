@@ -113,6 +113,8 @@ group :development do
 	# gem 'solargraph'
 	# gem 'solargraph-rails'
 
+	gem 'net-ssh', '~> 7.1'
+
 	gem 'seedbank'
 end
 
