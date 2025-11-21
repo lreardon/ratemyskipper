@@ -20,6 +20,13 @@ Rails.application.configure do
 	# Store uploaded files on the local file system (see config/storage.yml for options).
 	config.active_storage.service = :local
 
+	# Use Redis for caching in development
+	config.cache_store = :redis_cache_store, {
+		host: 'localhost',
+		port: 6379,
+		password: Rails.application.credentials.redis.password
+	}
+
 	# Don't care if the mailer can't send.
 	config.action_mailer.perform_caching = false
 	config.action_mailer.perform_deliveries = true

@@ -52,3 +52,5 @@ config/secrets.yml
 
 notes.txt
 /config/credentials/test.key
+
+prod_credentials_backup.yaml

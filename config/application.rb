@@ -23,13 +23,6 @@ module Ratemyskipper
 		# config.eager_load_paths << Rails.root.join("extras")
 		config.active_job.queue_adapter = :sidekiq
 
-		config.action_controller.perform_caching = true
-		config.cache_store = :redis_cache_store, {
-			host: 'localhost',
-			port: 6379,
-			password: Rails.application.credentials.redis.password
-		}
-
 		# Serve assets compressed for faster page loadtimes.
 		# Make sure Rack::Deflater it runs after ActionDispatch::Static, if it's present.
 		config.middleware.insert_before ActionDispatch::Executor, Rack::Deflater

@@ -55,10 +55,10 @@ development:
   pool: 5
   database: ratemyskipper_development
   # These could be set explicitly to avoid needing encrypted files for development, but this feels the cleanest
-  # host: <%= Rails.application.credentials.pg_host %>
-  # database: <%= Rails.application.credentials.pg_database %>
-  # username: <%= Rails.application.credentials.pg_username %>
-  # password: <%= Rails.application.credentials.pg_password %>
+  # host: <%= Rails.application.credentials.pg.host %>
+  # database: <%= Rails.application.credentials.pg.database %>
+  # username: <%= Rails.application.credentials.pg.username %>
+  # password: <%= Rails.application.credentials.pg.password %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
